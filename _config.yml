@@ -1,9 +1,0 @@
-title: Le French Math Project
-email: chirac.correze@gmail.com
-description: Maths for everyobody
-
-# markdown: GFM
-
-collections:
-  notes:
-    output: true
