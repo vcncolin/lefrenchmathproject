@@ -5,6 +5,8 @@
 layout: default
 ---
 
+Link to [exercises](/_posts/2024-07-01-welcome-to-jekyll.markdown)
+
 # Algèbre linéaire
 
 ## SEV et familes de vecteurs
