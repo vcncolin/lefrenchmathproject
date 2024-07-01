@@ -1,8 +1,9 @@
+
 title: Le French Math Project
 email: chirac.correze@gmail.com
 description: Maths for everyobody
 
-theme: cayman
+theme: jekyll-cayman
 
 # markdown: GFM
 
