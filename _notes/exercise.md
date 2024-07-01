@@ -2,7 +2,7 @@
 layout: post
 title: Méthodes
 author: Vincent G. COLIN
-date: July 1 2024
+date: July 1, 2024
 permalink: methods
 ---
 
