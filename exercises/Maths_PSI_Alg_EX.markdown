@@ -3,6 +3,7 @@ layout: default
 title:  "Exercices : Algèbre 1 PSI"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
+exclude : True
 ---
 
 # Chapitre 3 : Compléments d'algèbre linéaire
