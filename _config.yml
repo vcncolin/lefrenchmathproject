@@ -29,6 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: vincent-g-colin-819083152
 github_username:  vcncolin
 
+repository: vcncolin/lefrenchmathproject
+
 # Build settings
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
