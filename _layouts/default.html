@@ -26,13 +26,11 @@
 <body>
 
   {%- include header.html -%}
-
-  <ul>
-    {% include nav.html nav=site.data.menu %}
-  </ul>
-
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       {{ content }}
     </div>
   </main>
