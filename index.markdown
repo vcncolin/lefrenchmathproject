@@ -9,10 +9,10 @@ layout: default
 
 ## Algèbre
 
-### [Cours Algèbre 1](/_courses/Maths_PSI_Alg1.markdown)
+### [Cours Algèbre 1](/courses/Maths_PSI_Alg1.markdown)
 
-### [Exos Algèbre](/_exercises/Maths_PSI_Alg_EX.markdown)
+### [Exos Algèbre](/exercises/Maths_PSI_Alg_EX.markdown)
 
-### [Méthodes Algèbre](/_methods/Maths_PSI_Alg_MT.markdown)
+### [Méthodes Algèbre](/methods/Maths_PSI_Alg_MT.markdown)
 
 <video src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="320" height="240" controls></video>
