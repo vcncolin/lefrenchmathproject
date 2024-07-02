@@ -40,17 +40,8 @@ plugins:
 
 header_pages:
   - about.markdown
-  - \courses\Maths_PSI_Alg1.markdown
-
-sidebar:
-  - getting-started
-  - label: Customization
-    children:
-      - sidebar
-      - search
-      - relative-nav
-      - additional-config
-  - development
+  - index.markdown
+  - courses/Maths_PSI_Alg1.markdown
 
 
 # Exclude from processing.
