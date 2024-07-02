@@ -36,6 +36,13 @@
     height: 100%;
     overflow-y: auto;
   }
+  .toc ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .toc ul ul {
+    padding-left: 20px;
+  }
   .content {
     margin-left: 270px;
     padding: 20px;
@@ -48,7 +55,7 @@
   {%- include header.html -%}
 
   <div class="toc">
-    <h2>Table of Contents</h2>
+    <h2 class="no-toc">Table of Contents</h2>
     <nav>
       <ul id="toc"></ul>
     </nav>
@@ -66,13 +73,43 @@
     document.addEventListener("DOMContentLoaded", function () {
       const toc = document.getElementById("toc");
       const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+      const excludeClass = 'no-toc';
+
+      let currentLevel = 1;
+      let currentList = toc;
+
       headers.forEach(header => {
+        if (header.classList.contains(excludeClass)) {
+          return;
+        }
+
+        const level = parseInt(header.tagName.charAt(1));
+
+        if (header.id === "") {
+          header.id = header.textContent.toLowerCase().replace(/\s+/g, '-');
+        }
+
         const link = document.createElement("a");
         link.href = "#" + header.id;
         link.textContent = header.textContent;
+
         const listItem = document.createElement("li");
         listItem.appendChild(link);
-        toc.appendChild(listItem);
+
+        if (level > currentLevel) {
+          for (let i = currentLevel; i < level; i++) {
+            const newList = document.createElement("ul");
+            currentList.appendChild(newList);
+            currentList = newList;
+          }
+        } else if (level < currentLevel) {
+          for (let i = currentLevel; i > level; i--) {
+            currentList = currentList.parentElement.parentElement;
+          }
+        }
+
+        currentList.appendChild(listItem);
+        currentLevel = level;
       });
     });
   </script>

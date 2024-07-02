@@ -1,0 +1,37 @@
+<footer class="site-footer h-card no-toc">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper no-toc">
+
+    <div class="footer-col-wrapper no-toc">
+      <div class="footer-col no-toc">
+        <p class="feed-subscribe no-toc">
+          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+            <svg class="svg-icon orange no-toc">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span class="no-toc">Subscribe</span>
+          </a>
+        </p>
+      {%- if site.author %}
+        <ul class="contact-list no-toc">
+          {% if site.author.name -%}
+            <li class="p-name no-toc">{{ site.author.name | escape }}</li>
+          {% endif -%}
+          {% if site.author.email -%}
+            <li><a class="u-email no-toc" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+        </ul>
+      {%- endif %}
+      </div>
+      <div class="footer-col no-toc">
+        <p class="no-toc">{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    <div class="social-links no-toc">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>
