@@ -5,17 +5,14 @@
 layout: default
 ---
 
-Link to [exercises](/_posts/2024-07-01-welcome-to-jekyll.markdown)
-
-
 # PSI
 
 ## Algèbre
 
-### [Cours Algèbre 1](/_courses/Maths_PSI_Alg1.md)
+### [Cours Algèbre 1](/_courses/Maths_PSI_Alg1.markdown)
 
-### [Exos Algèbre](/_exercises/Maths_PSI_Alg_EX.md)
+### [Exos Algèbre](/_exercises/Maths_PSI_Alg_EX.markdown)
 
-### [Méthodes Algèbre](/_methods/Maths_PSI_Alg_MT.md)
+### [Méthodes Algèbre](/_methods/Maths_PSI_Alg_MT.markdown)
 
 <video src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="320" height="240" controls></video>
