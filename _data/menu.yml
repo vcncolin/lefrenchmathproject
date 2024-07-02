@@ -1,0 +1,8 @@
+- text: Home
+  url: /
+- text: Courses
+  url: /courses/
+- text: Exercices
+  url: /exercises/
+- text: Méthodes
+  url: /methods/
