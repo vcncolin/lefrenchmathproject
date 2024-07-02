@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ~/_layouts/default
 title:  "Exercices : Algèbre 1 PSI"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
