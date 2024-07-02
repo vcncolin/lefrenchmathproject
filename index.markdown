@@ -5,14 +5,10 @@
 layout: default
 ---
 
-# PSI
+# Index
 
-## Algèbre
+## [Maths PSI](/MathsPSI/index.markdown)
 
-### [Cours Algèbre 1](/courses/Maths_PSI_Alg1.markdown)
-
-### [Exos Algèbre](/exercises/Maths_PSI_Alg_EX.markdown)
-
-### [Méthodes Algèbre](/methods/Maths_PSI_Alg_MT.markdown)
+## [Physique MPSI](/PhysiqueMPSI/index.markdown)
 
 <video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480" controls></video>
