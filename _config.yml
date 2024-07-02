@@ -30,7 +30,8 @@ linkedin_username: vincent-g-colin-819083152
 github_username:  vcncolin
 
 # Build settings
-theme: minima
+remote_theme: zendesk/jekyll-theme-zendesk-garden@main
+
 plugins:
   - jekyll-feed
 
