@@ -38,7 +38,7 @@ header_pages:
   - about.markdown
 
 sidebar:
-  - about.markdown
+  - Alg1
 
 
 # Exclude from processing.
