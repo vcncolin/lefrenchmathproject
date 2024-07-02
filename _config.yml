@@ -33,6 +33,9 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+minima:
+  skin: dark # or auto if you want it to switch with your system settings.
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
