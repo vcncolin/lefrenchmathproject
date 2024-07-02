@@ -10,7 +10,7 @@ source "https://rubygems.org"
 #gem "jekyll", "~> 4.3.3"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem 'jekyll-theme-dinky', '~> 0.2.0'
+gem "minima", "~> 3.0"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
