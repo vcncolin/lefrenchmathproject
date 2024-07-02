@@ -15,4 +15,4 @@ layout: default
 
 ### [Méthodes Algèbre](/methods/Maths_PSI_Alg_MT.markdown)
 
-<video auto-play="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480" controls></video>
+<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480" controls></video>
