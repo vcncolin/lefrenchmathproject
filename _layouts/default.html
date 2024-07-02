@@ -1,7 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/rouge.css' | relative_url }}"
+    />
+    <script src="{{ '/assets/js/accordian.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/heading_links.js' | relative_url }}"></script>
+    {% if site.search_enabled %}
+    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    {% endif %}
+  </head>
 
-{%- include head.html -%}
+  <body>
+    <div class="chrome">
+      {% include navbar.html %}
+      <div class="chrome:body">
+        {% include header.html %}
+        <div class="chrome:content">
+          <div class="chrome:main">
+            {% if site.auto_page_title and page.title %}
+            {% if page.auto_title != false %}
+            <h1 id="{{ page.title | replace: " ", "-" | downcase | url_encode }}">{{ page.title }}</h1>
+            {% endif %}
+            {% endif %}
+            {{ content }}
+            {% if page.previous_page or page.next_page %} {% include page_nav.html %} {% endif %}
+          </div>
+          {% if site.sidebar %} {% include sidebar.html %} {% endif %}
+        </div>
+        {% include footer.html %}
+      </div>
+    </div>
+    {% if site.mermaid_enabled != false %}
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: "{{ site.mermaid_theme }}" });
+        mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    </script>
+    {% endif %}
+  </body>
+</html>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.css"
   integrity="sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4" crossorigin="anonymous">
@@ -22,20 +68,3 @@
     });
   });
 </script>
-
-<body>
-
-  {%- include header.html -%}
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
-
-  {%- include footer.html -%}
-
-</body>
-
-
-
-</html>
