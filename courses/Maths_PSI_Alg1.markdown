@@ -3,7 +3,7 @@ layout: default
 title:  "Cours : Algèbre 1 PSI"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
-exclude : True
+exclude: true
 ---
 
 # 1. Compléments
