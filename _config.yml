@@ -41,7 +41,7 @@ plugins:
 header_pages:
   - about.markdown
   - index.markdown
-  - courses/Maths_PSI_Alg1.markdown
+  - MathsPSI/index.markdown
 
 
 # Exclude from processing.
