@@ -9,6 +9,6 @@ categories: index
 
 ## [Cours - Algèbre 1](Maths_PSI_Alg1.markdown)
 
-## [Exercices - Algèbre](/MathsPSI/Maths_PSI_Alg_EX.markdown)
+## [Exercices - Algèbre](Maths_PSI_Alg_EX.markdown)
 
-## [Méthodes - Algèbre](/MathsPSI/Maths_PSI_Alg_MT.markdown)
+## [Méthodes - Algèbre](Maths_PSI_Alg_MT.markdown)
