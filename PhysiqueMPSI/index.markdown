@@ -7,4 +7,4 @@ categories: index
 
 # Sommaire Physique MPSI
 
-[Come back later]{/404.html}
+[Come back later](/404.html)
