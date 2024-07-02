@@ -32,13 +32,15 @@ github_username:  vcncolin
 repository: vcncolin/lefrenchmathproject
 
 # Build settings
-remote_theme: zendesk/jekyll-theme-zendesk-garden@main
+#remote_theme: zendesk/jekyll-theme-zendesk-garden@main
+theme: minima
 
 plugins:
   - jekyll-feed
 
 header_pages:
   - about.markdown
+  - \courses\Maths_PSI_Alg1.markdown
 
 sidebar:
   - getting-started
