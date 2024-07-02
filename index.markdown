@@ -44,4 +44,4 @@ Un isomorphisme transforme une base en une autre base.
 
 $rg(u) = dim(F)$ ?
 
-[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)]([https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4](https://github.com/vcncolin/lefrenchmathproject/blob/e5545f69e33fbd19d63893d5220b0e903c519f72/assets/manim/GaussianFunction.mp4))
+[![Watch the video](https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/Manim_icon.png)](https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4)
