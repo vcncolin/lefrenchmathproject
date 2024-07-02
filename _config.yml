@@ -32,7 +32,7 @@ github_username:  vcncolin
 repository: vcncolin/lefrenchmathproject
 
 # Build settings
-theme: zendesk/jekyll-theme-zendesk-garden@main
+remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
 plugins:
   - jekyll-feed
