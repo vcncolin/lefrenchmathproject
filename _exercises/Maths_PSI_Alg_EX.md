@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: default
+title:  "Exercices : Algèbre 1 PSI"
 date:   2024-07-01 12:19:36 +0200
-categories: jekyll update
+categories: exercises
 ---
 
 # Chapitre 3 : Compléments d'algèbre linéaire

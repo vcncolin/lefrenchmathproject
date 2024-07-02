@@ -7,41 +7,15 @@ layout: default
 
 Link to [exercises](/_posts/2024-07-01-welcome-to-jekyll.markdown)
 
-# Algèbre linéaire
 
-## SEV et familes de vecteurs
+# PSI
 
-### Montrer qu'une famille est une base
+## Algèbre
 
-### Montrer qu'un ensemble est un SEV
+### [Cours Algèbre 1](/_courses/Maths_PSI_Alg1.md)
 
-### Trouver le supplémentaire d'un SEV
+### [Exos Algèbre](/_exercises/Maths_PSI_Alg_EX.md)
 
-### Montrer que deux SEV sont en somme directe
-
-## Applications linéaires
-
-### Montrer qu'une application linéaire est injective :
-
-$u$ est injective $\iff Ker(u) = {0}$
-
-### Montrer qu'une application linéaire est surjective :
-
-$u$ est surjective $\iff Im(u) = F$
-
-### Montrer qu'une application est un endomorphisme
-
-Un endomorphisme est une application linéaire de $E$ dans $E$.
-
-1. $\varphi(\lambda u + v) = \lambda \varphi (u) + \varphi (v)$
-2. $\varphi (E) \subset E$
-
-### Montrer qu'une application est un isomorphisme
-
-Un isomorphisme est une application linéaire bijective de $E$ dans $E$.
-
-Un isomorphisme transforme une base en une autre base.
-
-$rg(u) = dim(F)$ ?
+### [Méthodes Algèbre](/_methods/Maths_PSI_Alg_MT.md)
 
 <video src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="320" height="240" controls></video>
