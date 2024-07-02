@@ -5,13 +5,6 @@
 
     <div class="footer-col-wrapper no-toc">
       <div class="footer-col no-toc">
-        <p class="feed-subscribe no-toc">
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-            <svg class="svg-icon orange no-toc">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span class="no-toc">Subscribe</span>
-          </a>
-        </p>
       {%- if site.author %}
         <ul class="contact-list no-toc">
           {% if site.author.name -%}
