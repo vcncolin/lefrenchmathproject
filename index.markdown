@@ -43,3 +43,5 @@ Un isomorphisme est une application linéaire bijective de $E$ dans $E$.
 Un isomorphisme transforme une base en une autre base.
 
 $rg(u) = dim(F)$ ?
+
+![Manim Test](../assets/manim/GaussianFunction.mp4) 
