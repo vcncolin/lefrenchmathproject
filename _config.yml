@@ -34,8 +34,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - about.markdown
 
 
 # Exclude from processing.
