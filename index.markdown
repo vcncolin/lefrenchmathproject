@@ -11,4 +11,4 @@ layout: default
 
 ## [Physique MPSI](/PhysiqueMPSI/index.markdown)
 
-<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480" controls></video>
+<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480"></video>

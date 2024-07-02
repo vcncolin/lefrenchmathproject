@@ -62,8 +62,78 @@ $$
 
 $Ker(f)$ et $Im(f)$ sont des SEV de respectivement $E$ et $F$
 
+**Remarque** : 
+
+Soit $f \in \mathcal{L}(E,F)$
+1. $f$ est injective $\iff Ker(f) = \{0\}$
+2. $f$ est surjective $\iff Im(f) = F$
+
+**Terminologie** : 
+
+Soit $f \in \mathcal{L}(E)$ un endomorphisme
+
+1. $f$ est un projecteur $\iff f^2 = f$
+2. $f$ est une symétrie $\iff f^2 = Id_{/E}$
+
+## C. Familles de vecteurs
+
+**Définitions** :
+
+On considère $(x_1, x_2, ... x_p) = (x_i)_{i\in I}$ une famille de $p$ vecteurs de l'EV $E$
+1. La famille de vecteurs est libre si $\sum\limits_{i=1}^p \lambda_i x_i = 0 \implies \forall i \in I, \lambda_i = 0$ 
+2. La famille de vecteurs est génératrice si $\forall x \in E, \exists (\lambda_i)_{i\in I} / x = \sum\limits_{i=1}^p \lambda_i x_i$
+3. La famille de vecteurs est une base si elle est libre et génératrice, ou encore si $\forall x \in E, \exists !(\lambda_i)_{i\in I} / x = \sum\limits_{i=1}^p \lambda_i x_i$
+
+**Remarque** : 
+
+Si $E$ est un EV de dim $n$, et $(x_i)$ une famille de vecteurs de $E$, alors il y a équivalence entre les trois propositions suivantes : 
+1. $(x_i)$ est une base de $E$
+2. $(x_i)$ est une famille libre à $n$ éléments
+3. $(x_i)$ est une famille génératrice à $n$ éléments
+
+**Définition** : 
+
+Soient $E$ et $F$ deux EV, et $u \in \mathcal{L}(E,F)$. On suppose que $E$ est de dimension finie. On appele rang de $u$ : 
+$$
+rg(u) = dim(Im(u))
+$$
+
+**Théorème** :
+Soient $E$ et $F$ deux EV, et $u \in \mathcal{L}(E,F)$. On suppose que $E$ est de dimension finie. On a alors la formule du rang : 
+
+$$
+dim(E) = dim(Ker(u)) + rg(u)
+$$
+
+**Remarque** :
+Que peut-on en déduire si $dim(E) = dim(F)$ ? (donc pour tout endomorphisme en dimension finie)
+
+## D. Produit et somme d'espaces vectoriels
 
 
+**Définition**:
+On considère $n \hspace{2mm} \mathbb{K}$-EV $E_1, ... E_n$
+Le produit cartésien $E_1 \times E_2 \times ... \times E_n$ est défini comme l'ensemble des $(x_1, x_2, ..., x_n)$ tels que $x_i \in E_i$
 
+$E_1 \times E_2 \times ... \times E_n$ a une structure de $\mathbb{K}$-EV et $dim(E_1 \times E_2 \times ... \times E_n) = \sum\limits_{i=1}^n dim(E_i)$
 
+**Définition** : 
+On considère deux SEV $F$ et $G$ d'un même EV $E$. On note alors : 
+$$
+F+G = \{x+y / x\in F, y \in G\} = \{z \in E / \exists (x,y) \in F \times G, z = x+y\} 
+$$
 
+La somme $F+G$ est un SEV de E.
+
+**Définition** :
+On dit que deux SEV $F$ et $G$ sont en somme directe lorsque $F \cap G = \{0\}$, dans ce cas on note $F+G = F\oplus G$
+
+**Définition** :
+On dit que deux SEV $F$ et $G$ sont supplémentaires dans $E$ lorsque 
+1. $F \cap G = \{0\}$
+2. $F+G = E$ (tout vecteur de $E$ peut s'exprimer comme une somme d'un vecteur de $F$ et d'un vecteur de $G$)
+
+**Théorème** : 
+Soient $E$ un $\mathbb{K}$-EV et $F$ et $G$ deux SEV de $E$ de $dim$ finie. 
+1. $F+G$ est un SEV de $E$ de $dim$ finie et $dim(F+G) \leq dim(F) + dim(G)$
+2. De plus si $F$ et $G$ sont en somme directe alors $dim(F\oplus G) = dim(F) + dim(G)$
