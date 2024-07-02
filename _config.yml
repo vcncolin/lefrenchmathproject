@@ -41,7 +41,8 @@ plugins:
 header_pages:
   - about.markdown
   - index.markdown
-  - /MathsPSI/index.markdown
+  - MathsPSI/index.markdown
+  - PhysiqueMPSI/index.markdown
 
 
 # Exclude from processing.
