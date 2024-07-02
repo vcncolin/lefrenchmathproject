@@ -9,7 +9,7 @@ layout: default
 
 ## Algèbre
 
-### [Cours Algèbre 1](/courses/Maths_PSI_Alg1.markdown)
+### [Cours Algèbre 1](Alg1)
 
 ### [Exos Algèbre](/exercises/Maths_PSI_Alg_EX.markdown)
 

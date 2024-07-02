@@ -41,7 +41,14 @@ header_pages:
   - about.markdown
 
 sidebar:
-  - Alg1
+  - getting-started
+  - label: Customization
+    children:
+      - sidebar
+      - search
+      - relative-nav
+      - additional-config
+  - development
 
 
 # Exclude from processing.
