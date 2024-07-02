@@ -43,7 +43,7 @@ exclude: true
 
 **Propriétés** :
 
-1. *Restriction* : Si $f \in \mathcal{L}$, si $G$ est un SEV de $E$, et si $H$ est un SEV de $F$ tel que $f(G) \subset H$, alors $f_{|G} \in \mathcal{L}(G,H)$
+1. *Restriction* : Si $f \in \mathcal{L}$, si $G$ est un SEV de $E$, et si $H$ est un SEV de $F$ tel que $f(G) \subset H$, alors $f_{/G} \in \mathcal{L}(G,H)$
 2. *Somme et multiplication* : Si $(f,g) \in \mathcal{L}(E,F)$ et $\lambda \in \mathbb{K}$, alors $\lambda.f + g \in \mathcal{L}(E,F)$
 3. *Composition* : Si $f \in \mathcal{L}(E,F)$ et $g \in \mathcal{L}(F,G)$, alors $g \circ f \in \mathcal{L}(E,G)$
 4. *Bijection réciproque* : Si f est un isomorphisme de $E$ sur $F$, alors $f^{-1}$ est un isomorphisme de $F$ dans $E$
