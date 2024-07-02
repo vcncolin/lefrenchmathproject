@@ -60,15 +60,41 @@
     padding-left: 0;
   }
   .toc ul ul {
-    padding-left: 20px;
+    padding-left: 5px;
   }
   .content {
     margin-left: 270px;
     padding: 20px;
     flex: 1;
+    transition: margin-left 0.3s ease;
   }
   .toc.collapsed + .content {
     margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .toc {
+      width: 100%;
+      height: auto;
+      position: relative;
+      transform: none;
+      padding: 10px;
+    }
+    .toc-toggle-button {
+      position: static;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      transition: none;
+    }
+    .content {
+      margin-left: 0;
+      padding: 10px;
+    }
+    .toc.collapsed {
+      display: none;
+    }
   }
 </style>
 
