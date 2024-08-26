@@ -45,8 +45,11 @@ $$ est-elle dérivable en $x = 1$ ?
 Calculons : 
 
 $$ \dfrac{f(1+h)-f(1)}{h} = \dfrac{3(1+h)^2 + 2 - (3*1^2 + 2)}{h} 
+
 = \dfrac{ 3(1+2h+h^2)+2-(3+2)}{h} = \dfrac{ 3+6h+3h^2+2-3-2}{h} 
+
 = \dfrac{6h + 3h^2}{h} = 6+3h \to_{h \to 0^{+}} 6 $$
 
 **En pratique :** Il convient de savoir quelles sont les fonctions usuelles dérivables, et le cas échéant, quel est leur intervalle de dérivabilité, ainsi que la fonction dérivée associée ! (cf. méthodes, tableau de dérivation)
 
+![image info](./img/Phy1_01.png)
