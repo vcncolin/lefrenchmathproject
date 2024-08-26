@@ -15,9 +15,9 @@ Il s'agit dans ce chapitre d'aborder quelques outils de base qui sont considér�
 - Analyse dimensionnelle d'une équation donnée
 - Calcul d'incertitude statistique / propagée
 
-## 1. Dérivation
+## 1. Dérivation des fonctions de la variable réelle
 
-### A. Fonction d'une seule variable
+### A. Définition
 
 Soit $f$ une fonction définie sur $\mathbb{R}$ et $x_0 \in \mathbb{R}$ :
 
@@ -37,7 +37,7 @@ La fonction dérivée d'une fonction $f$ se note $f'$ et est définie pour tout 
 
 **Exemple :** La fonction $$
 \begin{array}{rlll}
-D: \mathbb{R} & \longrightarrow & \mathbb{R} \\
+f: \mathbb{R} & \longrightarrow & \mathbb{R} \\
 x & \longrightarrow & 3x^2+2
 \end{array}
 $$ est-elle dérivable en $x = 1$ ?
@@ -52,4 +52,27 @@ $$ \dfrac{f(1+h)-f(1)}{h} = \dfrac{3(1+h)^2 + 2 - (3*1^2 + 2)}{h}
 
 **En pratique :** Il convient de savoir quelles sont les fonctions usuelles dérivables, et le cas échéant, quel est leur intervalle de dérivabilité, ainsi que la fonction dérivée associée ! (cf. méthodes, tableau de dérivation)
 
+### B. Détermination de l'équation de la tangente à une courbe
+
+Le nombre dérivé d'une fonction en un point correspond au coefficient directeur de la tangente à la courbe représentative de la fonction en ce point. 
+
+En d'autres termes : soit la fonction $f$ que l'on va considérer dérivable sur $\mathbb{R}$ et admettant pour dérivée $f'$. Alors, en un point d'abcisse $a$ donnée, la tangente à la courbe $C_f$ représentative de la fonction $f$ a pour coefficient directeur $f'(a)$.
+
+Plus précisément, la tangente a pour équation : $y = f'(a) * (x-a) + f(a)$
+
+**Exemple** : Quelle est l'équation de la tangente à la fonction $f$ définie dans le paragraphe précédent, au point d'abcisse $x=1$ ?
+
+On peut directement appliquer la formule ci-avant, afin de trouver : $y = 6(x-1) + 5 \eq y = 6x - 1$
+
 ![image info](./img/Phy1_01.png)
+
+### C. Définition d'une dérivée seconde, dérivée $n$-ième
+
+Si $f$ est dérivable deux fois, on appelle fonction dérivée seconde de $f$ la fonction dérivée de $f'$, que l'on notera $f''$.
+
+On peut généraliser cette définition de la manière suivante : si $f$ est dérivable $n$ fois, on appelle fonction dérivée $n$-ième de $f$ la fonction dérivée de $f'$, que l'on notera $f^{(n)}$.
+
+## 2. Fonctions de plusieurs variables
+
+Depuis tout petit, le lycéen considère les fonctions mathématiques comme des fonctions de la variable $x$, et prend l'habitude de noter $f'(x)$ le nombre dérivé de la fonction $f$ par rapport à la variable $x$. En revanche, le monde du physicien est autrement plus complexe. Nous sommes entourés de fonctions de plusieurs variables (on pourrait imaginer, par exemple, une modélisation de la température de la pièce en fonction de la température extérieure, du nombre d'individus présents, ...). Le physicien a donc pour habitude d'indiquer en permanence la variable par rapport à laquelle il dérive une fonction, en utilisant la notation suivante : $\dfrac{df}{dx}$ représente la dérivée de la fonction $f$ par rapport à la variable $x$.
+
