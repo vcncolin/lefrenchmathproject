@@ -7,4 +7,8 @@ categories: index
 
 # Sommaire Physique MPSI
 
+## [Cours - Chapitre 1 - Analyse dimensionnelle](Physique_MPSI_1.markdown)
+
+## [Exercices - Chapitre 1](Physique_MPSI_1_EX.markdown)
+
 [Come back later](../404.html)
