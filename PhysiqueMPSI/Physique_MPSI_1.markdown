@@ -34,7 +34,7 @@ Toute grandeur physique peut s'exprimer en fonction de sept dimensions fondament
 
 Le système international des unités se compose d'un ensemble d'unités fondamentales, d'unités dérivées, et de préfixes multiplicateurs. 
 
-- La **seconde** (s), unité fondamentale de temps, est définie comme la durée de 9 192 631 770 périodes de la radiation correspondant à la transition entre les deux niveaux hyperfins de l'état fondamental de l'atome de césium 133 à la température du zéro absolu. (Le césium c'est rigolo : https://youtu.be/uixxJtJPVXk?t=136)
+- La **seconde** (s), unité fondamentale de temps, est définie comme la durée de 9 192 631 770 périodes de la radiation correspondant à la transition entre les deux niveaux hyperfins de l'état fondamental de l'atome de césium 133 à la température du zéro absolu. (Le césium c'est rigolo : <https://youtu.be/uixxJtJPVXk?t=136>)
 - Le **mètre** (m), unité fondamentale de distance, définie comme la longueur du trajet parcouru dans le vide par la lumière pendant une durée de 1/299 792 458 de seconde.
 - Le **kilogramme** (kg), unité fondamentale de masse, est défini grâce à la valeur numérique de la constante de Planck $h = 6,62607015.10^{-34} kg.m^2.s^{-1}$, en ayant au préalable défini le mètre et la seconde. 
 - L'**ampère** (A), unité fondamentale d'intensité électrique, est défini en fixant la valeur numérique de la charge élémentaire $e=1,602176634.10^{-19} A.s$, en ayant défini au préalable la seconde.
@@ -58,7 +58,7 @@ Le système international des unités se compose d'un ensemble d'unités fondame
 
 On rappelera que ces unités étaient initialement basées sur l'observation de phénomènes naturels (fraction du jour solaire, oscillation d'un pendule, ...)
 
-On peut déduire de ces unités fondamentales toutes les unités dérivées du système international (liste complète : https://en.wikipedia.org/wiki/SI_derived_unit). Par exemple, la capacité thermique s'exprime habituellement en $J.K^{-1}$, qui s'exprime dans le système fondamental : $kg.m^2.s^{-2}.K^{-1}$
+On peut déduire de ces unités fondamentales toutes les unités dérivées du système international (liste complète : <https://en.wikipedia.org/wiki/SI_derived_unit>). Par exemple, la capacité thermique s'exprime habituellement en $J.K^{-1}$, qui s'exprime dans le système fondamental : $kg.m^2.s^{-2}.K^{-1}$
 
 **Remarque :** Dans beaucoup de domaines, on aura tendance a utiliser des unités dérivées pour un côté pratique. (voir les illustrations)
 
@@ -98,7 +98,24 @@ En pratique, il s'avère que dans beaucoup de domaines, les préfixes multiplica
 
 **Remarque :** Un angle n'a pas d'unité, le radian correspond à un ratio de longueurs (c'est par définition le quotient de la longueur d'un arc de cercle par le rayon).
 
-### D. Analyse dimensionnelle
+### D. Chiffres significatifs
+
+**Définition :** Un chiffre significatif d'un nombre est : 
+- Tout chiffre non nul de ce nombre
+- Tout "0" situé à droite d'un autre nombre 
+
+Lorsqu’on indique un nombre en physique, on indique en fait un encadrement de ce nombre. La précision de cet encadrement est directement reliée au nombre de chiffres significatifs.
+
+**Exemples :**
+- $x = 1.5$ signifie $1.45 \leq x < 1.55$
+- $x = 1.500$ signifie $1.4995 \leq x < 1.5005$
+
+**Opérations :**
+- Le résultat d'une **addition** ou d'une **soustraction** a le même nombre de *décimales* que la donnée qui en possède le moins. 
+- Le résultat d'une **multiplication** ou d'une **division** a le même nombre de *chiffre significatifs* que la donnée qui en possède le moins.  
+
+
+### E. Analyse dimensionnelle
 
 Connaître les unités des grandeurs physiques que l'on manipule permet de vérifier la pertinence d'un calcul. En effet, une égalité entre deux membres implique nécessairement l'égalité des unités. Par conséquent, lors de **tout calcul numérique**, un élève avisé vérifiera **systématiquement** la cohérence des unités dans le calcul. 
 
@@ -108,16 +125,11 @@ On va chercher à déterminer l'unité du membre de droite, et vérifier si cela
 
 $[v] = L\times T^{-1}$ et $[D] = L$. De fait, le membre de droite est donc une grandeur de type $\dfrac{(L\times T^{-1})^2}{L}$et on obtient en simplifiant : $L\times T^{-2}$, ce qui correspond bien à une accélération. 
 
-### E. Conversions
+### F. Conversions
 
 Un point rapide sur les conversions : afin d'éviter des erreurs de calcul on pourra utiliser la technique suivante : 
 
 $25 km/h = \dfrac{25 km}{1 h} = \dfrac{25 \times 1000 m}{1 \times 3600 s} = \dfrac{25}{3.6}  m/s \simeq 6.9 m/s$
-
-
-
-
-
 
 
 ## 2. Dérivation des fonctions de la variable réelle
@@ -190,3 +202,63 @@ $\left(\dfrac{\partial f(x,y)}{\partial y}\right)_{x = cst} \hspace{4mm}$ ou sim
 - $\dfrac{\partial g}{\partial x} = 2y^2$; $\dfrac{\partial g}{\partial y} = 4xy$
 
 **Remarque :** On peut généraliser cette définition à une fonction d'un nombre quelconque de variables.
+
+## 4. Mesures et incertitudes
+
+### A. Définitions
+- Une **mesurande** est une grandeur physique que l'on mesure
+- Un **mesurage** est une opération de mesure d'une mesurande. A la suite de cette opération, on obtient une valeur mesurée $x$ pour la mesurande.
+
+Il est impossible de connaître la valeur exacte $x_{vrai}$ de la mesurande par les mesurages. Une mesure $x$ contient nécessairement une erreur $\varepsilon$ sur l'estimation de $x_{vrai}$ : $\varepsilon = x - x_{vrai}$
+
+Cette erreur contient deux composantes : 
+- **Erreur systématique** : composante de l'erreur qui, dans des mesurages répétés, reste constante, ou varie de manière prévisible. (mauvais calibrage, approximation dans la modélisation...)
+- **Erreur aléatoire** : composante de l'erreur qui, dans des mesurages répétés, varie de façon imprévisible. (précision des données des appareils de mesure, fluctuation des conditions expérimentales...)
+
+### B. Erreur aléatoire, évaluation de type A
+
+On considère que l'on dispose, pour l'évaluation de $x_{vrai}$ d'une série de $n$ mesures indépendantes, $x_1, x_2, ... x_n$
+
+Dans l'évaluation de type A, $x_{vrai}$ est donnée par : 
+
+$$x_{vrai} = x_m \pm \dfrac{\sigma(x)}{\sqrt{n}}$$
+
+avec : $x_m = \dfrac{1}{n} \sum\limits_{i} x_i$, la moyenne de la série de mesures,
+
+et $s(x) = \sqrt{\dfrac{1}{n}\sum\limits_{i} (x_i-x_m)^2}$ l'écart-type de la série de mesures. 
+
+L'évaluation de type A est une méthode statistique qui est d'autant plus précise que le nombre de mesures indépendantes $n$ est grande.
+
+**Remarque :** il convient plutôt en physique de définir l'indicateur écart type en divisant par $n-1$ au lieu de $n$. L'indicateur indiqué ci-dessus est légèrement moins précis (discutable) mais s'aligne parfaitement avec la définition de l'écart-type mathématique pour éviter une confusion de la part de l'élève. 
+
+### C. Evaluation de type B
+
+Il s'agit maintenant de pouvoir évaluer l'erreur commise lors d'une mesure unique. 
+
+**Mesure directe :** Dans le cas d'une mesure directe, il existe généralement une précision $\Delta$ indiquée par l'appareil de mesure. 
+
+*Remarque : on peut considérer dans ce cas que $u(x) = \frac{\Delta}{\sqrt{3}}$ avec certaines considérations mathématiques. Cette relation n'est pas à retenir*
+
+**Mesure indirecte et composition des incertitudes :**
+
+Dans le cas d'une mesure indirecte, une valeur mesurée de la mesurande est déduite d'une formule mathématique faisant intervenir la mesure d'autres grandeurs $z_1, z_2, ... z_n$ (appelées grandeurs d'entrée).
+
+$$x = f(z_1, z_2, ... z_n)$$
+
+On note $u_1, u_2, ... u_n$ les incertitudes sur les grandeurs d'entrée. Si les grandeurs d'entrée sont indépendantes, alors l'incertitude $u(x)$ sur $x$ est donnée par : 
+
+$$u(x) = \sqrt{\left(\dfrac{df}{dz_1}u_1\right)^2+\left(\dfrac{df}{dz_2}u_2\right)^2+...+\left(\dfrac{df}{dz_n}u_n\right)^2}$$
+
+**Exemple :** On cherche l'énergie cinétique (et l'incertitude associée) d'une balle de ping pong, de masse $m = 2.7 \pm 0.1 g$ et de vitesse $v = 100 \pm 2 km/h$. 
+
+On commence par convertir les données dans le SI pour obtenir un résultat en $J$ : $m = 2.7\times 10^{-3} \pm 1\times 10^{-4} kg$, et $v = 27.8m/s \pm 0.56m/s$
+
+$E_C = 1/2 m v ^2 = 1.0 J$
+
+Pour le calcul de l'incertitude, on commence par calculer les dérivées partielles de $E_C$ : $\dfrac{\partial E_C}{\partial m} = \dfrac{1}{2} v^2$, et $\dfrac{\partial E_C}{\partial v} = mv$
+
+On obtient pour l'incertitude totale : 
+
+$u(E_C) = \sqrt{\left(\frac{1}{2}v^2\times\Delta m\right)^2+\left(m v\times\Delta v\right)^2} \newline = \sqrt{(\frac{1}{2}\times 27.8^2 \times 10^{-4})^2 + (2.7 \times 10^{-3}\times 27.8 \times 0.56)^2} \newline =\sqrt{1.49\times 10^{-3} + 1.77\times 10^{-3}} \newline =5.7 \times 10^{-2} J$
+
+On peut donner le résultat final sous la forme : $E_C = 1,0 \pm 0.06 J$, ou bien donner une incertitude relative sur le résultat : $\frac{\Delta E_C}{E_C} = 0.06 = 6 \%$
