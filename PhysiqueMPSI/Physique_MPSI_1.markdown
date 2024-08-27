@@ -65,9 +65,16 @@ On peut déduire de ces unités fondamentales toutes les unités dérivées du s
 ![alt-text-1](./img/compteur.jpg "Fiat Panda de Mamie") ![alt-text-2](./img/compteur-edf.jpg "Compteur électrique")
 
 
-|![alt-text-1](./img/barometre.jpeg "Baromètre de Papi")|![alt-text-2](./img/biner.jpg "Mousqueton d'escalade")|
-|:----:|:----:|
-|![alt-text-1](./img/compteur.jpg "Fiat Panda de Mamie") |![alt-text-2](./img/compteur-edf.jpg "Compteur électrique")|
+<table>
+  <tr>
+    <td><img src="./img/barometre.jpeg" alt="Image 1" style="width: 100%; max-width: 200px;"></td>
+    <td><img src="./img/biner.jpg" alt="Image 2" style="width: 100%; max-width: 200px;"></td>
+  </tr>
+  <tr>
+    <td><img src="./img/compteur.jpg" alt="Image 3" style="width: 100%; max-width: 200px;"></td>
+    <td><img src="./img/compteur-edf.jpg" alt="Image 4" style="width: 100%; max-width: 200px;"></td>
+  </tr>
+</table>
 
 
 
@@ -91,20 +98,11 @@ On appelle ces limites "dérivée de f en $x_0$" et elle se note $f'(x_0)$.
 
 La fonction dérivée d'une fonction $f$ se note $f'$ et est définie pour tout point $x$ où $f$ est dérivable. 
 
-**Exemple :** La fonction $
-\begin{array}{rlll}
-f: \mathbb{R} & \longrightarrow & \mathbb{R} \\
-x & \longrightarrow & 3x^2+2
-\end{array}
-$ est-elle dérivable en $x = 1$ ?
+**Exemple :** La fonction $\begin{array}{rlll} f: \mathbb{R} & \longrightarrow & \mathbb{R} \\ x & \longrightarrow & 3x^2+2 \end{array}$ est-elle dérivable en $x = 1$ ?
 
 Calculons : 
 
-$\dfrac{f(1+h)-f(1)}{h} = \dfrac{3(1+h)^2 + 2 - (3*1^2 + 2)}{h} 
-
-= \dfrac{ 3(1+2h+h^2)+2-(3+2)}{h} = \dfrac{ 3+6h+3h^2+2-3-2}{h} 
-
-= \dfrac{6h + 3h^2}{h} = 6+3h \to_{h \to 0^{+}} 6$
+$\dfrac{f(1+h)-f(1)}{h} = \dfrac{3(1+h)^2 + 2 - (3*1^2 + 2)}{h} \newline = \dfrac{ 3(1+2h+h^2)+2-(3+2)}{h} = \dfrac{ 3+6h+3h^2+2-3-2}{h} \newline = \dfrac{6h + 3h^2}{h} = 6+3h \to_{h \to 0^{+}} 6$
 
 **En pratique :** Il convient de savoir quelles sont les fonctions usuelles dérivables, et le cas échéant, quel est leur intervalle de dérivabilité, ainsi que la fonction dérivée associée ! (cf. méthodes, tableau de dérivation)
 
