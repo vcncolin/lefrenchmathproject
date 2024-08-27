@@ -65,6 +65,9 @@ On peut déduire de ces unités fondamentales toutes les unités dérivées du s
 ![alt-text-1](./img/compteur.jpg "Fiat Panda de Mamie") ![alt-text-2](./img/compteur-edf.jpg "Compteur électrique")
 
 
+|![alt-text-1](./img/barometre.jpeg "Baromètre de Papi")|![alt-text-2](./img/biner.jpg "Mousqueton d'escalade")|
+|:----:|:----:|
+|![alt-text-1](./img/compteur.jpg "Fiat Panda de Mamie") |![alt-text-2](./img/compteur-edf.jpg "Compteur électrique")|
 
 
 
