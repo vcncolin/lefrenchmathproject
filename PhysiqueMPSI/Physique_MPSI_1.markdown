@@ -54,6 +54,8 @@ Le système international des unités se compose d'un ensemble d'unités fondame
 
 **Remarque :** le nom d'une unité est un nom commun et s'écrit sans majuscule dans tous les cas (i.e. un kelvin). Lorsque l'unité est basée sur un nom propre, son symbole prend une majuscule (i.e. "$1073 K$ c'est un peu chaud pour le jacuzzi Kévin"). L'exception est le litre (i.e. "$2L$ de bière le jeudi ne te t'aideront pas pour le DS du vendredi").
 
+
+
 On rappelera que ces unités étaient initialement basées sur l'observation de phénomènes naturels (fraction du jour solaire, oscillation d'un pendule, ...)
 
 On peut déduire de ces unités fondamentales toutes les unités dérivées du système international (liste complète : https://en.wikipedia.org/wiki/SI_derived_unit). Par exemple, la capacité thermique s'exprime habituellement en $J.K^{-1}$, qui s'exprime dans le système fondamental : $kg.m^2.s^{-2}.K^{-1}$
@@ -70,6 +72,51 @@ On peut déduire de ces unités fondamentales toutes les unités dérivées du s
     <td style="text-align: center;"><img src="./img/compteur-edf.jpg" alt="Image 4" style="width: 100%; max-width: 200px;"></td>
   </tr>
 </table>
+
+**Exemple :** Convertir les grandeurs des illustrations précédentes.
+
+### C. Préfixes multiplicatifs et puissances de dix
+
+Il est pertinent dans la majorité des cas d'utiliser un préfixe d'unité afin d'éviter l'utilisation abusive et lourde des puissances de dix. 
+
+En pratique, il s'avère que dans beaucoup de domaines, les préfixes multiplicatifs seront utilisés par défaut :
+- Spectroscopie : $nm$
+- Distance en voiture : $km$
+- Impulsions laser : $fs$
+- Capacité de stockage informatique : $To$
+- Puissance de calcul : pétaflops (FLoating point Operations Per Second)
+
+| Facteur  | Nom | Symbole | Facteur  | Nom | Symbole |
+| :----: |:----:| :----:|:----: |:----:| :----:|
+| $10^{1}$ | déca | da | $10^{-1}$ | déci | d |
+| $10^{2}$ | hecto | h | $10^{-2}$ | centi | c |
+| $10^{3}$ | kilo | k | $10^{-3}$ | milli | m |
+| $10^{6}$ | méga | M | $10^{-6}$ | micro | $\mu$ |
+| $10^{9}$ | giga | G | $10^{-9}$ | nano | n |
+| $10^{12}$ | téra | T | $10^{-12}$ | pico | p |
+| $10^{15}$ | péta | P | $10^{-15}$ | femto | f |
+
+**Remarque :** Un angle n'a pas d'unité, le radian correspond à un ratio de longueurs (c'est par définition le quotient de la longueur d'un arc de cercle par le rayon).
+
+### D. Analyse dimensionnelle
+
+Connaître les unités des grandeurs physiques que l'on manipule permet de vérifier la pertinence d'un calcul. En effet, une égalité entre deux membres implique nécessairement l'égalité des unités. Par conséquent, lors de **tout calcul numérique**, un élève avisé vérifiera **systématiquement** la cohérence des unités dans le calcul. 
+
+**Exemple :** (tiré d'un TD de cinématique) : On calcule une accélération grâce à la formule suivante : $a = \dfrac{v_0^2}{2 D}$ Vérifions la cohérence de cette équation :
+
+On va chercher à déterminer l'unité du membre de droite, et vérifier si cela correspond bien à une accélération. 
+
+$[v] = L\times T^{-1}$ et $[D] = L$. De fait, le membre de droite est donc une grandeur de type $\dfrac{(L\times T^{-1})^2}{L}$et on obtient en simplifiant : $L\times T^{-2}$, ce qui correspond bien à une accélération. 
+
+### E. Conversions
+
+Un point rapide sur les conversions : afin d'éviter des erreurs de calcul on pourra utiliser la technique suivante : 
+
+$25 km/h = \dfrac{25 km}{1 h} = \dfrac{25 \times 1000 m}{1 \times 3600 s} = \dfrac{25}{3.6}  m/s \simeq 6.9 m/s$
+
+
+
+
 
 
 
