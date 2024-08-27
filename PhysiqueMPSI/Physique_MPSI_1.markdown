@@ -14,6 +14,7 @@ Il s'agit dans ce chapitre d'aborder quelques outils de base qui sont considér�
 - Dérivation d'ordre quelconque d'une fonction de la variable réelle
 - Dérivation d'une fonction de plusieurs variables
 - Calcul d'incertitude statistique / propagée
+
 ## 1. Analyse dimensionnelle et unités
 
 ### A. Qu'est-ce qu'une grandeur physique ? 
@@ -262,3 +263,5 @@ On obtient pour l'incertitude totale :
 $u(E_C) = \sqrt{\left(\frac{1}{2}v^2\times\Delta m\right)^2+\left(m v\times\Delta v\right)^2} \newline = \sqrt{(\frac{1}{2}\times 27.8^2 \times 10^{-4})^2 + (2.7 \times 10^{-3}\times 27.8 \times 0.56)^2} \newline =\sqrt{1.49\times 10^{-3} + 1.77\times 10^{-3}} \newline =5.7 \times 10^{-2} J$
 
 On peut donner le résultat final sous la forme : $E_C = 1,0 \pm 0.06 J$, ou bien donner une incertitude relative sur le résultat : $\frac{\Delta E_C}{E_C} = 0.06 = 6 \%$
+
+
