@@ -60,19 +60,14 @@ On peut déduire de ces unités fondamentales toutes les unités dérivées du s
 
 **Remarque :** Dans beaucoup de domaines, on aura tendance a utiliser des unités dérivées pour un côté pratique. (voir les illustrations)
 
-![alt-text-1](./img/barometre.jpeg "Baromètre de Papi") ![alt-text-2](./img/biner.jpg "Mousqueton d'escalade")
-
-![alt-text-1](./img/compteur.jpg "Fiat Panda de Mamie") ![alt-text-2](./img/compteur-edf.jpg "Compteur électrique")
-
-
 <table>
   <tr>
-    <td><img src="./img/barometre.jpeg" alt="Image 1" style="width: 100%; max-width: 200px;"></td>
-    <td><img src="./img/biner.jpg" alt="Image 2" style="width: 100%; max-width: 200px;"></td>
+    <td style="text-align: center;"><img src="./img/barometre.jpeg" alt="Image 1" style="width: 100%; max-width: 200px;"></td>
+    <td style="text-align: center;"><img src="./img/biner.jpg" alt="Image 2" style="width: 100%; max-width: 200px;"></td>
   </tr>
   <tr>
-    <td><img src="./img/compteur.jpg" alt="Image 3" style="width: 100%; max-width: 200px;"></td>
-    <td><img src="./img/compteur-edf.jpg" alt="Image 4" style="width: 100%; max-width: 200px;"></td>
+    <td style="text-align: center;"><img src="./img/compteur.jpg" alt="Image 3" style="width: 100%; max-width: 200px;"></td>
+    <td style="text-align: center;"><img src="./img/compteur-edf.jpg" alt="Image 4" style="width: 100%; max-width: 200px;"></td>
   </tr>
 </table>
 
@@ -148,6 +143,3 @@ $\left(\dfrac{\partial f(x,y)}{\partial y}\right)_{x = cst} \hspace{4mm}$ ou sim
 - $\dfrac{\partial g}{\partial x} = 2y^2$; $\dfrac{\partial g}{\partial y} = 4xy$
 
 **Remarque :** On peut généraliser cette définition à une fonction d'un nombre quelconque de variables.
-
-
-
