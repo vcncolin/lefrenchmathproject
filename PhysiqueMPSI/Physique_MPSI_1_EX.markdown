@@ -17,7 +17,7 @@ Convertir les valeurs suivantes en utilisant les unités du système internation
 - 150 mph
 - 30 gallons
 - 451 Fahrenheit
-- 
+
 ### Exercice 2 : Puissances et énergies
 
 Même question : 
@@ -81,13 +81,14 @@ Dériver les fonctions suivantes, on précisera l'intervalle de dérivation qui 
 ### Exercice 9 : Fonctions de plusieurs variables
 
 Donner la dérivée de ces fonctions par rapport à chacune de leurs variables.
+
 |  |  |  |
 |--|--|--|
 |1)  $f(x,y)=2x + 3y$ | 2)  $f(x,y)=8x^2+5y$ | 3)  $f(x,y,z) = 2x^3 + y + 4 exp(z)$|
 |4)  $f(x,y)=2xy$ | 5)  $f(x,y,z)=\dfrac{3(x+y)}{z}$ | 6)  $f(x,y,z)=\dfrac{x^2 -1}{4y + z}$|
 |7)  $f(x,y)=xexp(yt+\beta)$ | 8)  $f(L,g)=2 \pi \sqrt{\dfrac{L}{g}}$ | 9)  $f(\rho,v,L,\eta)=\dfrac{\rho v L}{\eta}$ |
 |10)  $f(E,T)=\dfrac{1}{1+exp(-E/(k_B T))}$ | 11)  $f(x,y,z,t)=\dfrac{x cos(2y)}{z^2t}$ | 12)  $f(E,B) = \dfrac{\epsilon_0 E^2}{2}+\dfrac{B^2}{2 \mu_0}$|
-|13)  13)  $f(x,y)=(x-1)\sqrt[3]{x-y}$ | 14)  $f(x,y,z) = xcos(xz)+ln(2-sin^2(y+z))$ | 15)  $f(x,y,z) = zsin(xy)+xe^{yz}$|
+|13) $f(x,y)=(x-1)\sqrt[3]{x-y}$ | 14)  $f(x,y,z) = xcos(xz)+ln(2-sin^2(y+z))$ | 15)  $f(x,y,z) = zsin(xy)+xe^{yz}$|
 
 ## Calcul d'incertitudes
 
