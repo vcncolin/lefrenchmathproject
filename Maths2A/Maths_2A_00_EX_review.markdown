@@ -10,7 +10,7 @@ id: MatEx0
 
 ## Exercice 1 :
 
-Résoudre dans $\mathbb{C}$ : $$\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$$
+Résoudre dans $\mathbb{C}$ : $\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$
 
 ## Exercice 2 : 
 
@@ -20,7 +20,7 @@ Calculer $\left(\dfrac{1}{1+i}\right)^{2024}$
 
 ## Exercice 3 :
 
-Soit $f$ la fonction définie par : $$f(x)= \dfrac{e^x}{e^x+1}$$
+Soit $f$ la fonction définie par : $f(x)= \dfrac{e^x}{e^x+1}$
 
 1. Etudier, sans calcul de dérivées, le sens de variations de $f$
 2. Déterminer les limites de $f$ en $\pm \infty$
@@ -34,7 +34,7 @@ Soit $x$ un réel fixé, et $n \in \mathbb{N}^*$. Calculer les sommes suivantes 
 
 $$C_n = \sum\limits_{k=1}^n ch(kx) \text{  et  } S_n = \sum\limits_{k=1}^n sh(kx)$$
 
-# Primitives
+# C. Primitives
 
 ## Exercice 5 : 
 
@@ -48,11 +48,11 @@ Calculer les primitives suivantes :
 ## Exercice 6 :
 
 Calculer les primitives suivantes par IPP :
-1. $\int ln x dx$
+1. $\int \ln x dx$
 2. $\int y^3e^{y^2} dy$
 3. $\int x \text{ arctan } x dx$
 
-# Equations différentielles
+# D. Equations différentielles
 
 ## Exercice 7 : 
 
@@ -69,7 +69,7 @@ Résoudre les ED du 2nd ordre :
 2. $y''-2y'+5y=0$
 3. $y'' - 2y' +y = xe^x$
 
-# Polynômes et Fractions Rationnelles
+# E. Polynômes et Fractions Rationnelles
 
 ## Exercice 9 : 
 
@@ -84,11 +84,11 @@ Décomposer les fractions suivantes en éléments simples sur $\mathbb{R}$ :
 3. $\frac{X^5-2 X^3+4 X^2-8 X+11}{X^3-3 X+2}$
 4. $\frac{3 X^4+5 X^3+11 X^2+5 X+3}{\left(X^2+X+1\right)^2(X-1)}$
 
-# Suites numériques
+# F. Suites numériques
 
 ## Exercice 11 : 
 
-Etudier la nature des suites suivantes, pusi déterminer leur limite éventuelle : 
+Etudier la nature des suites suivantes, puis déterminer leur limite éventuelle : 
 
 |  |  |
 |--|--|
@@ -104,7 +104,7 @@ On souhaite calculer l'intégrale $W_n = \int\limits_0^{\pi/2} \sin^n(x)dx$.
 1. En effectuant une double intégration par parties, établir une relation de récurrence pour $W_n$.
 2. En déduire une expression explicite pour $W_n$.
 
-# Développements limités
+# G. Développements limités
 
 ## Exercice 13 : 
 
@@ -134,7 +134,7 @@ Donner le développement limité des fonctions suivantes :
 
 Déterminer $\lim\limits_{x \to 0} \dfrac{e^{x^2}- \cos x}{x^2}$
 
-# Espaces vectoriels
+# H. Espaces vectoriels
 
 ## Exercice 16 : 
 
@@ -177,7 +177,7 @@ Soit $E = \mathbb{R}_3[X]$. Soit $u$ l'applciation de $E$ dans lui-même : $u(P)
 3. Déterminer une base de $Ker(u)$
 4. Montrer que $Ker(u)$ et $Im(u)$ sont deux sous-espaces vectoriels supplémentaires de $E$.
 
-# Calcul matriciel
+# I. Calcul matriciel
 
 ## Exercice 22 : 
 1. Soit $A = \begin{pmatrix}-1 & 1 & 1\\1 & -1 & 1\\ 1 & 1 & -1 \end{pmatrix}$. Calculer $A^2$ et en déduire une relation entre $A^2$, $A$, et $I_3$. Prouver alors que $A$ est inversible et déterminer son inverse. 
@@ -189,12 +189,12 @@ Calculer (si possible) l'inverse des matrices :
 
 1. $\begin{pmatrix} a&b\\c&d\end{pmatrix}$
 2. $\begin{pmatrix} 1&2&1\\1&2&-1\\-2&-2&-1\end{pmatrix}$
-3. $\begin{pmatrix} 1&\overline\alpha&\overline\alpha^2\\\alpha&1&\overline\alpha\\\alpha^2&\alpha&1\end{pmatrix}$
+3. $\begin{pmatrix} 1&\overline\alpha&\overline\alpha^2\\ \alpha&1&\overline\alpha\\ \alpha^2&\alpha&1\end{pmatrix}$
 4. $\begin{pmatrix}0&1&1&1\\1&0&1&1\\1&1&0&1\\1&1&1&0\end{pmatrix}$
-5. $\begin{pmatrix} 1&1&\dots&\dots&1\\0&1&& &\vdots\\\vdots&\ddots&\ddots&&1\\\vdots&&\ddots&\ddots&\vdots\\0&\dots&\dots&0&1\end{pmatrix}$
-6. $\begin{pmatrix} 1&2&3&\dots&n\\0&1&2& \dots&n-1\\\vdots&\ddots&\ddots&\ddots&\vdots\\\vdots&&\ddots&1&2\\0&\dots&\dots&0&1\end{pmatrix}$
+5. $\begin{pmatrix} 1&1&\dots&\dots&1\\0&1&& &\vdots\\ \vdots&\ddots&\ddots&&1\\ \vdots&&\ddots&\ddots&\vdots\\0&\dots&\dots&0&1\end{pmatrix}$
+6. $\begin{pmatrix} 1&2&3&\dots&n \\ 0&1&2& \dots&n-1\\ \vdots&\ddots&\ddots&\ddots&\vdots \\ \vdots&&\ddots&1&2 \\ 0&\dots&\dots&0&1\end{pmatrix}$
 
-# Matrices et applications linéaires
+# J. Matrices et applications linéaires
 
 ## Exercice 24 : 
 Soient $(e_1, e_2, e_3)$ la base canonique de $\mathbb{R}^3$, $w_1 = (1, -2, 0), w_2 = (-1, 2, 0), w_3=(0,0,2)$ et $u$ l'endomorphisme de $\mathbb{R}^3$ défini par la donnée des images des vecteurs de base : $u(e_1) = w_1, u(e_2) = w_2, u(e_3) = w_3$
@@ -208,21 +208,21 @@ Soient $(e_1, e_2, e_3)$ la base canonique de $\mathbb{R}^3$, $w_1 = (1, -2, 0),
 
 On considère l'endomorphisme $f$ de $\mathbb{R}^3$ dont la matrice dans la base canonique est $A = \begin{pmatrix} 1&1&1\\-1&2&-2\\0&3&-1\end{pmatrix}$. Donner une base de $Ker(f)$ et de $Im(f)$.
 
-# Déterminants
+# K. Déterminants
 
 ## Exercice 26 : 
 
 Calculer les déterminants des matrices suivantes, et calculer leur inverse : 
 
-$\begin{pmatrix}7&11\\-8&4\end{pmatrix}$
+$\begin{pmatrix}7&11 \\ -8&4\end{pmatrix}$
 
 $\begin{pmatrix}1&0&6\\3&4&15\\5&6&21\end{pmatrix} \begin{pmatrix}1&0&2\\3&4&5\\5&6&7\end{pmatrix} \begin{pmatrix}1&0&-1\\2&3&5\\4&1&3\end{pmatrix}$ 
 
-$\begin{pmatrix}0&1&2&3\\1&2&3&0\\2&3&0&1\\3&0&1&2\end{pmatrix} \begin{pmatrix}0&1&1&0\\1&0&0&1\\1&1&0&1\\1&1&1&0\end{pmatrix} \begin{pmatrix}1&2&1&2\\1&3&1&3\\2&1&0&6\\1&1&1&7\end{pmatrix}$ 
+$\begin{pmatrix}0&1&2&3 \\ 1&2&3&0 \\ 2&3&0&1 \\ 3&0&1&2 \end{pmatrix} \begin{pmatrix}0&1&1&0 \\ 1&0&0&1 \\ 1&1&0&1 \\ 1&1&1&0 \end{pmatrix} \begin{pmatrix}1&2&1&2 \\ 1&3&1&3 \\ 2&1&0&6 \\ 1&1&1&7 \end{pmatrix}$ 
 
 ## Exercice 27 :
 
 Montrer, sans développer, que : 
 
-$\begin{vmatrix} 1+a&a&a\\b&1+b&b\\c&c&1+c\end{vmatrix} = 1+a+b+c$
+$\begin{vmatrix} 1+a&a&a \\ b&1+b&b \\ c&c&1+c \end{vmatrix} = 1+a+b+c$
 
