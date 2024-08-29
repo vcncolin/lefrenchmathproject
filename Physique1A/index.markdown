@@ -7,8 +7,7 @@ categories: index
 
 # Sommaire Physique A1
 
-## [Cours - Chapitre 1 - Analyse dimensionnelle](Physique_MPSI_1.markdown)
-
-## [Exercices - Chapitre 1](Physique_MPSI_1_EX.markdown)
-
 ## [Références - Sources](ref.markdown)
+
+## Chapitre 1 - Outils Mathématiques et Physique
+[Cours](Physique_1A_01_C_Outils.markdown), [Exercices](Physique_1A_01_EX.markdown)
