@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Cours : Algèbre 1 PSI"
+title:  "Maths A2 - Chapitre 1 - Compléments d'Algèbre Linéaire"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
-id: Alg1
+id: Mat2_01_C
 ---
 
 # 1. Compléments
