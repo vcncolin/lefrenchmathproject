@@ -188,7 +188,8 @@ Soit $E = \mathbb{R}_3[X]$. Soit $u$ l'application de $E$ dans lui-même : $u(P)
 
 Calculer (si possible) l'inverse des matrices : 
 
-1. $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
+1. $\begin{pmatrix} a & b \\
+c & d \end{pmatrix}$
 2. $\begin{pmatrix} 1&2&1\\1&2&-1\\-2&-2&-1\end{pmatrix}$
 3. $\begin{pmatrix} 1&\overline\alpha&\overline\alpha^2\\ \alpha&1&\overline\alpha\\ \alpha^2&\alpha&1\end{pmatrix}$
 4. $\begin{pmatrix}0&1&1&1\\1&0&1&1\\1&1&0&1\\1&1&1&0\end{pmatrix}$
