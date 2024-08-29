@@ -7,8 +7,8 @@ layout: default
 
 # Index
 
-## [Maths PSI](/MathsPSI/index.markdown)
+## [Maths A2](/Maths2A/index.markdown)
 
-## [Physique MPSI](/PhysiqueMPSI/index.markdown)
+## [Physique A1](/Physique1A/index.markdown)
 
 <video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480"></video>

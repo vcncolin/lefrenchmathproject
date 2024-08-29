@@ -1,11 +1,11 @@
 ---
 layout: default
-title:  "Physique MPSI"
+title:  "Physique A1"
 date:   2024-07-01 12:19:36 +0200
 categories: index
 ---
 
-# Sommaire Physique MPSI
+# Sommaire Physique A1
 
 ## [Cours - Chapitre 1 - Analyse dimensionnelle](Physique_MPSI_1.markdown)
 
