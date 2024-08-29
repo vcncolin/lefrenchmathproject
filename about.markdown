@@ -10,6 +10,4 @@ J'aime beaucoup les Pyrénées et les séries de Fourier.
 
 Ce site a été créé dans le but de concentrer tous les cours ainsi que les sources que j'utilise lors de leur écriture. 
 
-<div class="container">
-  <img src="assets/404.jpg" alt="Hello">
-</div>
+![image info](./assets/404.jpg)
