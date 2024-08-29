@@ -7,12 +7,16 @@ categories: index
 
 # Sommaire Maths A2
 
-## [Exercices - Révisions A1](Maths_2A_00_EX_review.markdown)
-
-## [Cours - Algèbre 1](Maths_2A_01_C.markdown)
-
-## [Exercices - Algèbre](Maths_2A_01_EX.markdown)
-
-## [Méthodes - Algèbre](Maths_2A_01_MT.markdown)
-
 ## [Références - Sources](ref.markdown)
+
+## Révisions A1
+
+[Exercices](Maths_2A_00_EX_review.markdown)
+
+## Chapitre 1 : Compléments d'algèbre linéaire
+
+[Cours](Maths_2A_01_C_Algebre.markdown), [Exercices](Maths_2A_01_EX.markdown), [Méthodes](Maths_2A_01_MT.markdown)
+
+## Chapitre 2 - Séries numériques
+
+[Cours](Maths_2A_02_C_Series.markdown)
