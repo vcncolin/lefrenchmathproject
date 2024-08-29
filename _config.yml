@@ -39,8 +39,8 @@ plugins:
 header_pages:
   - about.markdown
   - index.markdown
-  - MathsPSI/index.markdown
-  - PhysiqueMPSI/index.markdown
+  - Maths2A/index.markdown
+  - Physique1A/index.markdown
 
 
 # Exclude from processing.
