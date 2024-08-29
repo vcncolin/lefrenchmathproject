@@ -14,3 +14,5 @@ categories: index
 ## [Exercices - Algèbre](Maths_PSI_Alg_EX.markdown)
 
 ## [Méthodes - Algèbre](Maths_PSI_Alg_MT.markdown)
+
+## [Références - Sources](ref.markdown)

@@ -10,7 +10,7 @@ id: MatEx0
 
 ## Exercice 1 :
 
-Résoudre dans $\mathbb{C}$ : $\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$
+Résoudre dans $\mathbb{C}$ : $$\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$$
 
 ## Exercice 2 : 
 
