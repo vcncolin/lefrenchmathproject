@@ -3,14 +3,15 @@ layout: default
 title:  "Exercices : Algèbre 1 PSI"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
-id: MatEx0
+id: Mat2_00_Ex
 ---
 
 # A. Complexes
 
 ## Exercice 1 :
 
-Résoudre dans $\mathbb{C}$ : $\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$
+Résoudre dans $\mathbb{C}$ : 
+$$\left\{\begin{array}{lll} (1+i)z & -iu & =2+i \\ (2+i)z & +(2-i)u & = 2i \end{array}\right.$$
 
 ## Exercice 2 : 
 
@@ -166,12 +167,12 @@ Soient $f, g: M_n(\mathbb{R}) \longrightarrow M_n(\mathbb{R})$ définies par $A 
 
 ## Exercice 20 : 
 
-1. Soit $f : \mathbb{R}^3 \to \mathbb{R}^3$ définie par $f(x,y,z) = (-x,y+z, 2z). Montrer que $f$ est une application linéaire. Calculer $Ker(f)$ et $Im(f)$. $f$ admet-elle un inverse ? Même question avec f(x,y,z) = (x-y, x+y, y).
+1. Soit $f : \mathbb{R}^3 \to \mathbb{R}^3$ définie par $f(x,y,z) = (-x,y+z, 2z)$. Montrer que $f$ est une application linéaire. Calculer $Ker(f)$ et $Im(f)$. $f$ admet-elle un inverse ? Même question avec f(x,y,z) = (x-y, x+y, y).
 2. Soit $f : \mathbb{R}_n[X] \to \mathbb{R}_n[X]$ définie par $P(X) \mapsto P''(X)$. Montrer que $f$ est une application linéaire. Calculer $Ker(f)$ et $Im(f)$. $f$ admet-elle un inverse ?
 
 ## Exercice 21 : 
 
-Soit $E = \mathbb{R}_3[X]$. Soit $u$ l'applciation de $E$ dans lui-même : $u(P) = P + (1-X)P'$
+Soit $E = \mathbb{R}_3[X]$. Soit $u$ l'application de $E$ dans lui-même : $u(P) = P + (1-X)P'$
 1. Montrer que $u$ est un endomorphisme de $E$.
 2. Déterminer une base de $Im(u)$
 3. Déterminer une base de $Ker(u)$
@@ -187,7 +188,10 @@ Soit $E = \mathbb{R}_3[X]$. Soit $u$ l'applciation de $E$ dans lui-même : $u(P)
 
 Calculer (si possible) l'inverse des matrices : 
 
-1. $\begin{pmatrix} a&b\\c&d\end{pmatrix}$
+1. \begin{pmatrix}
+   a & b \\
+   c & d
+\end{pmatrix}
 2. $\begin{pmatrix} 1&2&1\\1&2&-1\\-2&-2&-1\end{pmatrix}$
 3. $\begin{pmatrix} 1&\overline\alpha&\overline\alpha^2\\ \alpha&1&\overline\alpha\\ \alpha^2&\alpha&1\end{pmatrix}$
 4. $\begin{pmatrix}0&1&1&1\\1&0&1&1\\1&1&0&1\\1&1&1&0\end{pmatrix}$
