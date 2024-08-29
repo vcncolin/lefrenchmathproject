@@ -157,9 +157,9 @@ Les applications suivantes sont-elles linéaires?
 2. $\mathbb{R}^4 \longrightarrow \mathbb{R}, \quad\left(x, y, x^{\prime}, y^{\prime}\right) \longmapsto x \cdot x^{\prime}+y \cdot y^{\prime}$
 3. $\mathcal{C}^0(\mathbb{R}, \mathbb{R}) \longrightarrow \mathbb{R}, \quad f \longmapsto f(1)$
 4. $\mathcal{C}^1(\mathbb{R}, \mathbb{R}) \longrightarrow \mathcal{C}^0(\mathbb{R}, \mathbb{R}), \quad f \longmapsto f^{\prime}+f$
-5. $\mathcal{C}^0([0,1], \mathbb{R}) \longrightarrow \mathbb{R}, \quad f \longmapsto \int_0^1|f(t)| d t$
-6. $\mathcal{C}^0([0,1], \mathbb{R}) \longrightarrow \mathbb{R}, \quad f \longmapsto \max _{x \in[0,1]} f(x)$
-7. $\mathbb{R}_3[X] \longrightarrow \mathbb{R}_3[X], \quad P(X) \longmapsto P(X+1)-$ $P(0)$
+5. $\mathcal{C}^0([0,1], \mathbb{R}) \longrightarrow \mathbb{R}, \quad f \longmapsto \int_0^1 \|f(t)\| dt$
+6. $\mathcal{C}^0([0,1], \mathbb{R}) \longrightarrow \mathbb{R}, \quad f \longmapsto \max_{x \in[0,1]} f(x)$
+7. $\mathbb{R}_3[X] \longrightarrow \mathbb{R}_3[X], \quad P(X) \longmapsto P(X+1)-P(0)$
 
 ## Exercice 19 :
 
@@ -207,7 +207,7 @@ Soient $(e_1, e_2, e_3)$ la base canonique de $\mathbb{R}^3$, $w_1 = (1, -2, 0),
 
 ## Exercice 25 : 
 
-On considère l'endomorphisme $f$ de $\mathbb{R}^3$ dont la matrice dans la base canonique est $A = \begin{pmatrix} 1&1&1\\\-1&2&-2\\\0&3&-1\end{pmatrix}$. Donner une base de $Ker(f)$ et de $Im(f)$.
+On considère l'endomorphisme $f$ de $\mathbb{R}^3$ dont la matrice dans la base canonique est $A = \begin{pmatrix} 1&1&1\\\ -1&2&-2\\\ 0&3&-1\end{pmatrix}$. Donner une base de $Ker(f)$ et de $Im(f)$.
 
 # K. Déterminants
 
