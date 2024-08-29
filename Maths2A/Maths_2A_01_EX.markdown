@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Exercices : Algèbre 1 PSI"
+title:  "Maths A2 - Chapitre 1 - Exercices"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
-id: AlgEx
+id: Mat2_01_EX
 ---
 
 # Chapitre 3 : Compléments d'algèbre linéaire

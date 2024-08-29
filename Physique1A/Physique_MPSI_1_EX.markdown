@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Exercices : Physique 1 MPSI"
+title:  "Physique A1 - Chapitre 1 - Exercices"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
 id: Phy1Ex

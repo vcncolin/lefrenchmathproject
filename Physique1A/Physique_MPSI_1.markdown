@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Cours : Physique 1 MPSI"
+title:  "Physique A1 - Chapitre 1 - Outils Mathématiques"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
 id: Phy1
