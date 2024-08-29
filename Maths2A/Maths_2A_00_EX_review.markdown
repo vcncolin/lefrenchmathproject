@@ -25,7 +25,7 @@ Soit $f$ la fonction définie par : $f(x)= \dfrac{e^x}{e^x+1}$
 
 1. Etudier, sans calcul de dérivées, le sens de variations de $f$
 2. Déterminer les limites de $f$ en $\pm \infty$
-3. Montrer que le point $a(0, \frac{1}{2}) est centre de symétrie de la courbe $C_f$, représentative de $f$ dans un repère orthonormé. 
+3. Montrer que le point $A(0, \frac{1}{2})$ est centre de symétrie de la courbe $C_f$, représentative de $f$ dans un repère orthonormé. 
 4. Donner une équation de la tangente $T$ en $A$ à $C_f$.
 5. Préciser la position de la courbe par rapport à cette tangente. 
 
@@ -207,7 +207,7 @@ Soient $(e_1, e_2, e_3)$ la base canonique de $\mathbb{R}^3$, $w_1 = (1, -2, 0),
 
 ## Exercice 25 : 
 
-On considère l'endomorphisme $f$ de $\mathbb{R}^3$ dont la matrice dans la base canonique est $A = \begin{pmatrix} 1&1&1\\\ -1&2&-2\\\ 0&3&-1\end{pmatrix}$. Donner une base de $Ker(f)$ et de $Im(f)$.
+On considère l'endomorphisme $f$ de $\mathbb{R}^3$ dont la matrice dans la base canonique est $A = \begin{pmatrix} 1&1&1\\\-1&2&-2\\\0&3&-1\end{pmatrix}$. Donner une base de $Ker(f)$ et de $Im(f)$.
 
 # K. Déterminants
 
@@ -226,3 +226,4 @@ $\begin{pmatrix}0&1&2&3 \\\ 1&2&3&0 \\\ 2&3&0&1 \\\ 3&0&1&2 \end{pmatrix} \begin
 Montrer, sans développer, que : 
 
 $\begin{vmatrix} 1+a&a&a \\\ b&1+b&b \\\ c&c&1+c \end{vmatrix} = 1+a+b+c$
+
