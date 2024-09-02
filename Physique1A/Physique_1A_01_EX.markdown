@@ -3,7 +3,7 @@ layout: default
 title:  "Physique A1 - Chapitre 1 - Exercices"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
-id: Phy1Ex
+id: Phy1_01_EX
 ---
 
 # Chapitre 1 : Outils mathématiques et physiques généraux - EXERCICES

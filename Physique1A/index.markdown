@@ -11,3 +11,6 @@ categories: index
 
 ## Chapitre 1 - Outils Mathématiques et Physique
 [Cours](Physique_1A_01_C_Outils.markdown), [Exercices](Physique_1A_01_EX.markdown)
+
+## Chapitre 2 - Ondes
+[Cours](Physique_1A_02_C_Ondes.markdown), [Exercices](Physique_1A_02_EX.markdown)

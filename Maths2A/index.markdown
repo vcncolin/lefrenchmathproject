@@ -9,7 +9,7 @@ categories: index
 
 ## [Références - Sources](ref.markdown)
 
-## Cahpitre 0 : Révisions A1
+## Chapitre 0 : Révisions A1
 
 [Exercices](Maths_2A_00_EX_review.markdown)
 
