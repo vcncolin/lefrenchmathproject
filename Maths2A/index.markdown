@@ -15,7 +15,7 @@ categories: index
 
 ## Chapitre 1 : Compléments d'algèbre linéaire
 
-[Cours](Maths_2A_01_C_Algebre.markdown), [Exercices](Maths_2A_01_EX.markdown), [Méthodes](Maths_2A_01_MT.markdown)
+[Cours](Maths_2A_01_C_Algebre.markdown)
 
 ## Chapitre 2 - Séries numériques
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Physique A1 - Chapitre 2 - Ondes"
+title:  "Cours : Physique 1 MPSI"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
 id: Phy1_02_C
@@ -75,6 +75,16 @@ On distinguera :
 - Interférences lumineuses : exemple de l'interféromètre de Michelson : <https://en.wikipedia.org/wiki/Michelson_interferometer>
 
 **Et à quoi ça sert ? :** Concrètement, on utilise le plus souvent le phénomène d'interférence afin de mesurer *précisément* une distance. En effet, on peut atteindre une précision de l'ordre d'une fraction de la longueur d'onde. Et dans le cas des ondes lumineuses... ça fait une sacrée précision. 
+
+https://www.etienne-thibierge.fr/cours-2024_optique/25_modele-scalaire_poly-prof.pdf
+
+**Calcul, et explication mathématique du phénomène :**
+
+Typiquement, un détecteur présente une sensibilité *quadratique*, c'est à dire qu'il est sensible à l'amplitude de l'onde *au carré*.
+
+De plus, les oscillations d'une onde lumineuse sont trop rapides pour être observées directement (que ce soit par l'oeil humain ou la majorité des capteurs). On va donc généralement mesurer la moyenne temporelle de cette intensité. 
+
+
 
 
 
