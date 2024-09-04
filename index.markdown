@@ -11,4 +11,6 @@ layout: default
 
 ## [Physique A1](/Physique1A/index.markdown)
 
+## [Physique FISA](/PhysiqueFISA/index.markdown)
+
 <video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/GaussianFunction.mp4" width="640" height="480"></video>
