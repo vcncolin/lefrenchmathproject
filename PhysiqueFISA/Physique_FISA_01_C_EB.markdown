@@ -80,7 +80,7 @@ $$\vec{F}_e = q\vec{E}$$
 
 Lorsque l'intensité de ce champ électrique est constante dans le temps, on parlera de champ **électrostatique**.
 
-## Champ magnétique : sources et interactions
+## Champ magnétique : sources
 
 Le champ magnétique, quant à lui, est créé par les *mouvements* de charges électriques (en d'autres termes : du 'courant électrique'). Il est donc plus difficile d'obtenir des équations simples permettant de le caractériser, puisqu'il faut caractériser le mouvement des charges !
 
@@ -115,9 +115,46 @@ L'intensité électrique enlacée se calcule ensuite en additionnant **algébriq
 
 ### Champ magnétique généré par un fil rectiligne
 
+Quel est le champ magnétique créé par un fil infini, infiniment fin, parcouru par une intensité $I$ ?
 
+### Champ magnétique dans un solénoïde
+
+Quel est le champ magnétique créé par un solénoïde de longueur infini, composé de $N$ spires jointives, et parcouru par une intensité électrique $I$ ?
 
 ### Champ magnétique généré par une spire
 
+Quel est le champ magnétique créé sur l'axe d'une spire, parcouru par une intensité $I$ ?
 
-### Champ magnétique dans un solénoïde
+Qu'en est-il pour une superposition de $n$ spires ? 
+
+## Champ magnétique : interactions 
+
+L'interaction d'une particule chargée avec un champ magnétique s'exprime selon la force suivante : 
+
+$$\vec{F_m} = q\vec{v}\wedge\vec{B}$$
+
+où $q$ représente la charge de la particule, $\vec{v}$ sa vitesse.
+
+**Remarque :** Une particule n'est soumise à l'action du champ magnétique que si elle est en mouvement ($\vec{v}=\vec{0} \implies \vec{F_m}=\vec{0}$)
+
+Il est assez classique en physique de regrouper les forces dûes aux champ électriques et magnétique sous une seule et même force, appellée force de Lorentz : 
+
+$$\vec{F_L} = q(\vec{E} + \vec{v}\wedge\vec{B})$$
+
+# Exercices : 
+
+## Exercice 1 : Calcul de champs magnétiques
+
+### Fils rectilignes :
+On considère deux fils électriques (infiniment fins), orientés tous les deux selon l'axe $(Ox)$, espacés d'une distance $d$ selon l'axe $(Oy)$, parcourus respectivement d'une intensité éléctrique $i_1$ et $i_2$
+1. Schématiser la situation
+2. Donner le champ magnétique généré par l'ensemble en tout point de l'axe $(Oy)$
+
+### Solénoïdes concentriques :
+On considère deux solénoïdes d'axe commun $(Oz)$, le premier de rayon $R_1$ parcouru par une intensité $i_1$, le second de rayon $R_2 > R_1$ parcouru par une intensité $i_2$. Les deux solénoïdes sont de longueur $L >> R$ et ont un nombre de spires total $N$.
+
+1. Schématiser la situation
+2. Donner le champ magnétique généré par l'ensemble en tout point de l'axe $(Oz)$
+
+### Câble coaxial : 
+Quel est le champ magnétique généré par un câble coaxial ? 
