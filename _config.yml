@@ -38,7 +38,6 @@ plugins:
 
 header_pages:
   - about.markdown
-  - index.markdown
   - Maths2A/index.markdown
   - Physique1A/index.markdown
   - PhysiqueFISA/index.markdown

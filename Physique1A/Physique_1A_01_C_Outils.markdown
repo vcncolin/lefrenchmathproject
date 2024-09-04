@@ -3,7 +3,7 @@ layout: default
 title:  "Physique A1 - Chapitre 1 - Outils Mathématiques"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
-id: Phy1_01_C
+id: Phy1
 ---
 
 # Chapitre 1 : Outils mathématiques et physiques généraux
@@ -133,6 +133,7 @@ Un point rapide sur les conversions : afin d'éviter des erreurs de calcul on po
 $25 km/h = \dfrac{25 km}{1 h} = \dfrac{25 \times 1000 m}{1 \times 3600 s} = \dfrac{25}{3.6}  m/s \simeq 6.9 m/s$
 
 
+
 ## 2. Dérivation des fonctions de la variable réelle
 
 ### A. Définition
@@ -238,7 +239,7 @@ Il s'agit maintenant de pouvoir évaluer l'erreur commise lors d'une mesure uniq
 
 **Mesure directe :** Dans le cas d'une mesure directe, il existe généralement une précision $\Delta$ indiquée par l'appareil de mesure. 
 
-*Remarque : on peut considérer dans ce cas que $u(x) = \frac{\Delta}{\sqrt{3}}$ avec certaines considérations mathématiques. Cette relation n'est pas à retenir*
+On peut considérer dans ce cas que $u(x) = \frac{\Delta}{\sqrt{3}}$ avec certaines considérations mathématiques (qui ne seront pas détaillés ici.) Cette relation sera notamment utile en TP lorsqu'il vous sera demandé d'évaluer 
 
 **Mesure indirecte et composition des incertitudes :**
 
