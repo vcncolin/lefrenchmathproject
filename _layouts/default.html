@@ -49,6 +49,10 @@
     color: white;
   }
 
+  body.dark-mode a{
+    color: #007BFF;
+  }
+
   .toc.collapsed {
     transform: translateX(-100%);
   }
@@ -84,6 +88,17 @@
     margin-left: 20px;
   }
 
+  .site-title{
+    position: fixed;
+    top: 20px;
+    left: 25%;
+    transition: left 0.3s ease;
+  }
+
+  .toc.collapsed + .site-title {
+    left: 0;
+  }
+
   @media (max-width: 768px) {
     .toc {
       width: 100%;
@@ -106,6 +121,11 @@
     }
     .toc.collapsed {
       display: none;
+    }
+    .site-title {
+      position: static;
+      transition: none;
+      left: 0%;
     }
   }
 
