@@ -9,6 +9,6 @@ categories: index
 
 ## [Références - Sources](ref.markdown)
 
-## Chapitre 1 : Électrostatique et Magnétostatique
+## [Chapitre 1 : Électrostatique et Magnétostatique](Physique_FISA_01_C_EB.markdown)
 
-[Cours](Physique_FISA_01_C_EB.markdown)
+## [Chapitre 2 : Induction](Physique_FISA_02_C_induction.markdown)
