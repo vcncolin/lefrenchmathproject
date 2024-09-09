@@ -199,7 +199,7 @@ Une série réelle $\sum u_n$ est dite \highl{alternée} si $u_{n+1}$ et $u_n$ s
 
 Soit $\sum u_n$ une série à termes de signe non constant.
 - Si $\sum u_n$ est une série alternée;
-- Si $(\left|u_n\right|)$ est décroissante;
+- Si $(\lvert u_n\rvert)$ est décroissante;
 - Si $\lim\limits_{n \to +\infty} u_n = 0$
 
 alors la série $\sum u_n$ est convergente. 
