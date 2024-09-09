@@ -20,3 +20,4 @@ Autres liens utiles :
 
 - <https://www.wolframalpha.com> Calcul formel en ligne
 - <https://www.youtube.com/c/3blue1brown> Chaine youtube de mathématiques animées
+- Les cahiers d'entraînement pour la prépa : https://colasbd.github.io/index
