@@ -1,23 +1,5 @@
 <header class="site-header">
-    <style>
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000; /* Ensure it stays above other content */
-            background-color: #fff; /* or any background you prefer */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow to make it stand out */
-            }
 
-        body {
-        padding-top: 60px; /* Adjust according to your header's height */
-        }
-
-        body.dark-mode header {
-        background-color: #333;
-        color: white;
-        }
-    </style>
 
     <div class="wrapper">
       {%- assign default_paths = site.pages | map: "path" -%}
