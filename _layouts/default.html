@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html lang="{{ page.lang | default: site.lang | default: ' en' }}">
 
 {%- include head.html -%}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.css"
-  integrity="sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4" crossorigin="anonymous">
+      integrity="sha384-cRxb1HsKSl8bTfU9fBcGsjktUfQa6w+fwvkYnU8XjFH4Qg8To1+/9OXv5iRzrKX4" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.js"
-  integrity="sha384-ov99pRO2tAc0JuxTVzf63RHHeQTJ0CIawbDZFiFTzB07aqFZwEu2pz4uzqL+5OPG" crossorigin="anonymous"></script>
+        integrity="sha384-ov99pRO2tAc0JuxTVzf63RHHeQTJ0CIawbDZFiFTzB07aqFZwEu2pz4uzqL+5OPG" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/contrib/auto-render.min.js"
-  integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/contrib/amscd.min.js"
-  integrity="sha384-Z35v0Cbs2xT8EPaBKl4dZ1mP5f8Ed4hlE+HdKJZMC7v+6Z8B7mK3AevxRhmhF2FM" crossorigin="anonymous"></script>
+        integrity="sha384-Z35v0Cbs2xT8EPaBKl4dZ1mP5f8Ed4hlE+HdKJZMC7v+6Z8B7mK3AevxRhmhF2FM" crossorigin="anonymous"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     renderMathInElement(document.body, {
@@ -31,7 +31,7 @@
     margin: 0;
   }
   .toc {
-    width: 250px;
+    width: 20%;
     padding: 20px;
     background-color: #f7f7f7;
     position: fixed;
@@ -39,12 +39,26 @@
     overflow-y: auto;
     transition: transform 0.3s ease;
   }
+
+  body.dark-mode .toc{
+    background-color: #212121;
+    color: white;
+  }
+
+  body.dark-mode .page-link {
+    color: white;
+  }
+
+  body.dark-mode a{
+    color: #007BFF;
+  }
+
   .toc.collapsed {
     transform: translateX(-100%);
   }
   .toc-toggle-button {
     position: fixed;
-    left: 250px;
+    left: 20%;
     top: 20px;
     z-index: 1000;
     padding: 10px;
@@ -74,6 +88,17 @@
     margin-left: 20px;
   }
 
+  .site-title{
+    position: fixed;
+    top: 20px;
+    left: 25%;
+    transition: left 0.3s ease;
+  }
+
+  .toc.collapsed + .site-title {
+    left: 0;
+  }
+
   @media (max-width: 768px) {
     .toc {
       width: 100%;
@@ -97,80 +122,147 @@
     .toc.collapsed {
       display: none;
     }
+    .site-title {
+      position: static;
+      transition: none;
+      left: 0%;
+    }
   }
+
+  body.light-mode {
+    background-color: white;
+    color: black;
+  }
+    body.dark-mode {
+        background-color: #333;
+        color: white;
+    }
+
+    body.dark-mode:visited {
+        color: #ccc;
+    }
+
+  /* Styles existants */
+  .site-title, .site-title:visited {
+    color: #424242;
+  }
+
+  /* Styles pour le mode sombre */
+  body.dark-mode .site-title,
+  body.dark-mode .site-title:visited {
+    color: white;
+  }
+
+    .theme-toggle-button {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+
 </style>
 
 <body>
 
-  {%- include header.html -%}
+{%- include header.html -%}
 
-  <div class="toc">
-    <h2 class="no-toc">Sommaire</h2>
-    <nav>
-      <ul id="toc"></ul>
-    </nav>
+<div class="toc">
+  <h2 class="no-toc">Sommaire</h2>
+  <nav>
+    <ul id="toc"></ul>
+  </nav>
+</div>
+<button class="toc-toggle-button">T</button>
+
+<main class="content page-content" aria-label="Content">
+  <div class="wrapper">
+    {{ content }}
   </div>
-  <button class="toc-toggle-button">T</button>
+</main>
 
-  <main class="content page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
+<button id="theme-toggle-button" class="theme-toggle-button">🌙</button>
 
-  {%- include footer.html -%}
+{%- include footer.html -%}
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toc = document.querySelector(".toc");
-      const toggleButton = document.querySelector(".toc-toggle-button");
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.querySelector(".toc");
+    const toggleButton = document.querySelector(".toc-toggle-button");
 
-      toggleButton.addEventListener("click", function () {
-        toc.classList.toggle("collapsed");
-      });
-
-      const tocList = document.getElementById("toc");
-      const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-      const excludeClass = 'no-toc';
-
-      let currentLevel = 1;
-      let currentList = tocList;
-
-      headers.forEach(header => {
-        if (header.classList.contains(excludeClass)) {
-          return;
-        }
-
-        const level = parseInt(header.tagName.charAt(1));
-
-        if (header.id === "") {
-          header.id = header.textContent.toLowerCase().replace(/\s+/g, '-');
-        }
-
-        const link = document.createElement("a");
-        link.href = "#" + header.id;
-        link.textContent = header.textContent;
-
-        const listItem = document.createElement("li");
-        listItem.appendChild(link);
-
-        if (level > currentLevel) {
-          for (let i = currentLevel; i < level; i++) {
-            const newList = document.createElement("ul");
-            currentList.appendChild(newList);
-            currentList = newList;
-          }
-        } else if (level < currentLevel) {
-          for (let i = currentLevel; i > level; i--) {
-            currentList = currentList.parentElement.parentElement;
-          }
-        }
-
-        currentList.appendChild(listItem);
-        currentLevel = level;
-      });
+    toggleButton.addEventListener("click", function () {
+      toc.classList.toggle("collapsed");
     });
-  </script>
+
+    const tocList = document.getElementById("toc");
+    const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    const excludeClass = 'no-toc';
+
+    let currentLevel = 1;
+    let currentList = tocList;
+
+    headers.forEach(header => {
+      if (header.classList.contains(excludeClass)) {
+        return;
+      }
+
+      const level = parseInt(header.tagName.charAt(1));
+
+      if (header.id === "") {
+        header.id = header.textContent.toLowerCase().replace(/\s+/g, '-');
+      }
+
+      const link = document.createElement("a");
+      link.href = "#" + header.id;
+      link.textContent = header.textContent;
+
+      const listItem = document.createElement("li");
+      listItem.appendChild(link);
+
+      if (level > currentLevel) {
+        const newList = document.createElement("ul");
+        currentList.appendChild(newList);
+        currentList = newList;
+      } else if (level < currentLevel) {
+        for (let i = currentLevel; i > level; i--) {
+          currentList = currentList.parentElement;
+        }
+      }
+
+      currentList.appendChild(listItem);
+      currentLevel = level;
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("theme-toggle-button");
+    const currentTheme = localStorage.getItem("theme") || "light";
+    document.body.classList.add(currentTheme + "-mode");
+
+    toggleButton.addEventListener("click", function () {
+      if (document.body.classList.contains("light-mode")) {
+        document.body.classList.remove("light-mode");
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+        toggleButton.textContent = "☀️";
+      } else {
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+        toggleButton.textContent = "🌙";
+      }
+    });
+
+    // Set the initial button text based on the current theme
+    toggleButton.textContent = currentTheme === "light" ? "🌙" : "☀️";
+    });
+</script>
 
 </body>
 
