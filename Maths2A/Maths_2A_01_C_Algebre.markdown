@@ -89,7 +89,7 @@ Soit $f \in \mathcal{L}(E)$ un endomorphisme
 On considère $(x_1, x_2, ... x_p) = (x_i)_{i\in I}$ une famille de $p$ vecteurs de l'EV $E$
 1. La famille de vecteurs est libre si $\sum\limits_{i=1}^p \lambda_i x_i = 0 \implies \forall i \in I, \lambda_i = 0$ 
 2. La famille de vecteurs est génératrice si $\forall x \in E, \exists (\lambda_i)_{i\in I} / x = \sum\limits_{i=1}^p \lambda_i x_i$
-3. La famille de vecteurs est une base si elle est libre et génératrice, ou encore si $\forall x \in E, \exists !(\lambda_i)_{i\in I} / x = \sum\limits_{i=1}^p \lambda_i x_i$
+3. La famille de vecteurs est une base si elle est libre et génératrice, ou encore si $\forall x \in E, \exists !(\lambda_i), i\in I / x = \sum\limits_{i=1}^p \lambda_i x_i$
 
 **Définitions :**
 - On dit qu'un $\mathbb{K}$ espace vectoriel $E$ est de dimension finie s'il admet une famille génératrice finie 
