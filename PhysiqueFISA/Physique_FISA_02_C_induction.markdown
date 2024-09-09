@@ -35,7 +35,7 @@ On étudiera deux cas dans le cadre de ce cours :
 
 **Exemples :**
 
-![image info](./img/Lorentz.jpeg)
+![image info](./img/Lorentz.jpg)
 
 Dans le cas de l'induction de Lorentz, on a un circuit en mouvement dans un champ magnétique $\vec{B}$ uniforme. Dans ce cas, $\vec{B}$ est constant, mais $S$ ne l'est pas.
 
@@ -49,7 +49,7 @@ $= -B_0 \ell \dfrac{dx}{dt}$
 
 où $\ell$ est la largeur du circuit considéré.
 
-![image info](./img/Neumann.jpeg)
+![image info](./img/Neumann.jpg)
 
 Dans le cas de l'induction de Neumann, le circuit est fixe, mais le champ est variable. Dans ce cas, $S$ est constant, mais $\vec{B}$ ne l'est pas.
 
@@ -61,7 +61,7 @@ $= - S \dfrac{dB(t)}{dt}$
 
 ### Loi de Lenz
 
-![image info](./img/Lenz_meme.jpeg)
+![image info](./img/Lenz_meme.jpg)
 
 Induction $\rightarrow$ modération
 
