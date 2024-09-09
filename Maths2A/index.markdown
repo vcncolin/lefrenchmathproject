@@ -9,11 +9,11 @@ categories: index
 
 ## [Références - Sources](ref.markdown)
 
-## Chapitre 0 : Révisions A1
+## Chapitre 0 - Révisions A1
 
 [Exercices](Maths_2A_00_EX_review.markdown)
 
-## Chapitre 1 : Compléments d'algèbre linéaire
+## Chapitre 1 - Compléments d'algèbre linéaire
 
 [Cours](Maths_2A_01_C_Algebre.markdown)
 
