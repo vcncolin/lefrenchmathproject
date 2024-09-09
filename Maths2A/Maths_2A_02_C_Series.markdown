@@ -156,7 +156,7 @@ Dans le cas $q \neq 1$, la limite de $S_N$ ne dépend que la limite de $q^{N+1}$
 
 Soit la série $\sum u_n$ à termes positifs non nuls. 
 
-    On suppose que $\lim\limits_{n \to + \infty} \dfrac{u_{n+1}}{u_n} = L$ ($L$ étant éventuellement $+\infty$).
+On suppose que $\lim\limits_{n \to + \infty} \dfrac{u_{n+1}}{u_n} = L$ ($L$ étant éventuellement $+\infty$).
 
 - Si $L>1$ alors $\sum u_n$ diverge \textbf{grossièrement}.
 - Si $L<1$ alors $\sum u_n$ converge.
@@ -199,7 +199,7 @@ Une série réelle $\sum u_n$ est dite \highl{alternée} si $u_{n+1}$ et $u_n$ s
 
 Soit $\sum u_n$ une série à termes de signe non constant.
 - Si $\sum u_n$ est une série alternée;
-- Si $(|u_n|)$ est décroissante;
+- Si $(\left|u_n\right|)$ est décroissante;
 - Si $\lim\limits_{n \to +\infty} u_n = 0$
 
 alors la série $\sum u_n$ est convergente. 
