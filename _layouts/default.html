@@ -39,6 +39,20 @@
     overflow-y: auto;
     transition: transform 0.3s ease;
   }
+
+  body.dark-mode .toc{
+    background-color: #212121;
+    color: white;
+  }
+
+  body.dark-mode .page-link {
+    color: white;
+  }
+
+  body.dark-mode a{
+    color: #007BFF;
+  }
+
   .toc.collapsed {
     transform: translateX(-100%);
   }
@@ -74,6 +88,17 @@
     margin-left: 20px;
   }
 
+  .site-title{
+    position: fixed;
+    top: 20px;
+    left: 25%;
+    transition: left 0.3s ease;
+  }
+
+  .toc.collapsed + .site-title {
+    left: 0;
+  }
+
   @media (max-width: 768px) {
     .toc {
       width: 100%;
@@ -97,7 +122,51 @@
     .toc.collapsed {
       display: none;
     }
+    .site-title {
+      position: static;
+      transition: none;
+      left: 0%;
+    }
   }
+
+  body.light-mode {
+    background-color: white;
+    color: black;
+  }
+    body.dark-mode {
+        background-color: #333;
+        color: white;
+    }
+
+    body.dark-mode:visited {
+        color: #ccc;
+    }
+
+  /* Styles existants */
+  .site-title, .site-title:visited {
+    color: #424242;
+  }
+
+  /* Styles pour le mode sombre */
+  body.dark-mode .site-title,
+  body.dark-mode .site-title:visited {
+    color: white;
+  }
+
+    .theme-toggle-button {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+
 </style>
 
 <body>
@@ -117,6 +186,8 @@
     {{ content }}
   </div>
 </main>
+
+<button id="theme-toggle-button" class="theme-toggle-button">🌙</button>
 
 {%- include footer.html -%}
 
@@ -168,6 +239,29 @@
       currentLevel = level;
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("theme-toggle-button");
+    const currentTheme = localStorage.getItem("theme") || "light";
+    document.body.classList.add(currentTheme + "-mode");
+
+    toggleButton.addEventListener("click", function () {
+      if (document.body.classList.contains("light-mode")) {
+        document.body.classList.remove("light-mode");
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+        toggleButton.textContent = "☀️";
+      } else {
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+        toggleButton.textContent = "🌙";
+      }
+    });
+
+    // Set the initial button text based on the current theme
+    toggleButton.textContent = currentTheme === "light" ? "🌙" : "☀️";
+    });
 </script>
 
 </body>
