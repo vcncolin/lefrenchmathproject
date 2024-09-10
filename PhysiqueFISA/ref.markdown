@@ -17,4 +17,5 @@ N'hésitez pas à me contacter pour tout retrait.
 ## Liens utiles : 
 
 - Cours de physique première année (avec TD, corrections) : <https://www.etienne-thibierge.fr/cours-td-ptsi.php>
-- Les cahiers d'entraînement pour la prépa : https://colasbd.github.io/index
+- Les cahiers d'entraînement pour la prépa : <https://colasbd.github.io/index>
+- Cours de physique première année (avec TD, corrections) : <https://cahier-de-prepa.fr/pcsi-lalande/docs?phys>

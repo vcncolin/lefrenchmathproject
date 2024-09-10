@@ -37,7 +37,7 @@ On étudiera deux cas dans le cadre de ce cours :
 
 **Exemples :**
 
-![image info](./img/02_Induction/Lorentz.jpeg)
+![image info](./img/02_Induction/Lorentz.jpg)
 
 Dans le cas de l'induction de Lorentz, on a un circuit en mouvement dans un champ magnétique $\vec{B}$ uniforme. Dans ce cas, $\vec{B}$ est constant, mais $S$ ne l'est pas.
 
@@ -51,7 +51,7 @@ $= -B_0 \ell \dfrac{dx}{dt}$
 
 où $\ell$ est la largeur du circuit considéré.
 
-![image info](./img/02_Induction/Neumann.jpeg)
+![image info](./img/02_Induction/Neumann.jpg)
 
 Dans le cas de l'induction de Neumann, le circuit est fixe, mais le champ est variable. Dans ce cas, $S$ est constant, mais $\vec{B}$ ne l'est pas.
 
@@ -63,7 +63,7 @@ $= - S \dfrac{dB(t)}{dt}$
 
 ### Loi de Lenz
 
-![image info](./img/02_Induction/Lenz_meme.jpeg)
+![image info](./img/02_Induction/Lenz_meme.jpg)
 
 Induction $\rightarrow$ modération
 
@@ -103,7 +103,7 @@ Sur un fragment de circuit rectiligne, on pourrait écrire : $\vec{F_L} = i \vec
 
 On reprend le schéma : 
 
-![image info](./img/02_Induction/Lorentz.jpeg)
+![image info](./img/02_Induction/Lorentz.jpg)
 
 On imagine que le circuit en mouvement est accroché à un véhicule, en mouvement selon la direction $x$, à une vitesse $\vec{v_0} = v_0 \vec{u_x}$. Dans l'espace $x<0$, le champ magnétique est nul, et dans l'espace $x>0$, $\vec{B} = B_0 \vec{u_z}$.
 
