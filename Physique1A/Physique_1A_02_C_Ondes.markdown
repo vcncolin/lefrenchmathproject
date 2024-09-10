@@ -8,11 +8,15 @@ id: Phy1_02_C
 
 # Chapitre 2 : Ondes
 
-https://cahier-de-prepa.fr/pcsi-lalande/download?id=7
+## Qu'est-ce qu'un signal ?
 
-Interférences Veritasium : https://youtu.be/Iuv6hY6zsd0?si=dfZc7TV2DiVFtIgM&t=278
+Un signal physique correspond à l'évolution temporelle de la mesure d'une grandeur physique en un point donné de l'espace.
 
-Diffraction of water waves : https://www.youtube.com/watch?v=2TMR-EyF_ds
+$$s(x,y,z,t)$$
+
+Toute grandeur physique dépendant du temps peut donc être considérée comme un signal : température, déplacement d'un point, pression, vitesse, tension [...]
+
+On peut bien évidemment observer des signaux unidimensionnels $s(x,t)$, qui seront les principaux sujets d'étude cette année. 
 
 ## Qu'est-ce qu'une onde ?
 
@@ -76,18 +80,35 @@ On distinguera :
 
 **Et à quoi ça sert ? :** Concrètement, on utilise le plus souvent le phénomène d'interférence afin de mesurer *précisément* une distance. En effet, on peut atteindre une précision de l'ordre d'une fraction de la longueur d'onde. Et dans le cas des ondes lumineuses... ça fait une sacrée précision. 
 
-https://www.etienne-thibierge.fr/cours-2024_optique/25_modele-scalaire_poly-prof.pdf
 
 **Calcul, et explication mathématique du phénomène :**
 
-Typiquement, un détecteur présente une sensibilité *quadratique*, c'est à dire qu'il est sensible à l'amplitude de l'onde *au carré*.
+*Les calculs détaillés peuvent se trouver ici : <https://www.etienne-thibierge.fr/cours-2024_optique/25_modele-scalaire_poly-prof.pdf>*
 
-De plus, les oscillations d'une onde lumineuse sont trop rapides pour être observées directement (que ce soit par l'oeil humain ou la majorité des capteurs). On va donc généralement mesurer la moyenne temporelle de cette intensité. 
+On va parler d'interférences constructives quand les deux ondes sont en phase : c'est à dire qu'elles présentent un déphasage $\Delta \phi = 2m\pi, m\in\mathbb{Z}$
 
+On va parler d'interférences destructives quand les deux ondes sont en phase : c'est à dire qu'elles présentent un déphasage $\Delta \phi = (2m+1)\pi, m\in\mathbb{Z}$
 
+Afin de simplifier l'étude de ce phénomène, on va plutôt raisonner en termes de **différence de marche $\delta$**. Cette distance $\delta$ correspond à la différence de chemin parcouru par les deux ondes. 
 
+Si $\delta = m\lambda, m\in\mathbb{Z}$, alors les intérférences sont constructives.
 
+Si $\delta = (m+\frac{1}{2})\lambda, m\in\mathbb{Z}$, alors les intérférences sont destructives.
 
-### Diffraction
+Dans les deux cas précédents, on appelle $m$ l'**ordre d'intérférence**.
 
-Parler rapidement de l'explication physique classique (principe d'Huygens Fresnel, spherical wavelets re-emission from every point -> can be explained by interferences from these wavelets)
+**Exercices-exemples :**
+
+![image info](./img/02_C/interference_01.jpg)
+
+Un élève se place en $x=0$. Il émet une onde sonore de fréquence $f=20 Hz$ en direction des $x$ positifs. La vitesse de propagation d'une onde dans l'air est $c = 340 m.s^{-1}$. L'onde se réfléchit en $x=D$. On suppose qu'il n'y a aucune perte dûe à la propagation, ni à la réflexion. À quelle distance du mur son camarade doit-il se placer pour ne plus rien entendre ? Pour entendre du mieux possible ? 
+
+![image info](./img/02_C/interference_02.jpg)
+
+On considère deux haut-parleurs espacés de $d = 20 m$, qui émettent la même onde, cohérente, dans toutes les directions.  Un auditeur se place en $M_0(0,D)$. Que dire des interférences en ce point ? L'auditeur se place désormais en $M_1$. Que dire des interférences en ce point ? Doit-il reculer ou avancer pour observer des intérférences constructives ? Destructives ? 
+
+Application numérique : $D = 30 m$, $f = 20 Hz$, $c = 340 m.s^{-1}$
+
+### Diffraction (hors programme)
+
+Diffraction of water waves : https://www.youtube.com/watch?v=2TMR-EyF_ds
