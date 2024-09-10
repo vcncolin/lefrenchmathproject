@@ -8,6 +8,8 @@ id: Phy3_02_C
 
 # Induction
 
+*Pré-requis : Bases d'électronique analogique.*
+
 L'induction électromagnétique est un phénomène physique découvert au cours du XIXè siècle. Ce phénomène se traduit par l'apparition d'un courant électrique dans un circuit en interaction avec un champ magnétique (sous certaines conditions).
 
 **Question :** dans quels dispositifs utilisés de manière quotidienne rencontre-t-on le phénomène d'induction ? 
@@ -35,7 +37,7 @@ On étudiera deux cas dans le cadre de ce cours :
 
 **Exemples :**
 
-![image info](./img/Lorentz.jpeg)
+![image info](./img/02_Induction/Lorentz.jpeg)
 
 Dans le cas de l'induction de Lorentz, on a un circuit en mouvement dans un champ magnétique $\vec{B}$ uniforme. Dans ce cas, $\vec{B}$ est constant, mais $S$ ne l'est pas.
 
@@ -49,7 +51,7 @@ $= -B_0 \ell \dfrac{dx}{dt}$
 
 où $\ell$ est la largeur du circuit considéré.
 
-![image info](./img/Neumann.jpeg)
+![image info](./img/02_Induction/Neumann.jpeg)
 
 Dans le cas de l'induction de Neumann, le circuit est fixe, mais le champ est variable. Dans ce cas, $S$ est constant, mais $\vec{B}$ ne l'est pas.
 
@@ -61,7 +63,7 @@ $= - S \dfrac{dB(t)}{dt}$
 
 ### Loi de Lenz
 
-![image info](./img/Lenz_meme.jpeg)
+![image info](./img/02_Induction/Lenz_meme.jpeg)
 
 Induction $\rightarrow$ modération
 
@@ -101,7 +103,7 @@ Sur un fragment de circuit rectiligne, on pourrait écrire : $\vec{F_L} = i \vec
 
 On reprend le schéma : 
 
-![image info](./img/Lorentz.jpeg)
+![image info](./img/02_Induction/Lorentz.jpeg)
 
 On imagine que le circuit en mouvement est accroché à un véhicule, en mouvement selon la direction $x$, à une vitesse $\vec{v_0} = v_0 \vec{u_x}$. Dans l'espace $x<0$, le champ magnétique est nul, et dans l'espace $x>0$, $\vec{B} = B_0 \vec{u_z}$.
 
@@ -165,3 +167,35 @@ $$ m\dfrac{d v_x}{dt} + \dfrac{B_0^2 \ell^2}{R_{int}} v_x = 0$$
 $$\iff \dfrac{d v_x}{dt} + \dfrac{B_0^2 \ell^2}{m R_{int}} v_x = 0$$
 
 On en déduit finalement : $v_x(t) = v_0 \exp(-\frac{B_0^2 \ell^2}{m R_{int}}t)$
+
+## Moment magnétique d'un circuit
+
+## Couple 
+
+# Exercices
+
+## Exercice 1 : Rails de Laplace, moteur
+
+![image info](./img/02_Induction/Rails_mot.jpg)
+
+Considérons un système de rails de Laplace séparés d'une distance $a$ et soumis à un champ magnétique extérieur $\vec{B} = B\vec{e_z}$. L'ensemble possède une résistance électrique $r$. Ce système est utilisé en fonctionnement moteur : un générateur impose une tension $E_0$, ce qui met en mouvement la tige initialement immobile. Il réalise donc une conversion d'énergie électrique en énergie mécanique. 
+
+1. Exprimer la force de Laplace subie par la tige mobile. En déduire l'équation mécanique. 
+2. Déterminer la force électromotrice induite. En déduire l'équation électrique.
+3. Établir et résoudre l'équation différentielle vérifiée par la vitesse $v_x$ de la tige.
+4. Établir et résoudre l'équation différentielle vérifiée par l'intensité $i$.
+5. Comparer la puissance mécanique fournie par la force de Laplace et la puissance électrique fournie par le générateur induit. Interpréter physiquement leur signe respectif.
+6. Procéder au bilan de puissance, et l'interpréter. 
+
+## Exercice 2 : Rails de Laplace, générateur
+
+![image info](./img/02_Induction/Rails_gen.jpg)
+
+Considérons les mêmes rails de Laplace que dans l'exercice précédent. Le système est maintenant utilisé en fonctionnement générateur : il n'y a plus de fénérateur $E_0$, mais un opérateur extérieur tracte la tige (intialement immobile) avec une force constante $\vec{F_0}$, ce qui génère un courant induit dans le système. Il réalise donc une conversion d'énergie mécanique en énergie électrique. 
+
+1. Déterminer sans calcul le signe du courant induit. 
+2. Exprimer la force de Laplace subie par la tige mobile. En déduire l'équation mécanique. 
+3. Déterminer la force électromotrice induite. En déduire l'équation électrique.
+4. Établir et résoudre l'équation différentielle vérifiée par l'intensité $i$.
+5. Comparer la puissqnce mécanique fournie par la force de Laplace et la puissance électrique fournie par le générateur induit. 
+6. Procéder au bilan de puissance et l'interpréter. 

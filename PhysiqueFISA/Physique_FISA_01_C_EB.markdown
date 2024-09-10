@@ -17,7 +17,7 @@ De manière générale, on utilise le système des coordonnées cartésiennes, o
 
 ### Coordonnées polaires
 
-![image info](./img/Coordonnees_polaires.png)
+![image info](./img/01_Electro/Coordonnees_polaires.png)
 
 Dans un plan, on peut également considérer les coordonnées polaires : au lieu de considérer l'abcisse $x$ et l'ordonnée $y$ d'un point, on va plutôt le repérer via sa distance à l'origine $r$ et l'angle formé avec l'axe des abcisses $\theta$.
 
@@ -29,13 +29,13 @@ $x = r \cos (\theta)$ et $y = r \sin (\theta)$
 
 ### Coordonnées cylindriques
 
-![image info](./img/Coordonnees_cylindriques.png)
+![image info](./img/01_Electro/Coordonnees_cylindriques.png)
 
 On peut généraliser le concept des coordonnées cylindriques dans un espace à 3 dimensions, en ajoutant la hauteur $z$ du point considéré. Les calculs restent les mêmes. 
 
 ### Coordonnées sphériques
 
-![image info](./img/Coordonnees_spheriques.png)
+![image info](./img/01_Electro/Coordonnees_spheriques.png)
 
 Il s'agit maintenant de repérer un point dans un espace à 3 dimensions, armé de deux angles et une distance (penser latitude/longitude).
 
@@ -60,7 +60,7 @@ On appelle charge élémentaire la valeur $e = 1.6\times 10^{-19} C$, qui corres
 
 ## Champ électrique : sources et interactions
 
-![image info](./img/Div_conv_E.png)
+![image info](./img/01_Electro/Div_conv_E.png)
 
 Le champ électrique est créé par les charges électriques. Il diverge à partir des charges positives et converge vers les charges négatives. Il n'a pas de caractère tourbillonant autour de celles-ci.
 
@@ -105,11 +105,11 @@ Quelques explications sur les différents termes :
 
 L’orientation de la surface peut se faire à l’aide de la règle du tire-bouchon : en tournant le tire-bouchon dans le sens de parcours du contour, le sens de déplacement du manche du tire-bouchon indique l’orientation de $\vec{S}$
 
-![image info](./img/orientation.png)
+![image info](./img/01_Electro/orientation.png)
 
-L'intensité électrique enlacée se calcule ensuite en additionnant **algébriquement** les intensités traversant la surface orientée : dans la figure suivante, $I_enl = i_1 -i_3 +i_3 -i_2$
+L'intensité électrique enlacée se calcule ensuite en additionnant **algébriquement** les intensités traversant la surface orientée : dans la figure suivante, $I_{enl} = i_1 -i_3 +i_3 -i_2$
 
-![image info](./img/Max_Amp.png)
+![image info](./img/01_Electro/Max_Amp.png)
 
 
 
@@ -158,3 +158,30 @@ On considère deux solénoïdes d'axe commun $(Oz)$, le premier de rayon $R_1$ p
 
 ### Câble coaxial : 
 Quel est le champ magnétique généré par un câble coaxial ? 
+
+## Exercice 2 : Accélération et déflection
+
+![image info](./img/01_Electro/oscillo.jpg)
+
+On considère le système représenté sur le schéma précédent.
+
+Un faisceau de particules (chargées) traverse successivement :
+
+- Une paire de plaques parallèles, situées en $x=0$ et $x=d$, sont alimentées par des tensions $\pm \frac{U}{2}$. Ceci créé un champ électrostatique (considéré uniforme et stationnaire) d'amplitude $E = \frac{U}{d}$. Les plaques sont percées de trous permettant à un faisceau de particules de traverser l'ensemble.
+- Une zone considérée comme vide
+- Une zone dans laquelle règne un champ magnétique uniforme et stationnaire, $\vec{B} = B_0 \vec{u_z}$
+On considère que les particules entrent dans le système avec une vitesse nulle. 
+
+**Données :** 
+- charge d'un électron : $e = -1.6\times 10^{-19}C$
+- masse d'un électron : $m_e = 9.1\times 10^{-31}kg$
+- tension : $U = 3 000 V$
+- distance entre les plaques  : $d = 5cm$ 
+
+1. Dans quel sens doit être le champ électrique de la première zone afin d'accélérer des électrons ? 
+2. En déduire quelle plaque présente une tension positive / négative.
+3. En considérant que l'on néglige le poids, effectuer un bilan des forces dans la zone 1.
+4. À quelle vitesse sort un électron de la zone 1 ? 
+5. En considérant que l'on néglige le poids, effectuer un bilan des forces dans la zone 3.
+6. Comment évolue la vitesse de l'électron ? (amplitude et direction)
+7. Quel est l'intérêt d'un tel dispositif ? (Hint : si le faisceau de départ contient des particules de même charge mais de masse différente, que se passe-t-il ?)
