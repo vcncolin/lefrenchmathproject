@@ -62,7 +62,7 @@ où $g$ est l'accélération de la pesanteur, $H$ la hauteur d'eau avant et apr�
 
 ### Exercice 5 : 
 
-Un tachéomètre est un instrument de mesure de distance utilisé par les géomètres pour effectuer un bornage. Lors de cette mersure, une onde électromagnétique de fréquence $f_1 = 30 000 kHz$ est émise par l'instrument, cette onde se réfléchit sur un réflecteur placé à une distance $d$ du géomètre. La mesure du déphasage entre l'onde émise et l'onde reçue permet de déterminer la distance $d$. L'indice de l'air à température ambiante est $n_a = 1.00029$ et la célérité des ondes électromagnétiques dans le vide est $c = 2.99792 \times 10^8 m.s^{-1}$. La fréquence $f_1$ est connue avec une précision relative de $10^{-5}.
+Un tachéomètre est un instrument de mesure de distance utilisé par les géomètres pour effectuer un bornage. Lors de cette mersure, une onde électromagnétique de fréquence $f_1 = 30 000 kHz$ est émise par l'instrument, cette onde se réfléchit sur un réflecteur placé à une distance $d$ du géomètre. La mesure du déphasage entre l'onde émise et l'onde reçue permet de déterminer la distance $d$. L'indice de l'air à température ambiante est $n_a = 1.00029$ et la célérité des ondes électromagnétiques dans le vide est $c = 2.99792 \times 10^8 m.s^{-1}$. La fréquence $f_1$ est connue avec une précision relative de $10^{-5}$.
 
 La figure ci-dessous représente les signaux emis et reçu par le tachéomètre. 
 

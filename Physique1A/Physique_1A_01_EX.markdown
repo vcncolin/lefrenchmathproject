@@ -14,6 +14,7 @@ id: Phy1_01_EX
 
 Convertir les valeurs suivantes en utilisant les unités du système international : 
 - 6 1/4 pouces
+- $5'11''$
 - 150 mph
 - 30 gallons
 - 451 Fahrenheit
@@ -32,7 +33,6 @@ Montrer que :
 - $mgh$ est homogène à une énergie
 - $2 \pi \sqrt{L/g}$ est homogène à un temps (où $L$ est une longueur, et $g$ l'accélération de pesanteur).
 - $1/2 g t ^2 +v_0 t + h$ est homogène à une longueur
-\end{itemize}
 
 
 ### Exercice 4 : Forces et pressions

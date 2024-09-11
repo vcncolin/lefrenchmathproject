@@ -9,7 +9,7 @@ categories: index
 
 ## [Références - Sources](ref.markdown)
 
-## Chapitre 1 - Outils Mathématiques et Physique
+## Chapitre 1 - Outils Mathématiques et Physiques
 [Cours](Physique_1A_01_C_Outils.markdown), [Exercices](Physique_1A_01_EX.markdown)
 
 ## Chapitre 2 - Ondes
