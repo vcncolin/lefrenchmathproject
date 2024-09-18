@@ -74,6 +74,8 @@ Pour terminer notre analogie, on va considérer que le champ électrique se comp
 
 On définit également une **tension électrique** comme étant la différence de potentiel électrique entre deux points. En pratique, on va définir le potentiel électrique en tout point d'un circuit, et la tension électrique correspondra à la différence entre deux points considérés. 
 
+On définit la masse d'un circuit comme étant le point avec un potentiel électrique $V =0$.
+
 ### D. Analogie complète eau / charge
 
 | Électrocinétique | Gravitation - eau |
@@ -108,7 +110,7 @@ Dans une résistance, il existe une relation linéaire entre la tension aux born
 
 ### A. Loi des noeuds
 
-![](.img/03_C/noeuds.png)
+![](./img/03_C/noeuds.png)
 
 - La somme algébrique des courants entrant un noeud est nulle.
 
@@ -120,7 +122,7 @@ Ici, $I_2-I_1-I_3-I_4 = 0$, ou encore $I_2 = I_1+I_3+I_4$
 
 ### B. Loi des mailles
 
-![](.img/03_C/mailles.png)
+![](./img/03_C/mailles.png)
 
 - La somme algébrique des tensions autour d'une boucle est nulle.
 
@@ -128,7 +130,7 @@ Ici, $U_0-U_1-U_2-U_3=0$
 
 ### C. Théorème de Millmann
 
-![](.img/03_C/Millmann.png)
+![](./img/03_C/Millmann.png)
 
 Le théorème de Millmann combine les deux lois précédentes, et permet de grandes simplifications dans les calculs. 
 
@@ -138,7 +140,7 @@ $$V_x = \dfrac{\dfrac{V_1}{R_1}+\dfrac{V_2}{R_2}+\dfrac{V_3}{R_3}+I_4}{\dfrac{1}
 
 ### A. Association de résistances en série
 
-![](.img/03_C/series.png)
+![](./img/03_C/series.png)
 
 $R_{eq} = R_1 + R_2 + R_3$
 
@@ -152,7 +154,7 @@ $U_1 = \dfrac{U_{total} \times R_1}{R_1+R_2}$, $U_2 = \dfrac{U_{total} \times R_
 
 ### B. Association de résistances en parallèle
 
-![](.img/03_C/parallel.png)
+![](./img/03_C/parallel.png)
 
 $\dfrac{1}{R_{eq}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
 
