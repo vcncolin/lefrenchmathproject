@@ -69,4 +69,3 @@ On vient de définir un **champ vectoriel**, c'est à dire une fonction vectorie
   </tr>
   
 </table>
-
