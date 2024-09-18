@@ -69,3 +69,97 @@ On vient de définir un **champ vectoriel**, c'est à dire une fonction vectorie
   </tr>
   
 </table>
+
+Pour terminer notre analogie, on va considérer que le champ électrique se comporte comme le champ gravitationnel. Dans le cas gravitationnel, on considère que les masses vont avoir tendance à se déplacer depuis les potentiels élevés (c'est à dire les altitudes élevées) vers les potentiels faibles. De la même manière, les charges électriques positives vont avoir tendance à se déplacer des potentiels électriques élevés vers les potentiels électriques faibles. 
+
+On définit également une **tension électrique** comme étant la différence de potentiel électrique entre deux points. En pratique, on va définir le potentiel électrique en tout point d'un circuit, et la tension électrique correspondra à la différence entre deux points considérés. 
+
+### D. Analogie complète eau / charge
+
+| Électrocinétique | Gravitation - eau |
+|--|--|
+|Charge positive|Goutte d'eau|
+|Champ électrique $\vec{E}$|Champ gravitationnel $\vec{g}$|
+|Potentiel électrique|Altitude|
+|Tension|Dénivelé|
+|Courant électrique|Débit|
+
+## 2. Dipôle récepteur / générateur
+
+### Définition
+
+Un dipôle est un élément relié au circuit par deux bornes. On va considérer deux types de dipôles principaux : 
+
+- Les dipôles générateurs (une pile par exemple)
+- Les dipôles récepteurs (une résistance par exemple)
+
+Dans un dipôle *générateur*, on oriente par convention l'intensité et la tension dans le même sens. De plus, ces deux grandeurs permettent de calculer la **puissance fournie** par le dipôle : $P = U\times I$
+
+Dans un dipôle *récepteur*, on oriente par convention l'intensité et la tension dans des sens opposés. De plus, ces deux grandeurs permettent de calculer la **puissance reçue** par le dipôle : $P = U\times I$
+
+### Loi d'Ohm
+
+Dans une résistance, il existe une relation linéaire entre la tension aux bornes du dipôle, et le courant qui le traverse : $U = R\times I$
+
+**Exercice :** Comment exprimer la puissance reçue par une résistance ?
+
+
+## 3. Lois de Kirchhoff
+
+### A. Loi des noeuds
+
+![](.img/03_C/noeuds.png)
+
+- La somme algébrique des courants entrant un noeud est nulle.
+
+ou
+
+- Le somme des courants entrant un noeud est égale à la somme des courants sortants.
+
+Ici, $I_2-I_1-I_3-I_4 = 0$, ou encore $I_2 = I_1+I_3+I_4$
+
+### B. Loi des mailles
+
+![](.img/03_C/mailles.png)
+
+- La somme algébrique des tensions autour d'une boucle est nulle.
+
+Ici, $U_0-U_1-U_2-U_3=0$
+
+### C. Théorème de Millmann
+
+![](.img/03_C/Millmann.png)
+
+Le théorème de Millmann combine les deux lois précédentes, et permet de grandes simplifications dans les calculs. 
+
+$$V_x = \dfrac{\dfrac{V_1}{R_1}+\dfrac{V_2}{R_2}+\dfrac{V_3}{R_3}+I_4}{\dfrac{1}{R_1}+\dfrac{1}{R_2}+\dfrac{1}{R_3}}$$
+
+## 4. Association de résistances
+
+### A. Association de résistances en série
+
+![](.img/03_C/series.png)
+
+$R_{eq} = R_1 + R_2 + R_3$
+
+Lorsqu'on associe des résistances en série, on rend le passage du courant *plus difficile*, donc on additionne les résistances.
+
+**Formule du diviseur de tension :**
+
+Si on considère deux résistances en série :
+
+$U_1 = \dfrac{U_{total} \times R_1}{R_1+R_2}$, $U_2 = \dfrac{U_{total} \times R_2}{R_1+R_2}$
+
+### B. Association de résistances en parallèle
+
+![](.img/03_C/parallel.png)
+
+$\dfrac{1}{R_{eq}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
+
+Lorsqu'on associe des résistances en parallèle, on rend le passage du courant *plus facile*, donc on additionne les conductances ($G = \frac{1}{R}$).
+
+**Formule du diviseur de courant :**
+
+Si on considère deux résistances en parallèle :
+
+$i_1 = \dfrac{i_{total} \times R_2}{R_1+R_2}$, $i_2 = \dfrac{i_{total} \times R_1}{R_1+R_2}$
