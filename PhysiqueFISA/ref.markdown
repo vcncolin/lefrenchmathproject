@@ -13,6 +13,7 @@ N'hésitez pas à me contacter pour tout retrait.
 - Jérome TISSIER (ESEO)
 - Catherine BASKIOTIS (ISEN Ouest)
 - Jérémy FREIXAS (ISEN Ouest)
+- https://www.etienne-thibierge.fr (pour certains points de cours, et quelques exercices !)
 
 ## Liens utiles : 
 

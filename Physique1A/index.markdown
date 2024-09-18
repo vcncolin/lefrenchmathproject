@@ -14,3 +14,6 @@ categories: index
 
 ## Chapitre 2 - Ondes
 [Cours](Physique_1A_02_C_Ondes.markdown), [Exercices](Physique_1A_02_EX.markdown)
+
+## Chapitre 3 - Fondements de l'électrocinétique
+[Cours](Physique_1A_03_C_Elec.markdown), [Exercices](Physique_1A_03_EX.markdown)

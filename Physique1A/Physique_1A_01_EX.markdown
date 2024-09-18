@@ -49,7 +49,7 @@ Lorsque l'on fait vibrer la corde d'un instrument, celle-ci vibre à une fréque
 - Chercher l'expression de la fréquence $\nu$ de vibration de la corde sous la forme $K.T^{\alpha}.\mu^{\beta}.\ell^{\gamma}$, où $K$ est une constante qu'on ne cherchera pas à déterminer.
 - Discuter la cohérence du résultat précédent
 
-### Exercice 6 : Képler \& Force gravitationnelle
+### Exercice 6 : Képler & Force gravitationnelle
 
 On rappelle l'expression de l'intensité de la force gravitationnelle s'exerçant entre deux masses $m_1$ et $m_2$ : $F = \dfrac{Gm_1m_2}{r^2}$ où $G$ est la constante universelle de gravitation et $r$ la distance entre les deux masses.
 - Quelle est la dimension de $G$ ? Donner son unité dans le SI. 
