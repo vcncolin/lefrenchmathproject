@@ -24,7 +24,7 @@
     });
   });
 </script>
-
+<link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
 <style>
   body {
     display: flex;
@@ -168,6 +168,22 @@
         color: #ccc;
     }
 
+    .back-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
   /* Styles existants */
   .site-title, .site-title:visited {
     color: #424242;
@@ -204,6 +220,7 @@
   <nav>
     <ul id="toc"></ul>
   </nav>
+  <button id="back-button" class="back-button">Retour</button>
 </div>
 <button class="toc-toggle-button">T</button>
 
@@ -288,6 +305,14 @@
     // Set the initial button text based on the current theme
     toggleButton.textContent = currentTheme === "light" ? "🌙" : "☀️";
     });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const backButton = document.getElementById("back-button");
+
+    backButton.addEventListener("click", function () {
+      window.history.back();
+    });
+  });
 </script>
 
 </body>
