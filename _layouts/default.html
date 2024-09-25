@@ -24,7 +24,7 @@
     });
   });
 </script>
-
+<link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
 <style>
   body {
     display: flex;
@@ -98,6 +98,33 @@
     left: 0;
   }
 
+  body.dark-mode table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+  }
+
+    body.dark-mode table th,
+    body.dark-mode table td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: left;
+    }
+
+    body.dark-mode table th {
+      background-color: #444;
+    }
+
+    body.dark-mode table tr:nth-child(even) {
+      background-color: #3a3a3a;
+    }
+
+    body.dark-mode table tr:hover {
+      background-color: #555;
+    }
+
+
   @media (max-width: 768px) {
     .toc {
       width: 100%;
@@ -141,6 +168,22 @@
         color: #ccc;
     }
 
+    .back-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
   /* Styles existants */
   .site-title, .site-title:visited {
     color: #424242;
@@ -177,6 +220,7 @@
   <nav>
     <ul id="toc"></ul>
   </nav>
+  <button id="back-button" class="back-button">Retour</button>
 </div>
 <button class="toc-toggle-button">T</button>
 
@@ -261,6 +305,14 @@
     // Set the initial button text based on the current theme
     toggleButton.textContent = currentTheme === "light" ? "🌙" : "☀️";
     });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const backButton = document.getElementById("back-button");
+
+    backButton.addEventListener("click", function () {
+      window.history.back();
+    });
+  });
 </script>
 
 </body>
