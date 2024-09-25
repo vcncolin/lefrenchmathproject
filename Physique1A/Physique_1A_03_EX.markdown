@@ -8,6 +8,10 @@ id: Phy1_03_EX
 
 # Chapitre 3 : Électrocinétique - EXERCICES
 
+## REMARQUE
+
+J'ai oublié les masses dans les schémas, donc par défaut on les met en bas de chaque circuit ! (désolé)
+
 ## Exercice 1
 
 Donner la valeur du potentiel électrique au point $A$
