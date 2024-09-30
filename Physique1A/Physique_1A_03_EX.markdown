@@ -12,6 +12,12 @@ id: Phy1_03_EX
 
 J'ai oublié les masses dans les schémas, donc par défaut on les met en bas de chaque circuit ! (désolé)
 
+## Exercice 0
+
+Dans les cas suivants, donner les valeurs de $U$ et $i$ indiquées sur les schémas.
+
+![](./img/03_EX/Ex0_TD.png)
+
 ## Exercice 1
 
 Donner la valeur du potentiel électrique au point $A$
