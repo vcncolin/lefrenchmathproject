@@ -14,7 +14,9 @@ J'ai oublié les masses dans les schémas, donc par défaut on les met en bas de
 
 ## Exercice 0
 
-Dans les cas suivants, donner les valeurs de $U$ et $i$ indiquées sur les schémas.
+Dans les cas suivants, donner les valeurs de $U$ et $i$ indiquées sur les schémas. On prendra $E = 12V$ et $R = 330 \Omega$ pour les applications numériques éventuelles. 
+
+BONUS : Quelle est la puissance dissipée dans chacune des résistances ? 
 
 ![](./img/03_EX/Ex0_TD.png)
 
