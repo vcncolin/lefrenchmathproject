@@ -19,4 +19,4 @@ categories: index
 [Cours](Physique_1A_03_C_Elec.markdown), [Exercices](Physique_1A_03_EX.markdown)
 
 ## Chapitre 4 - Régimes transitoires dans les circuits du premier ordre
-[Cours](Physique_1A_03_C_RT.markdown), [Exercices](Physique_1A_04_EX.markdown)
+[Cours](Physique_1A_04_C_RT.markdown), [Exercices](Physique_1A_04_EX.markdown)
