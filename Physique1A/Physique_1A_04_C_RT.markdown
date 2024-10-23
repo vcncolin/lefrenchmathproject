@@ -159,3 +159,16 @@ $$\boxed{u_{C}(t) = E\left(1 - e^{-\frac{t}{RC}}\right)}$$
 **Tracé de la courbe :**
 
 <video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/RC_series_voltage.mp4" width="640" height="480"></video>
+
+On peut faire plusieurs remarques sur cette courbe : 
+- On retrouve bien la valeur $u_C(t\to\infty) = E$
+- Il existe plusieurs valeurs remarquables : $u_C(RC) \simeq 0.63E$, $u_C(3.RC) \simeq 0.95E$, $u_C(5.RC) \simeq 0.99E$
+- On pourra généralement que le condensateur est complètement chargé après $5.RC$
+
+**Intensité dans le condensateur :**
+
+Une fois le calcul de la tension dans le condensateur effectué, il est assez simple d'accéder à la valeur de l'intensité en utilisant la formule de base : $i(t) = C \dfrac{du_C}{dt}$
+
+On obtient alors : $i(t) = \dfrac{E}{R} e^{-\frac{t}{RC}}$
+
+<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/RC_series_current.mp4" width="640" height="480"></video>
