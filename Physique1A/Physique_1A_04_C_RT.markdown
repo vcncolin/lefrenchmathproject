@@ -59,3 +59,58 @@ $$ i_C(t) = \dfrac{dq_C}{dt} = C \dfrac{du_C}{dt}  $$
 $$ \Leftrightarrow q_C(t) = C u_C(t) $$
 
 ### B. Circuit RC série et charge d'un condensateur
+
+![](./img/04_C/RC_series.png)
+
+- À $t < 0$, on considère que le condensateur est déchargé, et que l'interrupteur est ouvert $\Rightarrow u_C = 0$ et $i=0$.
+- À $t=0$, on ferme l'interrupteur (le condensateur va donc commencer à se charger)
+
+On cherche maintenant à déterminer le comportement du circuit pour $t\geq0$
+
+Pour ce faire, nous allons chercher à déterminer $u_C(t)$, en trois étapes : 
+
+1. Écrire les équations caractéristiques du circuit (mailles, noeuds, composants)
+2. Établir l'équation différentielle vérifiée par $u_C(t)$
+3. Résoudre l'équation différentielle 
+
+*Remarque* : Ces étapes s'appliquent à l'étude de tout circuit pour ce chapitre !  
+
+**Équations caractéristiques du circuit**
+
+- Loi des mailles : $(1) : E = u_C(t) + u_R(t)$
+- Loi d'Ohm : $(2) : u_R(t) = R.i(t)$
+- Loi du condensateur : $(3) : i(t) = C \dfrac{du_C}{dt}$
+
+On va maintenant combiner ces trois équations afin d'obtenir une équation unique qui ne contient que $u_C(t)$.
+
+*Remarque* : Cette démarche sera toujours possible lorsqu'on a autant d'équations que d'inconnues (et que les équations sont indépendantes, cf. cours de maths). Ici on a trois équations pour trois inconnues : $u_R(t), u_C(t), i(t)$.
+
+**Équation différentielle en $u_C(t)$**
+
+$(3) : i(t) = C \dfrac{du_C}{dt}$
+
+On élimine $i(t)$ en utilisant $(2) : i(t) = \dfrac{u_R(t)}{R}$
+
+$\Leftrightarrow \dfrac{u_R(t)}{R} = C \dfrac{du_C}{dt}$
+
+On élimine $u_R(t)$ en utilisant $(1) : u_R(t) = E - u_C(t)$
+
+$\Leftrightarrow \dfrac{E - u_C(t)}{R} = C \dfrac{du_C}{dt}$
+
+Il ne reste qu'à remettre en forme l'équation : 
+
+$\Leftrightarrow \dfrac{E}{R} - \dfrac{u_C(t)}{R} = C \dfrac{du_C}{dt}$
+
+$\Leftrightarrow \boxed{\dfrac{E}{RC} = \dfrac{du_C}{dt} +\dfrac{u_C(t)}{RC}}$
+
+On obtient ainsi une équation différentielle linéaire du premier ordre à coefficients réels constants.
+
+- Équation différentielle : l'inconnue est une fonction, et l'équation est une relation entre la fonction et ses dérivées. 
+- Linéaire : pas de $f^2$
+- Premier ordre : uniquement des dérivées d'ordre 1 ($f', \cancel{f''}$)
+- On a ici écrit l'équation sous **forme canonique**, c'est à dire que le coefficient devant la dérivée de plus haut ordre est $1$.
+- On appelle **second membre** le terme constant dans l'équation différentielle (ici $\frac{E}{RC}$)
+
+**Résolution de l'équation différentielle**
+
+*Remarque* : la méthode détaillée ici sera utilisée pour toutes les équations différentielles d'ordre $1$. 
