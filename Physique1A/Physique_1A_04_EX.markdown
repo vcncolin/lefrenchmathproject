@@ -75,4 +75,4 @@ On considère le montage ci-dessus. À $t=0$, on ferme l'interrupteur. La lampe 
 
 1. Donner $i_L(0^+)$, et $i_L(t\to\infty)$.
 2. Établir et résoudre l'équation différentielle vérifiée par $i_L(t)$. En déduire $i_D(t)$.
-3. La lampe ne s'allume que pour $|i_D|> E/8R$. Quel est son rôle ? 
+3. La lampe ne s'allume que pour $\lvert i_D\rvert > E/8R$. Quel est son rôle ? 
