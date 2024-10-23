@@ -114,3 +114,48 @@ On obtient ainsi une équation différentielle linéaire du premier ordre à coe
 **Résolution de l'équation différentielle**
 
 *Remarque* : la méthode détaillée ici sera utilisée pour toutes les équations différentielles d'ordre $1$. 
+
+La résolution se déroule en trois étapes : 
+- Solution particulière
+- Solution homogène
+- Détermination des constantes grâce aux conditions intiales
+
+1. Solution particulière $u_{C,p}(t)$:
+
+On cherche la solution en régime permanent. On sait que lorsque la charge du condensateur sera terminée, on aura $\frac{du_C}{dt} = 0$. L'équation devient alors : 
+$$\dfrac{1}{RC} u_{C,p}(t) = \dfrac{E}{RC}$$
+$$\Leftrightarrow \boxed {u_{C,p}(t) = E}$$
+
+2. Solution homogène $u_{C,h}(t)$:
+
+On écrit l'équation dite "sans second membre", c'est à dire qu'on écrit l'équation sans les termes qui ne dépendent pas de $u_C(t)$ :
+$$\dfrac{du_{C,h}}{dt} + \dfrac{1}{RC} u_{C,h}(t) = 0$$
+
+**Théorème :** L'équation $y'(t) + a.y(t) = 0$ a pour solution : $y(t) = \alpha e^{-at}$ où $\alpha$ est une constante à déterminer. 
+
+Donc ici, on peut en déduire que $\boxed{u_{C,h}(t) = \alpha e^{-\frac{t}{RC}}}$
+
+3. Conclusion (et détermination de la constante $\alpha$) :
+
+La solution complète de l'équation différentielle est : 
+
+$$u_C(t) = u_{C,p}(t) + u_{C,h}(t) = E + \alpha e^{-\frac{t}{RC}}$$
+
+Il faut déterminer $\alpha$ afin de terminer la résolution. Pour ce faire, on doit utiliser une condition intiale qui donne la valeur de $u_C(t)$ à un temps donné. Ici, on sait que $u_C(t=0) = 0$.
+
+Alors, 
+$$u_C(t=0) = 0$$
+$$\Leftrightarrow E + \alpha e^{-\frac{0}{RC}} = 0$$
+$$\Leftrightarrow E + \alpha \times 1 = 0$$
+$$\Leftrightarrow \alpha = -E$$
+
+Et on peut donc finalement écrire que : 
+$$u_C(t) = E - E e^{-\frac{t}{RC}}$$
+
+ou encore : 
+
+$$\boxed{u_{C}(t) = E\left(1 - e^{-\frac{t}{RC}}\right)}$$
+
+**Tracé de la courbe :**
+
+<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/RC_series_voltage.mp4" width="640" height="480"></video>
