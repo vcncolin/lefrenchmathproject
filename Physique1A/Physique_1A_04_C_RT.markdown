@@ -587,10 +587,10 @@ $\mathscr{P}_{out}(t) = \mathscr{P}_L(t) + \mathscr{P}_R(t)$
 
 $\Leftrightarrow \mathscr{P}_{out}(t) = L.i(t)\dfrac{di}{dt} + R(i(t))^2$
 
-On commence par calculer : $\mathscr{P}_{R}(t) = R(i(t))^2$
-$\Leftrightarrow \mathscr{P}_{R}(t) = R \left( \dfrac{E}{R} (1 - e^{-\frac{Rt}{L}})\right)^2$
-$\Leftrightarrow \mathscr{P}_{R}(t) = \cancel R \dfrac{E^2}{R^{\cancel 2}} \left( 1 - e^{-\frac{Rt}{L}}\right)^2$ 
-$\Leftrightarrow \mathscr{P}_{R}(t) = \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right)$
+On commence par calculer : $\mathscr{P}_R(t) = R(i(t))^2$
+$\Leftrightarrow \mathscr{P}_R(t) = R \left( \dfrac{E}{R} (1 - e^{-\frac{Rt}{L}})\right)^2$
+$\Leftrightarrow \mathscr{P}_R(t) = \cancel R \dfrac{E^2}{R^{\cancel 2}} \left( 1 - e^{-\frac{Rt}{L}}\right)^2$ 
+$\Leftrightarrow \mathscr{P}_R(t) = \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right)$
 
 Puis pour la puissance dans la bobine :
 
@@ -599,12 +599,13 @@ $\Leftrightarrow \dfrac{di}{dt} = \dfrac{d}{dt} \left( \dfrac{E}{R}\right) - \df
 $\Leftrightarrow \dfrac{di}{dt} = 0 - \dfrac{E}{R}\left(\dfrac{-R}{L}\right)e^{-\frac{Rt}{L}}$
 $\Leftrightarrow \dfrac{di}{dt} = \dfrac{E}{L}e^{-\frac{Rt}{L}}$
 
-D'où : $\mathscr{P}_{L}(t) = L \dfrac{di}{dt}i(t)$
-$\Leftrightarrow \mathscr{P}_{L}(t) = L\left(\dfrac{E}{L}e^{-\frac{Rt}{L}}\right)\dfrac{E}{R}\left(1 - e^{-\frac{Rt}{L}}\right)$
-$\Leftrightarrow \mathscr{P}_{L}(t) = \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
+D'où : $\mathscr{P}_L(t) = L \dfrac{di}{dt}i(t)$
+$\Leftrightarrow \mathscr{P}_L(t) = L\left(\dfrac{E}{L}e^{-\frac{Rt}{L}}\right)\dfrac{E}{R}\left(1 - e^{-\frac{Rt}{L}}\right)$
+$\Leftrightarrow \mathscr{P}_L(t) = \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
 
-Donc $\mathscr{P}_{out}(t) =\mathscr{P}_{R}(t) + \mathscr{P}_{L}(t)$
+Donc $\mathscr{P}_{out}(t) =\mathscr{P}_R(t) + \mathscr{P}_L(t)$
 $\Leftrightarrow \mathscr{P}_{out}(t) =  \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right) + \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
+
 $\Leftrightarrow \mathscr{P}_{out}(t) = \dfrac{E^2}{R}\left(1 - e^{-\frac{Rt}{L}}\right) = \mathscr{P}_{in}(t)$
 
 On retrouve bien que la puissance générée est égale à la puissance consommée dans le circuit $\Rightarrow$ On a bien conservation de l'énergie dans le circuit, on est contents !
