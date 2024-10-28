@@ -604,6 +604,7 @@ $\Leftrightarrow \mathscr{P}_L(t) = L\left(\dfrac{E}{L}e^{-\frac{Rt}{L}}\right)\
 $\Leftrightarrow \mathscr{P}_L(t) = \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
 
 Donc $\mathscr{P}_{out}(t) =\mathscr{P}_R(t) + \mathscr{P}_L(t)$
+
 $\Leftrightarrow \mathscr{P}_{out}(t) =  \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right) + \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
 
 $\Leftrightarrow \mathscr{P}_{out}(t) = \dfrac{E^2}{R}\left(1 - e^{-\frac{Rt}{L}}\right) = \mathscr{P}_{in}(t)$
