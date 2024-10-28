@@ -175,7 +175,7 @@ On obtient alors : $i(t) = \dfrac{E}{R} e^{-\frac{t}{RC}}$
 
 **Remarque importante :**
 
-L'intensité dans le condensateur est nulle à $t<0$. Il y a donc une discontinuité de l'intensité dans le condensateur au moment ou la charge débute !
+L'intensité dans le condensateur est nulle à $t<0$. Or, d'après la formule ci-dessus, $i(t = 0^+) = E/R$. Il y a donc une discontinuité de l'intensité dans le condensateur au moment ou la charge débute !
 
 ### C. Décharge du condensateur : 
 
@@ -386,3 +386,225 @@ $$\Leftrightarrow \alpha = -\dfrac{ER_1}{R_1+R_2}$$
 Et on peut donc finalement écrire que : 
 
 $$\boxed{u_{C}(t) = E -\dfrac{ER_1}{R_1+R_2}e^{-\frac{t}{R_1C}}}$$
+
+## 3. Bobine
+
+Une bobine, parfois nommée inductance, est un enroulement de fil conducteur (on appellera communément un tour de fil : **une spire**). Dans le cours de deuxième année, nous verrons comment la bobine est un élément central pour créer des champs magnétiques, ce qui en fait un élément prépondérant dans de nombreux systèmes usuels (transformateurs, chargeurs à induction, systèmes de freinage magnétique [...])
+
+Pour la partie qui nous intéresse aujourd'hui, une bobine présente tout comme le condensateur un comportement *transitoire* dans un circuit électrique. 
+
+Lorsqu'un condensateur est soumis à un échelon de tension, la réponse n'est pas immédiate, le condensateur freine l'établissement de la tension dans le circuit. Nous allons voir que pour la bobine, il en va de même pour létablissement du courant dans le circuit. 
+
+### A. Les maths 
+
+Pour un condensateur, le retard induit sur la tension se traduisait par l'équation : $i_C(t) = C \dfrac{du_C}{dt}$.
+
+Pour la bobine, on va écrire la relation *'symétrique'*, en remplaçant l'intensité par la tension et vice versa. 
+
+On a donc comme relation caractéristique pour la bobine : $u_L(t) = L \dfrac{di_L}{dt}$.
+
+$L$ est la propriété caractéristique de la bobine, nommée l'inductance (la lettre L provient du physicien prussien Lenz). $L$ s'exprime en **henry ($H$)**, et sera typiquement de l'ordre du $mH$ dans les circuits que nous étudierons.
+
+**Remarque :** On verra par la suite que la grande majorité des raisonnements que nous avons effectués dans le cadre de l'étude du condensateur seront valables, en remplaçant la tension du condensateur par l'intensité dans la bobine. 
+
+### B. Circuit RL série : établissement du courant
+
+![](./img/04_C/RL_series.jpg)
+
+On va étudier l'établissement dans un circuit RL série dans la situation représentée sur le schéma précédent.
+
+ - A $t=0$, on ferme l'interrupteur.
+ - Cela veut dire qu'à $t<0$, $i = 0$ dans le circuit.
+
+**Équations caractéristiques du circuit**
+
+- Loi des mailles : $(1) : E = u_R(t) + u_L(t)$
+- Loi d'Ohm : $(2) : u_R(t) = R.i(t)$
+- Loi de la bobine : $(3) : u_L(t) = L \dfrac{di}{dt}$
+
+On va maintenant combiner ces trois équations afin d'obtenir une équation unique qui ne contient que $i(t)$.
+
+*Remarque* : On va ici résoudre pour $i(t)$ et non pas $u_L(t)$. Nous justifierons ce choix à la fin de l'exemple. 
+
+**Équation différentielle en $i(t)$**
+
+$(3) : u_L(t) = L \dfrac{di}{dt}$
+
+On élimine $u_L(t)$ en utilisant $(1) : u_L(t) = E - u_R(t)$
+
+$\Leftrightarrow E - u_R(t) = L \dfrac{di}{dt}$
+
+On élimine $u_R(t)$ en utilisant $(2) : u_R(t) = R.i(t)$
+
+$\Leftrightarrow E -  R.i(t)= L \dfrac{di}{dt}$
+
+Il ne reste qu'à remettre en forme l'équation : 
+
+$\Leftrightarrow L \dfrac{di}{dt} + R.i(t) = E$
+
+$\Leftrightarrow \boxed{\dfrac{di}{dt} + \dfrac{R}{L}i(t) = \dfrac{E}{L}}$
+
+Il s'agit d'une équation qu'on peut comparer à celle obtenue pour la tension aux bornes du condensateur lors de la charge.  
+
+**Résolution de l'équation différentielle**
+
+1. Solution particulière $i_{p}(t)$:
+
+On cherche la solution en régime permanent : $\frac{di}{dt} = 0$. L'équation devient alors : 
+$$\dfrac{R}{L} i_{p}(t) = \dfrac{E}{L}$$
+$$\Leftrightarrow \boxed {i_{p}(t) = \dfrac{E}{R}}$$
+
+2. Solution homogène $i_{h}(t)$:
+
+On écrit l'équation dite "sans second membre" :
+$$\dfrac{di_{h}}{dt} + \dfrac{R}{L} i_{h}(t) = 0$$
+
+**Théorème :** L'équation $y'(t) + a.y(t) = 0$ a pour solution : $y(t) = \alpha e^{-at}$ où $\alpha$ est une constante à déterminer. 
+
+Donc ici, on peut en déduire que $\boxed{i_{h}(t) = \alpha e^{-\frac{Rt}{L}}}$
+
+3. Conclusion (et détermination de la constante $\alpha$) :
+
+La solution complète de l'équation différentielle est : 
+
+$$i(t) = i_{p}(t) + i_{h}(t) = \dfrac{E}{R} + \alpha e^{-\frac{Rt}{L}}$$
+
+Ici, on sait que $i(t=0) = 0$.
+
+Alors, 
+$$i(t=0) = 0$$
+$$\Leftrightarrow \dfrac{E}{R} + \alpha e^{-\frac{R.0}{L}} = 0$$
+$$\Leftrightarrow \dfrac{E}{R} + \alpha \times 1 = 0$$
+$$\Leftrightarrow \alpha = -\dfrac{E}{R}$$
+
+Et on peut donc finalement écrire que : 
+$$i(t) = \dfrac{E}{R} -  \dfrac{E}{R} e^{-\frac{Rt}{L}}$$
+
+ou encore : 
+
+$$\boxed{i(t) =  \dfrac{E}{R}\left(1 - e^{-\frac{Rt}{L}}\right)}$$
+
+Le tracé de la courbe sera le même que pour la tension dans un condensateur ! (Peu de surprises, c'était la même équation différentielle)
+
+**Remarque importante :**
+
+Lorsqu'on calcule la tension aux bornes de la bobine, on obtient : 
+
+$$u_L(t) = L \dfrac{di}{dt} = E e^{-\frac{Rt}{L}}$$
+
+La tension aux bornes de la bobine est nulle à $t<0$. Or, d'après la formule ci-dessus, $u_L(t = 0^+) = E$. Il y a donc une discontinuité de l'intensité dans la bobine au moment ou la charge débute !
+
+### C. Suite ? 
+
+On pourrait considérer la partie "décharge" de la bobine de la même manière, mais les résultats seront strictement identiques à ceux obtenus pour la partie précédente.
+
+## 4. Bilans énergétiques
+
+En physique, il est très courant d'utiliser une approche énergétique pour résoudre un problème. En effet, pour tout système, on a toujours conservation de l'énergie : les sources d'énergie doivent compenser les dépenses. 
+
+On peut faire un bilan sur **l'énergie** d'un système (sur une durée donnée) ou bien sur **la puissance** (à un insant donnée).
+
+En effet, la puissance et l'énergie sont reliés par la relation suivante : 
+
+$$ \mathscr{E} = \int \mathscr{P}(t)dt \text{,    et    }\mathscr{P}(t) = \dfrac{\partial \mathscr{E}}{\partial t}$$
+
+$\Rightarrow$ La puissance correspond à un 'débit' d'énergie.
+
+Dans les paragraphes suivants, nous allons principalement travailler sur les bilans de puissance, ceux-ci ne nécessitant pas le calcul d'intégrales. 
+
+### A. Puissance délivrée / reçue par un dipôle
+
+**Générateur de tension continue :**
+
+(Il s'agit d'un dipôle générateur, les formules suivantes sont valides si la tension est orientée dans le même sens que l'intensité)
+
+$\mathscr{P}(t) = E . i(t)$ 
+
+Par définition $E$ est constant, donc $\mathscr{P}(t)$ ne varie que si $i(t)$ varie.
+
+$\mathscr{E} = \int \mathscr{P}(t)dt = \int E . i(t) dt = E \int i(t)dt$
+
+**Résistance :**
+
+(Il s'agit d'un dipôle récepteur, les formules suivantes sont valides si la tension est orientée dans le sens opposé à l'intensité)
+
+$\mathscr{P}(t) = u(t) . i(t)$, or $u(t) = R.i(t)$
+$\Leftrightarrow \mathscr{P}(t) = R . (i(t))^2 = \dfrac{(u(t))^2}{R}$
+
+Dans le cas de la résistance, on a juste besoin de connaître la tension ou l'intensité afin de calculer la puissance reçue. 
+
+La totalité de la puissance reçue par une résistance est transformée en chaleur : c'est **l'effet Joule**. Dans un circuit classique, cela correspond à des pertes sèches (sauf si on est en train de griller une tartine de pain sur cette résistance)
+
+$\mathscr{E} = \int \mathscr{P}(t)dt =  R \int (i(t))^2dt = \dfrac{1}{R} \int (u(t))^2dt$
+
+**Condensateur :**
+
+(Il s'agit d'un dipôle récepteur, les formules suivantes sont valides si la tension est orientée dans le sens opposé à l'intensité)
+
+$\mathscr{P}(t) = u(t) . i(t)$, or $i(t) = C\dfrac{du}{dt}$
+$\Leftrightarrow \mathscr{P}(t) = u(t) . C\dfrac{du}{dt} =C .u(t)  \dfrac{du}{dt}$
+
+$\mathscr{E} = \int \mathscr{P}(t)dt =  C \int u(t)  \dfrac{du}{dt}dt = \left[ C. \dfrac{(u(t))^2}{2}\right]$ (cf. cours de maths sur l'intégration dans le doute)
+
+On peut remarquer ici que le condensateur ne consomme pas d'énergie. Il la stocke (sous forme de tension) et peut la restituer ensuite en intégralité. 
+
+**Bobine :**
+
+(Il s'agit d'un dipôle récepteur, les formules suivantes sont valides si la tension est orientée dans le sens opposé à l'intensité)
+
+$\mathscr{P}(t) = u(t) . i(t)$, or $u(t) = L\dfrac{di}{dt}$
+$\Leftrightarrow \mathscr{P}(t) = L\dfrac{di}{dt} i(t)=L .i(t)  \dfrac{di}{dt}$
+
+$\mathscr{E} = \int \mathscr{P}(t)dt =  L \int i(t)  \dfrac{di}{dt}dt = \left[ L. \dfrac{(i(t))^2}{2}\right]$ (cf. cours de maths sur l'intégration dans le doute)
+
+On peut remarquer ici que la bobine ne consomme pas d'énergie. Elle la stocke (sous forme de courant électrique) et peut la restituer ensuite en intégralité. 
+
+*Remarque :* (cf. TP 3) En pratique, sachant qu'une bobine est constituée d'une grande longueur de fil conducteur, toute bobine est (un peu) résistante. On parle de **résistance interne** de la bobine. On distinguera donc dans l'étude la bobine idéale ($R=0$) et la bobine réelle ($R\neq 0$)
+
+### B. Bilan de puissance du circuit RL série
+
+![](./img/04_C/RL_series.jpg)
+
+On va étudier la phase d'établissement du courant : 
+
+$$i(t) = \dfrac{E}{R} (1 - e^{-\frac{Rt}{L}})$$
+
+**Puissance fournie au circuit ?**
+
+Dans ce circuit, il y a un unique élément générateur (le générateur..) :
+
+$\mathscr{P}_{in}(t) = E.i(t) = \dfrac{E^2}{R} (1 - e^{-\frac{Rt}{L}})$
+
+A un instant $t$, le générateur fournit la puissance $\mathscr{P}_{in}(t)$ au circuit. 
+
+Les lois de la physique étant (généralement) bien faites, on devrait trouver la même chose lorsqu'on calcule $\mathscr{P}_{out}(t)$ !
+
+**Puissance reçue par le circuit :**
+
+Dans ce circuit, il y a deux éléments récepteurs : la bobine et la résistance.
+
+$\mathscr{P}_{out}(t) = \mathscr{P}_{L}(t) + \mathscr{P}_{R}(t)$
+
+$\Leftrightarrow \mathscr{P}_{out}(t) = L.i(t)\dfrac{di}{dt} + R(i(t))^2$
+
+On commence par calculer : $\mathscr{P}_{R}(t) = R(i(t))^2$
+$\Leftrightarrow \mathscr{P}_{R}(t) = R \left( \dfrac{E}{R} (1 - e^{-\frac{Rt}{L}})\right)^2$
+$\Leftrightarrow \mathscr{P}_{R}(t) = \cancel R \dfrac{E^2}{R^{\cancel 2}} \left( 1 - e^{-\frac{Rt}{L}}\right)^2$ 
+$\Leftrightarrow \mathscr{P}_{R}(t) = \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right)$
+
+Puis pour la puissance dans la bobine :
+
+$\dfrac{di}{dt} = \dfrac{d}{dt} \left( \dfrac{E}{R} - \dfrac{E}{R}e^{-\frac{Rt}{L}}\right)$
+$\Leftrightarrow \dfrac{di}{dt} = \dfrac{d}{dt} \left( \dfrac{E}{R}\right) - \dfrac{d}{dt} \left( \dfrac{E}{R}e^{-\frac{Rt}{L}}\right)$
+$\Leftrightarrow \dfrac{di}{dt} = 0 - \dfrac{E}{R}\left(\dfrac{-R}{L}\right)e^{-\frac{Rt}{L}}$
+$\Leftrightarrow \dfrac{di}{dt} = \dfrac{E}{L}e^{-\frac{Rt}{L}}$
+
+D'où : $\mathscr{P}_{L}(t) = L \dfrac{di}{dt}i(t)$
+$\Leftrightarrow \mathscr{P}_{L}(t) = L\left(\dfrac{E}{L}e^{-\frac{Rt}{L}}\right)\dfrac{E}{R}\left(1 - e^{-\frac{Rt}{L}}\right)$
+$\Leftrightarrow \mathscr{P}_{L}(t) = \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
+
+Donc $\mathscr{P}_{out}(t) =\mathscr{P}_{R}(t) + \mathscr{P}_{L}(t)$
+$\Leftrightarrow \mathscr{P}_{out}(t) =  \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right) + \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
+$\Leftrightarrow \mathscr{P}_{out}(t) = \dfrac{E^2}{R}\left(1 - e^{-\frac{Rt}{L}}\right) = \mathscr{P}_{in}(t)$
+
+On retrouve bien que la puissance générée est égale à la puissance consommée dans le circuit $\Rightarrow$ On a bien conservation de l'énergie dans le circuit, on est contents !

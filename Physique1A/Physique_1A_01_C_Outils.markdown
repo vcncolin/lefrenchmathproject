@@ -227,7 +227,7 @@ $$x_{vrai} = x_m \pm \dfrac{\sigma(x)}{\sqrt{n}}$$
 
 avec : $x_m = \dfrac{1}{n} \sum\limits_{i} x_i$, la moyenne de la série de mesures,
 
-et $s(x) = \sqrt{\dfrac{1}{n}\sum\limits_{i} (x_i-x_m)^2}$ l'écart-type de la série de mesures. 
+et $\sigma(x) = \sqrt{\dfrac{1}{n}\sum\limits_{i} (x_i-x_m)^2}$ l'écart-type de la série de mesures. 
 
 L'évaluation de type A est une méthode statistique qui est d'autant plus précise que le nombre de mesures indépendantes $n$ est grande.
 
