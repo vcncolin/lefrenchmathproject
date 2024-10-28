@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Physique A1 - Chapitre 4 - Régime transitoire - Bases"
+title:  "Physique A1 - Chapitre 4 - Régime transitoire"
 date:   2024-07-01 12:19:36 +0200
 categories: courses
 id: Phy1_04_C
@@ -583,7 +583,7 @@ Les lois de la physique étant (généralement) bien faites, on devrait trouver 
 
 Dans ce circuit, il y a deux éléments récepteurs : la bobine et la résistance.
 
-$\mathscr{P}_{out}(t) = \mathscr{P}_{L}(t) + \mathscr{P}_{R}(t)$
+$\mathscr{P}_{out}(t) = \mathscr{P}_L(t) + \mathscr{P}_R(t)$
 
 $\Leftrightarrow \mathscr{P}_{out}(t) = L.i(t)\dfrac{di}{dt} + R(i(t))^2$
 
