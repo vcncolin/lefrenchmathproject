@@ -607,6 +607,6 @@ Donc $\mathscr{P}_{out}(t) =\mathscr{P}_R(t) + \mathscr{P}_L(t)$
 
 $\Leftrightarrow \mathscr{P}_{out}(t) =  \dfrac{E^2}{R}\left(1 - 2e^{-\frac{Rt}{L}} + e^{-\frac{2Rt}{L}}\right) + \dfrac{E^2}{R}\left(e^{-\frac{Rt}{L}} - e^{-\frac{2Rt}{L}}\right)$
 
-$\Leftrightarrow \mathscr{P}_{out}(t) = \dfrac{E^2}{R}\left(1 - e^{-\frac{Rt}{L}}\right) = \mathscr{P}_{in}(t)$
+$\Leftrightarrow \mathscr{P}_{out}(t) = \dfrac{E^2}{R} \left(1 - e^{-\frac{Rt}{L}} \right) = \mathscr{P}_in(t)$
 
 On retrouve bien que la puissance générée est égale à la puissance consommée dans le circuit $\Rightarrow$ On a bien conservation de l'énergie dans le circuit, on est contents !
