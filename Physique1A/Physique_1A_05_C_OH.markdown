@@ -12,11 +12,17 @@ id: Phy1_05_C
 
 ![](./img/05_C/LC_series.png)
 
-On s'intéresse au circuit représenté ci-dessus. À $t=0$, on ferme l'interrupteur. On s'intéresse à la tension $u_C(t)$ pour $t>0$.
+On s'intéresse au circuit représenté ci-dessus. On considère qu'à $t<0$, le condensateur est chargé, et $u_C(t<0) = U_0$. 
+
+À $t=0$, on ferme l'interrupteur. On s'intéresse à la tension $u_C(t)$ pour $t>0$.
 
 ### A. Étude qualitative
 
-On peut se demander comment va évoluer la tension du condensateur. En effet, dans un premier temps, lorsqu'on ferme l'interrupteur, la bobine va s'opposer à l'établissement du courant dans le circuit. Puis, progressivement, le courant va s'établir, et les charges vont s'accumuler sur le condensateur.
+On peut se demander comment va évoluer la tension du condensateur. En effet, dans un premier temps, lorsqu'on ferme l'interrupteur, le condensateur va avoir tendance à se décharger. Cependant, la bobine va s'opposer à l'établissement du courant, qui va donc augmenter de manière progressive et non brutale. 
+
+Lorsque la tension du condensateur devient nulle, le mouvement de charges devrait alors s'interrompre. Nous savons cependant que l'intensité électrique est continue dans une bobine : la bobine continue à alimenter le mouvement des charges, et va donc forcer la charge du condensateur dans le sens opposé. 
+
+Intuitivement, on devrait donc voir apparaître une oscillation de la tension du condensateur entre une valeur positive et une valeur négative. 
 
 ### B. Étude quantitative
 
@@ -53,4 +59,11 @@ $\Leftrightarrow \boxed{\dfrac{d^2u_C}{dt^2} + \dfrac{1}{LC} u_C(t) = 0}$
 
 - Il s'agit d'une équation différentielle linéaire du **second ordre** à coefficients réels constants.
 - On ne va pas pouvoir appliquer la même méthode de résolution que pour les équations différentielles du premier ordre, car notre théorème pour la solution homogène ne s'applique plus ! Pas de panique, on va en inventer un autre :)
-- On dit que cette équation différentielle est caractéristique d'un oscillateur harmonique
+- On remarque que les fonctions qui vérifient cette équation sont les fonctions trigonométriques !
+- On appelle ce genre de système **un oscillateur harmonique**.
+
+## 2. L'oscillateur harmonique
+
+> Un oscillateur harmonique est un oscillateur idéal dont l'évolution au cours du temps est décrite par une fonction sinusoïdale, dont la fréquence ne dépend que des caractéristiques du système et dont l'amplitude est constante. (*Wikipédia*)
+
+Il faut comprendre dans le mot idéal, un oscillateur sans frottements. 
