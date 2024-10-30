@@ -22,4 +22,4 @@ categories: index
 [Cours](Physique_1A_04_C_RT.markdown), [Exercices](Physique_1A_04_EX.markdown)
 
 ## Chapitre 5 - Oscillateurs électriques
-[Cours](Physique_1A_05_C_OH.markdown), [Exercices]()
+[Cours](Physique_1A_05_C_OH.markdown), [Exercices](Physique_1A_05_EX.markdown)
