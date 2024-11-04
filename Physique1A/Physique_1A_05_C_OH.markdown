@@ -34,7 +34,7 @@ On procède de la même manière que dans le chapitre précédent.
 - Loi du condensateur : $(2) : i(t) = C \dfrac{du_C}{dt}$
 - Loi de la bobine : $(3) : u_L(t) = L \dfrac{di}{dt}$
 
-**Établissement de l'équation différentielle en $u_c(t)$ :**
+**Établissement de l'équation différentielle en $u_C(t)$ :**
 
 
 On part de l'équation $(2) : i(t) = C \dfrac{du_C}{dt}$.
@@ -62,8 +62,140 @@ $\Leftrightarrow \boxed{\dfrac{d^2u_C}{dt^2} + \dfrac{1}{LC} u_C(t) = 0}$
 - On remarque que les fonctions qui vérifient cette équation sont les fonctions trigonométriques !
 - On appelle ce genre de système **un oscillateur harmonique**.
 
-## 2. L'oscillateur harmonique
+### C. L'oscillateur harmonique
 
 > Un oscillateur harmonique est un oscillateur idéal dont l'évolution au cours du temps est décrite par une fonction sinusoïdale, dont la fréquence ne dépend que des caractéristiques du système et dont l'amplitude est constante. (*Wikipédia*)
 
-Il faut comprendre dans le mot idéal, un oscillateur sans frottements. 
+Il faut comprendre dans le mot idéal, un oscillateur sans frottements. Dans ce cas, il n'y a aucune perte d'énergie, et le mouvement peut être entretenu de manière infinie. 
+
+On écrit l'équation différentielle caractéristique d'un oscillateur harmonique sous la forme suivante : 
+
+$$\boxed{\dfrac{d^2y}{dt^2} + {\omega_0}^2  y(t) = 0}$$
+
+Et la solution s'écrit sous la forme : 
+
+$$\boxed{y(t)= y_0 \cos (\omega_0 t + \varphi)}$$
+
+*(On verra dans la suite du cours comment retrouver cette solution)*
+
+Et on appelle : 
+
+- $\omega_0$ la pulsation propre du mouvement
+- $y_0$ l'amplitude du mouvement
+- $\varphi$ la phase à l'origine des temps
+
+$\omega_0$ est déterminé à partir de l'équation différentielle, tandis que $y_0$ et $\varphi$ sont déterminés à partir des conditions initiales. 
+
+On pourra donc retrouver (par exemple) la période des oscillations en utilisant les formules du cours sur les ondes ! $T = \frac{2\pi}{\omega_0}$
+
+## 2. La réalité : l'oscillateur harmonique amorti 
+
+En pratique, il existe souvent une limite physique aux systèmes qu'on approxime à des oscillateurs harmoniques : il existe une dissipation d'énergie. 
+
+### A. Le circuit RLC série
+
+![](./img/05_C/RLC_series.png)
+
+On s'intéresse donc au circuit représenté ci-dessus. A la différence du circuit LC, la résistance va ici consommer une partie de l'énergie du circuit, réduisant peu à peu l'amplitude des oscillations. 
+
+En procédant de la même manière qu'au début du chapitre, on va établir l'équation différentielle, et identifier les termes caractéristiques.
+
+**Équations caractéristiques du circuit :**
+
+- Loi des mailles : $(1) : 0 = u_C(t) + u_R(t) + u_L(t)$
+- Loi du condensateur : $(2) : i(t) = C \dfrac{du_C}{dt}$
+- Loi de la bobine : $(3) : u_L(t) = L \dfrac{di}{dt}$
+- Loi d'Ohm : $(4) : u_R(t) = R. i(t)$
+
+**Établissement de l'équation différentielle en $u_C(t)$ :**
+
+
+On part de l'équation $(2) : i(t) = C \dfrac{du_C}{dt}$.
+
+On voudrait éliminer $i(t)$, mais on ne dispose que de l'équation $(3)$ qui contient $\frac{di}{dt}$ et non pas $i(t)$. Il va donc falloir dériver l'équation $(2)$ pour pouvoir utiliser l'équation $(3)$ !
+
+$(2) \Rightarrow \dfrac{di}{dt} = C \dfrac{d^2u_C}{dt^2}$ où $\dfrac{d^2u_C}{dt^2}$ représente la dérivée seconde de $u_C(t)$.
+
+Et donc en remplaçant grâce à $(3) : \dfrac{di}{dt} = \dfrac{u_L(t)}{L}$
+
+$\Leftrightarrow \dfrac{u_L(t)}{L} = C \dfrac{d^2u_C}{dt^2}$
+
+Et enfin en remplaçant $u_L(t)$ grâce à $(1) : u_L(t) = -u_R(t) - u_C(t)$,
+
+$\Leftrightarrow \dfrac{ -u_R(t)- u_C(t)}{L} = C \dfrac{d^2u_C}{dt^2}$
+
+Ici, on doit utiliser $(4)$ pour remplacer $u_R(t) = R .i(t)$, puis avec $(2) : u_R(t) = RC\dfrac{du_C}{dt}$
+
+$\Leftrightarrow -\dfrac{1}{L}RC\dfrac{du_C}{dt} - \dfrac{u_C(t)}{L} = C \dfrac{d^2u_C}{dt^2}$
+
+On remet en forme et on obtient: 
+
+$\Leftrightarrow \boxed{\dfrac{d^2u_C}{dt^2} + \dfrac{R}{L}\dfrac{du_C}{dt} + \dfrac{1}{LC} u_C(t) = 0}$
+
+**Que peut-on dire de cette équation ?**
+
+- Il s'agit d'une équation différentielle linéaire du **second ordre** à coefficients réels constants.
+
+- Cette fois-ci, on a un terme d'ordre 1, on ne vas pas pouvoir résoudre avec une fonction trigonométrique.
+
+- On appelle ce genre de système **un oscillateur harmonique amorti**.
+
+### B. L'oscillateur harmonique amorti
+
+Dans ce cas, on considère tout simplement un oscillateur harmonique, mais en prenant en compte la dissipation de l'énergie. Il existera alors un temps caractéristique de dissipation.
+
+On écrit l'équation différentielle caractéristique d'un oscillateur harmonique amorti sous la forme suivante : 
+
+$$\boxed{\dfrac{d^2y}{dt^2} + \dfrac{2}{\tau} \dfrac{dy}{dt} + {\omega_0}^2  y(t) = 0}$$
+
+On retrouve la même équation que pour l'oscillateur harmonique, avec le terme de premier ordre qui correspondra au terme d'amortissement. 
+
+Il existe plusieurs façons d'écrire la solution de cette équation, qui dépendent de la relation entre $\tau$ et $\omega_0$.
+
+Cette fois-ci, pas le choix...
+
+### C. Les maths
+
+On reprend l'équation : 
+
+$$\boxed{\dfrac{d^2y}{dt^2} + \dfrac{2}{\tau} \dfrac{dy}{dt} + {\omega_0}^2  y(t) = 0}$$
+
+On va chercher les fonctions exponentielles qui vérifient cette équation. Pour ce faire, on suppose que $y(t) = \alpha e^{-at}$.
+
+Alors on a : $\dfrac{dy}{dt} = - a \alpha e^{-at} = -a y(t)$, et $\dfrac{d^2y}{dt^2} = a^2 \alpha e^{-at} = a^2 y(t)$.
+
+On peut réinjecter dans l'équation initiale et on obtient : 
+
+$$\Leftrightarrow a^2 y(t) + \dfrac{2}{\tau} .(- a y(t)) + {\omega_0}^2 y(t) = 0$$
+
+On peut simplifier partout par $y(t)$ pour obtenir : 
+
+$$\boxed{a^2 - \dfrac{2}{\tau}a + {\omega_0}^2 = 0}$$
+
+Le coefficient $a$ vérifie donc une équation d'ordre 2, c'est ce qu'on appelle le polynôme caractéristique de l'équation différentielle.
+
+On va distinguer les trois cas de l'équation de degré 2 en fonction du signe de $\Delta$.
+
+**$\Delta > 0$, les racines sont réelles :**
+
+Dans ces cas là, on a deux solutions réelles. La solution pourra s'écrire sous la forme : 
+
+$$y(t) = A \exp(-r_1t) + B \exp(-r_2t)$$
+
+où $r_1$ et $r_2$ sont les deux racines du polynôme caractéristique. (En général pour un problème physique, on aura deux racines négatives pour un problème amorti. Sinon la solution tend vers l'infini...)
+
+$A$ et $B$ sont déterminés par les conditions initiales du problème. 
+
+On appelle cela le régime **apériodique**. Le système revient vers un état de repos sans oscillations. 
+
+**$\Delta = 0$, cas limite :**
+
+Dans ce cas, la solution s'écrit : 
+
+$$y(t) = (At + B) \exp(-t/\tau)$$
+
+$A$ et $B$ sont déterminés par les conditions initiales du problème. 
+
+Il s'agit du cas limite pour lequel il n'y a pas d'oscillations. 
+
+**$\Delta < 0$, les racines sont complexes :**
