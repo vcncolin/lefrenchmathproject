@@ -184,6 +184,8 @@ $$y(t) = A \exp(-r_1t) + B \exp(-r_2t)$$
 
 où $r_1$ et $r_2$ sont les deux racines du polynôme caractéristique. (En général pour un problème physique, on aura deux racines négatives pour un problème amorti. Sinon la solution tend vers l'infini...)
 
+
+
 $A$ et $B$ sont déterminés par les conditions initiales du problème. 
 
 On appelle cela le régime **apériodique**. Le système revient vers un état de repos sans oscillations. 
@@ -199,3 +201,18 @@ $A$ et $B$ sont déterminés par les conditions initiales du problème.
 Il s'agit du cas limite pour lequel il n'y a pas d'oscillations. 
 
 **$\Delta < 0$, les racines sont complexes :**
+
+Dans ce cas, $r_{1,2} = -\dfrac{1}{2 \tau} \pm j\sqrt{{\omega_0}^2-\dfrac{1}{4 \tau^2}}$
+
+**Remarque :** En physique, et tout particulièrement en électronique, on a tendance à écrire le nombre complexe $j$ qui correspond à $j^2 = -1$. Le but est de ne pas le confondre avec l'intensité électrique, par exemple. 
+
+Afin de simplifier l'écriture de $r_{1,2}$, on va souvent poser : $\alpha = -\dfrac{1}{2 \tau}$ et $\omega = \sqrt{{\omega_0}^2-\dfrac{1}{4 \tau^2}}$ pour écrire finalement : 
+$r_{1,2} = \alpha \pm j\omega$
+
+Ce qui permettra d'écrire la solution : 
+
+$$\boxed{y(t) = A e^{-\alpha t} \cos(\omega t + \varphi)}$$
+
+On appelle ce régime un **régime pseudo-périodique**. Le système va revenir vers son état de repos en oscillant autour de la position d'équilibre. Ces oscillations sont caractérisées par la **pseudo-période** $\omega$.
+
+<video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/RLC_resolution.mp4" width="640" height="480"></video>
