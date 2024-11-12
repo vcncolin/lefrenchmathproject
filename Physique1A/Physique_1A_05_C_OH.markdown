@@ -208,11 +208,11 @@ Il s'agit du cas limite pour lequel il n'y a pas d'oscillations.
 
 **$\Delta < 0$, les racines sont complexes :**
 
-Dans ce cas, $r_{1,2} = -\dfrac{1}{\tau} \pm j\sqrt{{\omega_0}^2-\dfrac{1}{\tau^2}}$
+Dans ce cas, $r_{1,2} = -\dfrac{1}{\tau} \pm j\sqrt{ {\omega_0}^2-\dfrac{1}{\tau^2}}$
 
 **Remarque :** En physique, et tout particulièrement en électronique, on a tendance à écrire le nombre complexe $j$ qui correspond à $j^2 = -1$. Le but est de ne pas le confondre avec l'intensité électrique, par exemple. 
 
-Afin de simplifier l'écriture de $r_{1,2}$, on va souvent poser : $\alpha = -\dfrac{1}{\tau}$ et $\omega = \sqrt{{\omega_0}^2-\dfrac{1}{\tau^2}}$ pour écrire finalement : 
+Afin de simplifier l'écriture de $r_{1,2}$, on va souvent poser : $\alpha = -\dfrac{1}{\tau}$ et $\omega = \sqrt{ {\omega_0}^2-\dfrac{1}{\tau^2}}$ pour écrire finalement : 
 $r_{1,2} = \alpha \pm j\omega$
 
 Ce qui permettra d'écrire la solution : 
