@@ -162,7 +162,7 @@ $$\boxed{\dfrac{d^2y}{dt^2} + \dfrac{2}{\tau} \dfrac{dy}{dt} + {\omega_0}^2  y(t
 
 On va chercher les fonctions exponentielles qui vérifient cette équation. Pour ce faire, on suppose que $y(t) = \alpha e^{at}$.
 
-Alors on a : $\dfrac{dy}{dt} = - a \alpha e^{at} = a y(t)$, et $\dfrac{d^2y}{dt^2} = a^2 \alpha e^{at} = a^2 y(t)$.
+Alors on a : $\dfrac{dy}{dt} = a \alpha e^{at} = a y(t)$, et $\dfrac{d^2y}{dt^2} = a^2 \alpha e^{at} = a^2 y(t)$.
 
 On peut réinjecter dans l'équation initiale et on obtient : 
 
