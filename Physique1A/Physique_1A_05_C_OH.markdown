@@ -184,7 +184,7 @@ On a $\Delta = \frac{4}{\tau^2} - 4{\omega_0}^2 = 4(\frac{1}{\tau^2}-{\omega_0}^
 
 Dans ces cas là, on a deux solutions réelles. La solution pourra s'écrire sous la forme : 
 
-$$y(t) = A \exp(r_1t) + B \exp(r_2t)$$
+$$\boxed{y(t) = A \exp(r_1t) + B \exp(r_2t)}$$
 
 où $r_1$ et $r_2$ sont les deux racines du polynôme caractéristique.
 
@@ -202,7 +202,7 @@ On appelle cela le régime **apériodique**. Le système revient vers un état d
 
 Dans ce cas, la solution s'écrit : 
 
-$$y(t) = (At + B) \exp(-t/\tau)$$
+$$\boxed{y(t) = (At + B) \exp(-t/\tau)}$$
 
 $A$ et $B$ sont déterminés par les conditions initiales du problème. 
 
@@ -224,3 +224,83 @@ $$\boxed{y(t) = A e^{-\frac{t}{\tau}} \cos(\omega t + \varphi)}$$
 On appelle ce régime un **régime pseudo-périodique**. Le système va revenir vers son état de repos en oscillant autour de la position d'équilibre. Ces oscillations sont caractérisées par la **pseudo-période** $\omega$.
 
 <video autoplay="true" loop="loop" src="https://raw.githubusercontent.com/vcncolin/lefrenchmathproject/main/assets/manim/RLC_resolution.mp4" width="640" height="480"></video>
+
+Les trois solutions présentées dans ce paragraphe constituent la solution homogène de l'équation différentielle. Dans l'exemple, cela est suffisant car le second membre est égal à $0$. En revanche, dans certains exercices, il faudra bien effectuer les trois étapes de résolution comme pour les équations différentielles d'ordre 1 dans le chapitre précédent : 
+
+- Solution homogène
+- Solution particulière
+- Conclusion (somme des deux précédents + détermination des constantes à l'aide des conditions initiales)
+
+### D. Application à l'étude du circuit RLC série : résolution
+
+On va étudier le circuit pour 3 ensembles de valeurs différentes : 
+
+| Valeur | Cas n°1 | Cas n°2 | Cas n°3 |
+|--|--|--|--|
+|$E$|$10V$|$10V$|$10V$|
+|$R$|$1 k\Omega$|$0.1 k\Omega$|$2 k\Omega$|
+|$L$|$10mH$|$1mH$|$1mH$|
+|$C$|$1 \mu F$|$1 nF$|$1 nF$|
+
+**Cas n°1 :**
+
+On commence par calculer les valeurs de $\tau$ et $\omega_0$ : 
+
+$\tau = \dfrac{2L}{R} = \dfrac{2\times10.10^{-3}}{10^3} = 20 \mu s$
+$\omega_0 = \dfrac{1}{\sqrt{LC}}=\dfrac{1}{\sqrt{10.10^{-3}\times10^{-6}}} = 10^4 rad.s^{-1}$
+On peut également calculer $T_0 = \dfrac{2\pi}{\omega_0} \simeq 630 \mu s$, afin de remarquer que $\tau << T_0$.
+
+*a. Solution homogène :*
+
+On réecrit le polynôme caractéristique : $a^2 + \dfrac{2}{\tau} a + {\omega_0}^2 = 0$, donc $\Delta = \frac{4}{\tau^2} - 4{\omega_0}^2 = 4(\frac{1}{\tau^2}-{\omega_0}^2) = 9,6.10^9 > 0$
+
+On va donc se situer dans le cas du **régime apériodique**, c'est à dire un amortissement sans oscillations. La solution homogène pour la tension dans le condensateur s'exprime : 
+
+$$u_{C,h}(t) = A \exp(r_1t) + B \exp(r_2t)$$
+
+avec $r_1 = -\dfrac{1}{\tau} -\sqrt{\dfrac{1}{\tau^2} - {\omega_0}^2} \simeq -1 000 s^{-1}$
+
+et $r_2 = -\dfrac{1}{\tau} +\sqrt{\dfrac{1}{\tau^2} - {\omega_0}^2} \simeq -99 000 s^{-1}$
+
+*b. Solution particulière*
+
+On peut réécrire l'équation différentielle : 
+
+$$\dfrac{d^2u_C}{dt^2} + \dfrac{2}{\tau} \dfrac{du_C}{dt} + {\omega_0}^2  u_C(t) = 0$$
+
+Lorsque les dérivées s'annulent, on obtient : $u_{C,p}(t) = 0$
+
+*c. Conclusion*
+
+On a donc $u_C(t) = u_{C,h}(t) + u_{C,p}(t) = A \exp(r_1t) + B \exp(r_2t)$
+
+Il nous reste à déterminer les constantes $A$ et $B$ grâce aux conditions initiales : 
+
+- $u_C(t<0) = U_0$, le condensateur est chargé au début de l'expérience
+- $i(t<0) = 0$, l'interrupteur est ouvert au début de l'expérience
+
+On peut alors justifier que: 
+
+- $u_C(t=0^+) = U_0$ car la tension est continue dans un condensateur
+- $i(t=0^+) = 0$ car l'intensité est continue dans une bobine. De plus, $i(t) = C\frac{du_C}{dt}$ dans un condensateur, donc $\frac{du_C}{dt} (t=0^+) = 0$
+
+On applique cela à la fonction u_C(t) trouvée plus haut (on calcule tout d'abord $\frac{du_C}{dt}$) :
+
+$\dfrac{du_C}{dt} = Ar_1\exp(r_1 t) + Br_2\exp(r_2 t)$
+
+$\left\{
+\begin{array}{l}
+  u_C(t=0^+) = U_0 \Leftrightarrow A+B=U_0 \\
+  \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow Ar_1+Br_2=0
+\end{array}
+\right.$
+
+Il s'agit d'un système de deux équations à deux inconnues à résoudre, on peut par exemple procéder en faisant une combinaison linéaire de lignes : $L_2-r_2\times L_1$ : 
+
+$Ar_1 - r_2A = 0 - r_2 U_0$
+
+$\Leftrightarrow A(r_1-r_2) = - r_2 U_0$
+
+$\Leftrightarrow A = \dfrac{r_2}{r_2-r_1} U_0$
+
+et on peut utiliser $A+B = U_0$ pour en déduire $B = \dfrac{-r_1}{r_2-r_1} U_0$
