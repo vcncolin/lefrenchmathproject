@@ -340,7 +340,7 @@ On applique cela à la fonction $u_C(t)$ trouvée plus haut (on calcule tout d'a
 
 $\dfrac{du_C}{dt} = -\dfrac{\alpha}{\tau}\exp(\frac{-t}{\tau})\cos(\omega t +\varphi)- \alpha \omega \exp(\frac{-t}{\tau})\sin(\omega t +\varphi)$
 
-$\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow \alpha \cos\varphi=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow -\dfrac{\alpha}{\tau}\cos(\varphi)- \alpha \omega \sin(\varphi)=0 \end{array} \right.$
+$$\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow \alpha \cos\varphi=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow -\dfrac{\alpha}{\tau}\cos(\varphi)- \alpha \omega \sin(\varphi)=0 \end{array} \right.$$
 
 Il s'agit d'un système de deux équations à deux inconnues à résoudre. Dans la deuxième équation, on peut simplifier par $\alpha$ afin d'obtenir une équation avec uniquement $\varphi$ : 
 
