@@ -315,7 +315,7 @@ On va donc se situer dans le cas du **régime pseudo-périodique**, c'est à dir
 
 $$u_{C,h}(t) = \alpha \exp(\frac{-t}{\tau}) \cos(\omega t + \varphi)$$
 
-avec $\omega = \sqrt{{{\omega_0}^2} - \dfrac{1}{\tau^2}} \simeq 10^6 rad.s^{-1}$
+avec $\omega = \sqrt{ {\omega_0}^2-\dfrac{1}{\tau^2}} \simeq 10^6 rad.s^{-1}$
 
 *b. Solution particulière*
 
