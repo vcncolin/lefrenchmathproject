@@ -284,16 +284,11 @@ On peut alors justifier que:
 - $u_C(t=0^+) = U_0$ car la tension est continue dans un condensateur
 - $i(t=0^+) = 0$ car l'intensité est continue dans une bobine. De plus, $i(t) = C\frac{du_C}{dt}$ dans un condensateur, donc $\frac{du_C}{dt} (t=0^+) = 0$
 
-On applique cela à la fonction u_C(t) trouvée plus haut (on calcule tout d'abord $\frac{du_C}{dt}$) :
+On applique cela à la fonction $u_C(t)$ trouvée plus haut (on calcule tout d'abord $\frac{du_C}{dt}$) :
 
 $\dfrac{du_C}{dt} = Ar_1\exp(r_1 t) + Br_2\exp(r_2 t)$
 
-$\left\{
-\begin{array}{l}
-  u_C(t=0^+) = U_0 \Leftrightarrow A+B=U_0 \\
-  \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow Ar_1+Br_2=0
-\end{array}
-\right.$
+$\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow A+B=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow A r_1+Br_2=0 \end{array} \right.$
 
 Il s'agit d'un système de deux équations à deux inconnues à résoudre, on peut par exemple procéder en faisant une combinaison linéaire de lignes : $L_2-r_2\times L_1$ : 
 
@@ -303,4 +298,58 @@ $\Leftrightarrow A(r_1-r_2) = - r_2 U_0$
 
 $\Leftrightarrow A = \dfrac{r_2}{r_2-r_1} U_0$
 
-et on peut utiliser $A+B = U_0$ pour en déduire $B = \dfrac{-r_1}{r_2-r_1} U_0$
+et on peut utiliser $A+B$ pour en déduire $B = \dfrac{-r_1}{r_2-r_1} U_0$
+
+**Cas n°2 :**
+
+$\tau = \dfrac{2L}{R} = \dfrac{2\times1.10^{-3}}{0,1.10^3} = 20 \mu s$
+$\omega_0 = \dfrac{1}{\sqrt{LC}}=\dfrac{1}{\sqrt{10^{-3}\times10^{-9}}} = 10^6 rad.s^{-1}$
+
+On peut également calculer $T_0 = \dfrac{2\pi}{\omega_0} \simeq 6.3 \mu s$, afin de remarquer que $\tau << T_0$.
+
+*a. Solution homogène :*
+
+On réecrit le polynôme caractéristique : $a^2 + \dfrac{2}{\tau} a + {\omega_0}^2 = 0$, donc $\Delta = \frac{4}{\tau^2} - 4{\omega_0}^2 = 4(\frac{1}{\tau^2}-{\omega_0}^2) = -4\times 10^{12} <0$
+
+On va donc se situer dans le cas du **régime pseudo-périodique**, c'est à dire un amortissement avec oscillations. La solution homogène pour la tension dans le condensateur s'exprime : 
+
+$$u_{C,h}(t) = \alpha \exp(\frac{-t}{\tau}) \cos(\omega t + \varphi)$$
+
+avec $\omega = \sqrt{{{\omega_0}^2} - \dfrac{1}{\tau^2}} \simeq 10^6 rad.s^{-1}$
+
+*b. Solution particulière*
+
+On peut réécrire l'équation différentielle : 
+
+$$\dfrac{d^2u_C}{dt^2} + \dfrac{2}{\tau} \dfrac{du_C}{dt} + {\omega_0}^2  u_C(t) = 0$$
+
+Lorsque les dérivées s'annulent, on obtient : $u_{C,p}(t) = 0$
+
+*c. Conclusion*
+
+On a donc $u_C(t) = u_{C,h}(t) + u_{C,p}(t) = \alpha \exp(\frac{-t}{\tau}) \cos(\omega t + \varphi)$
+
+Il nous reste à déterminer les constantes $\alpha$ et $\varphi$ grâce aux conditions initiales : 
+
+- $u_C(0^+) = U_0$
+- $\dfrac{du_C}{dt}(0^+) = 0$
+
+(mêmes justifications que dans le cas précédent)
+
+On applique cela à la fonction $u_C(t)$ trouvée plus haut (on calcule tout d'abord $\frac{du_C}{dt}$) :
+
+$\dfrac{du_C}{dt} = -\dfrac{\alpha}{\tau}\exp(\frac{-t}{\tau})\cos(\omega t +\varphi)- \alpha \omega \exp(\frac{-t}{\tau})\sin(\omega t +\varphi)$
+
+$\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow \alpha \cos\varphi=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow -\dfrac{\alpha}{\tau}\cos(\varphi)- \alpha \omega \sin(\varphi)=0 \end{array} \right.$
+
+Il s'agit d'un système de deux équations à deux inconnues à résoudre. Dans la deuxième équation, on peut simplifier par $\alpha$ afin d'obtenir une équation avec uniquement $\varphi$ : 
+
+$-\dfrac{1}{\tau}\cos(\varphi)- \omega \sin(\varphi)=0$
+
+$\Leftrightarrow -\dfrac{1}{\tau}\cos(\varphi) = \omega \sin(\varphi)$
+
+$\Leftrightarrow \dfrac{-1}{\tau \omega} = \tan(\varphi)$
+
+d'où : $\varphi = \arctan(\dfrac{-1}{\tau \omega})$
+
+Et on pourra utiliser la première équation pour en déduire : $\alpha = \dfrac{U_0}{\cos \varphi}$
