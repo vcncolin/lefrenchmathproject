@@ -197,5 +197,5 @@ Considérons les mêmes rails de Laplace que dans l'exercice précédent. Le sys
 2. Exprimer la force de Laplace subie par la tige mobile. En déduire l'équation mécanique. 
 3. Déterminer la force électromotrice induite. En déduire l'équation électrique.
 4. Établir et résoudre l'équation différentielle vérifiée par l'intensité $i$.
-5. Comparer la puissqnce mécanique fournie par la force de Laplace et la puissance électrique fournie par le générateur induit. 
+5. Comparer la puissance mécanique fournie par la force de Laplace et la puissance électrique fournie par le générateur induit. 
 6. Procéder au bilan de puissance et l'interpréter. 
