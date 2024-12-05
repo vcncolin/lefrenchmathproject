@@ -191,7 +191,7 @@ Considérons un système de rails de Laplace séparés d'une distance $a$ et sou
 
 ![image info](./img/02_Induction/Rails_gen.jpg)
 
-Considérons les mêmes rails de Laplace que dans l'exercice précédent. Le système est maintenant utilisé en fonctionnement générateur : il n'y a plus de fénérateur $E_0$, mais un opérateur extérieur tracte la tige (intialement immobile) avec une force constante $\vec{F_0}$, ce qui génère un courant induit dans le système. Il réalise donc une conversion d'énergie mécanique en énergie électrique. 
+Considérons les mêmes rails de Laplace que dans l'exercice précédent. Le système est maintenant utilisé en fonctionnement générateur : il n'y a plus de générateur $E_0$, mais un opérateur extérieur tracte la tige (intialement immobile) avec une force constante $\vec{F_0}$, ce qui génère un courant induit dans le système. Il réalise donc une conversion d'énergie mécanique en énergie électrique. 
 
 1. Déterminer sans calcul le signe du courant induit. 
 2. Exprimer la force de Laplace subie par la tige mobile. En déduire l'équation mécanique. 
