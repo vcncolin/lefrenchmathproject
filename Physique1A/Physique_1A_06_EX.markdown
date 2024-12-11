@@ -8,7 +8,7 @@ id: Phy1_06_EX
 
 # Chapitre 6 : Régime Sinusoïdal Forcé - EXERCICES
 
-## Exercice 1 : Impédances équivalentes :
+## Exercice 1 : Impédances équivalentes
 
 Pour chacun des dipôles suivants, déterminer l'impédance complexe équivalente : 
 
@@ -27,3 +27,12 @@ Pour chacun des dipôles suivants, déterminer l'impédance complexe équivalent
   </tr>
 </table>
 
+## Exercice 2 : Détermination d'une équation différentielle à partir des impédances complexes
+
+En reprenant les circuits du TD précédent ci-dessous, déterminer l'équation différentielle recherchée en utilisant les impédances complexes : 
+
+![](./img/05_EX/RLC_series.png)
+
+![](./img/05_EX/RLC_parallel.png)
+
+![](./img/05_EX/RCRC.png)
