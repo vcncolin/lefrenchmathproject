@@ -288,7 +288,7 @@ On applique cela à la fonction $u_C(t)$ trouvée plus haut (on calcule tout d'a
 
 $\dfrac{du_C}{dt} = Ar_1\exp(r_1 t) + Br_2\exp(r_2 t)$
 
-$$\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow A+B=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow A r_1+Br_2=0 \end{array} \right.$$
+$ $\left\{\begin{array}{l} u_C(t=0^+) = U_0 \Leftrightarrow A+B=U_0 \\ \dfrac{du_C}{dt}(t=0^+) = 0 \Leftrightarrow A r_1+Br_2=0 \end{array} \right.$$
 
 Il s'agit d'un système de deux équations à deux inconnues à résoudre, on peut par exemple procéder en faisant une combinaison linéaire de lignes : $L_2-r_2\times L_1$ : 
 

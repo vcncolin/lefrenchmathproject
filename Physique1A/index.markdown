@@ -23,3 +23,6 @@ categories: index
 
 ## Chapitre 5 - Oscillateurs électriques
 [Cours](Physique_1A_05_C_OH.markdown), [Exercices](Physique_1A_05_EX.markdown)
+
+## Chapitre 6 - Régime Sinusoïdal Forcé
+[Cours](Physique_1A_06_C_RSF.markdown), [Exercices](Physique_1A_06_EX.markdown)

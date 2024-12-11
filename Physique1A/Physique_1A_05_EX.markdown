@@ -47,7 +47,8 @@ Le circuit ci-dessus comporte deux résistances $R$ identiques, et deux condensa
 4. Montrer que l'équation différentielle vérifiée par $u(t)$ est : 
 $$\dfrac{E}{\tau^2} = \dfrac{d^2u}{dt^2} + \dfrac{3}{\tau} \dfrac{du}{dt} + \dfrac{u(t)}{\tau^2}$$
 et donner l'expression de $\tau$.
-6. Résoudre, qualifier le régime suivi par $u(t)$, et préciser ses caractéristiques. Tracer l'allure de $u(t)$.
+
+5. Résoudre, qualifier le régime suivi par $u(t)$, et préciser ses caractéristiques. Tracer l'allure de $u(t)$.
 
 ## Exercice 4 : RL-RC
 
