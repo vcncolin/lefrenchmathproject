@@ -9,3 +9,5 @@ categories: index
 
 
 ## [Séance 0 - Bases du Traitement Numérique de l'Image](TNI_M1_00_Bases.markdown)
+
+## [Séance 1 - Colorimétrie](TNI_M1_01_Colorimetrie.markdown)
