@@ -29,6 +29,8 @@ print(img)
 plt.imshow(img)
 ~~~
 
+![](./Queyras.png)
+
 > Qu'affiche-t-on avec *print(img)* ?
 > Qu'affiche-t-on avec *plt.imshow(img)* ? L'image s'affiche-t-elle correctement ? 
 >
