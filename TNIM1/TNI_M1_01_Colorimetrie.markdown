@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "TNI : Bases"
+title:  "TNI : Colorimétrie"
 date:   2024-07-01 12:19:36 +0200
 categories: exercises
 id: TNI_01
@@ -10,7 +10,7 @@ id: TNI_01
 
 Dans cette séance, le but va être de modifier une image en fonction des informations contenues dans les canaux RGB.
 
-# A. Histogrammes
+# A1. Histogrammes
 
 Il peut être intéressant dans une image de dresser l'histogramme des valeurs de pixels. 
 
@@ -22,7 +22,17 @@ plt.hist(img.ravel(), 256)
 >
 > Que se passe-t-il si on applique la même fonction aux différents canaux ? 
 
-## A1. Binarisation / seuillage
+## A2. Profil d'intensité lumineuse
+
+L'histogramme nous permet d'avoir une répartition statistique de l'intensité de tous les pixels de l'image. Cependant, on perd alors l'information de localisation des pixels. 
+
+Afin de passer outre cette limite, on peut tracer le profil d'intensité des pixels le long d'une ligne donnée. 
+
+> Sur l'image de la section précédente, tracer une ligne verticale. 
+>
+> Tracer le profil d'intensité des pixels le long de cette ligne en utilisant les coordonnées des pixels considérés en abcisse, et leur valeur d'intensité en ordonnée. 
+
+## A3. Binarisation / seuillage
 
 On peut ensuite choisir de binariser l'image, c'est à dire de choisir une valeur seuil au dessus de laquelle les pixels deviennent blancs, et en dessous de laquelle les pixels deviennent noirs.
 
