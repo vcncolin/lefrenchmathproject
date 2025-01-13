@@ -34,8 +34,22 @@ Dans les parties suivantes, on va utiliser la fonction *cv2.filter2D* avec diff�
 
 > En utilisant les kernels suivants, pouvez-vous qualifier les opérations réalisées ? 
 
-$K1 = \begin{pmatrix} 0&0&0 \\ 0&1&0 \\ 0&0&0\end{pmatrix}$
+$K1 = \begin{pmatrix} 0&0&0 \\\ 0&1&0 \\\ 0&0&0\end{pmatrix}$
 
-$K2 = \frac{1}{9} \begin{pmatrix} 1&1&1 \\ 1&1&1 \\ 1&1&1 \end{pmatrix}$
+$K2 = \frac{1}{9} \begin{pmatrix} 1&1&1 \\\ 1&1&1 \\\ 1&1&1 \end{pmatrix}$
 
-$K1 = \begin{pmatrix} -1&-1&-1 \\ 2&2&2 \\ -1&-1&-1 \end{pmatrix}$
+$K3 = \begin{pmatrix} -1&-1&-1 \\\ 2&2&2 \\\ -1&-1&-1 \end{pmatrix}$
+
+$K3 = \begin{pmatrix} -1&2&-1 \\\ -1&2&-1 \\\ -1&2&-1 \end{pmatrix}$
+
+$K4 = \begin{pmatrix} -1&-1&-1 \\\ -1&8&-1 \\\ -1&-1&-1 \end{pmatrix}$
+
+$K5 = \begin{pmatrix} 0&-1&0 \\\ -1&4&-1 \\\ 0&-1&0 \end{pmatrix}$
+
+> Que se passe-t-il si on fait varier la taille de ces différents filtres ? 
+
+## A2. Fonctions de filtrage
+
+La librairie *opencv* propose également certaines fonctions de filtrage directement accessibles.
+
+> Utilisez les fonctions *cv2.Canny*, *cv2.blur*, *cv2.goodFeaturesToTrack*, et comparer les avec les filtres appliqués dans la section précédente. 
