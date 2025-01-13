@@ -10,7 +10,7 @@ id: TNI_01
 
 Dans cette séance, le but va être de modifier une image en fonction des informations contenues dans les canaux RGB.
 
-# A1. Histogrammes
+## A1. Histogrammes
 
 Il peut être intéressant dans une image de dresser l'histogramme des valeurs de pixels. 
 

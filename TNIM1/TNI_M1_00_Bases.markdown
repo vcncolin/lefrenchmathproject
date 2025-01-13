@@ -31,6 +31,8 @@ plt.imshow(img)
 
 ![](./Queyras.jpg)
 
+(Crédits photo : https://github.com/DaluS)
+
 > Qu'affiche-t-on avec *print(img)* ?
 > Qu'affiche-t-on avec *plt.imshow(img)* ? L'image s'affiche-t-elle correctement ? 
 >

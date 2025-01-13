@@ -53,3 +53,32 @@ $K5 = \begin{pmatrix} 0&-1&0 \\\ -1&4&-1 \\\ 0&-1&0 \end{pmatrix}$
 La librairie *opencv* propose également certaines fonctions de filtrage directement accessibles.
 
 > Utilisez les fonctions *cv2.Canny*, *cv2.blur*, *cv2.goodFeaturesToTrack*, et comparer les avec les filtres appliqués dans la section précédente. 
+
+## B0. Opérateurs morphologiques
+
+Après avoir déterminé les contours d'objets considérés, il peut arriver qu'on observe certains artefacts (notamment des pixels détachés des contours, ou encore des contours incomplets en raison d'un contraste insuffisant)
+
+Afin de parfaire la définition de ces contours, il est courant d'utiliser un ensemble de transformations dénotés *opérateurs morphologiques*.
+
+## B1. Dilatation / érosion
+
+Les deux opérations basiques sont la dilatation et l'érosion. 
+
+La première a pour objectif d'augmenter les contours des objets dans l'image. Il peut être pertinent d'imaginer qu'on repasse un crayon épais sur les contours considérés, afin de combler les manques dans ces contours. 
+
+La seconde a pour objectif (inverse) de diminuer les contours des objets dans l'image. Il peut être pertinent d'imaginer qu'on repasse une gomme sur les contours considérés, afin de retirer les points excédentaires dans un contour. 
+
+On choisit pour cela un élément structurel (en d'autres termes, le crayon, le pinceau ou la gomme qu'on va utiliser) qu'on va convoluer avec l'image.
+
+> Utiliser les fonctions *cv2.dilate*, *cv2.erode* sur une image qui contiendra des contours déterminés précedemment. 
+> 
+> On fera varier l'élément structurel (*cv2.getStructuringElement*), en choisissant notamment un rectangle, une croix, une ellipse (ou mieux si vous en avez l'envie).
+>
+> Vous tenterez d'améliorer la qualité des contours des objets dans l'image en utilisant ces transformations, et en faisant varier la taille et le type de l'élément structurel. 
+
+## B2. Ouverture / fermeture
+
+Les opérations de dilatation / érosion sont généralement utilisées de concert afin de conserver une taille caractéristique des objets. 
+
+> Quelles sont les opérations successives effectuées par les fonctions *opening = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)* et *closing = cv.morphologyEx(img, cv.MORPH_CLOSE, kernel)* ?
+
