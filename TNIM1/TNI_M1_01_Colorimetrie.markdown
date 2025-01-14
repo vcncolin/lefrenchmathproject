@@ -46,14 +46,14 @@ a, img_t = cv2.threshold(img, 200, 255, cv2.THRESH_BINARY)
 >
 > Effectuer la même opération en utilisant un seuillage dit "adaptatif" afin de tenir compte des variations de luminosité éventuelles dans l'image. (*cv2.adaptiveThreshold*)
 
-## A2. Manipulations colorimétriques
+## A4. Manipulations colorimétriques
 
 > En utilisant les fonctions étudiées ci-dessus:
 >
-> _ quelles inversions de couleurs pouvez-vous effectuer sur l'image de Rubik's Cube ci-dessous ? 
+> _ séparer les manchots ci-dessous du reste de l'image, et emmenez-les en vacances vers la destination de votre choix. 
 >
-> _ séparer les pingouins ci-dessous du reste de l'image, et emmenez-les en vacances vers la destination de votre choix. 
-
-![](./Cube.png)
+> _ quelles inversions de couleurs pouvez-vous effectuer sur l'image de Rubik's Cube ci-dessous ?
 
 ![](./manchots.jpg)
+
+![](./Cube.png)
